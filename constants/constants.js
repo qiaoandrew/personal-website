@@ -218,3 +218,46 @@ export const PROJECTS = [
     buttons: [{ id: "button-1", text: "Website", link: "https://tsac.ca/" }],
   },
 ];
+
+export const EXPERIENCES = [
+  {
+    role: "Research Intern",
+    company: "University of Toronto",
+    chips: ["October 2022 — Present", "Toronto, ON"],
+    description: [
+      "Studying the role of AI in the workplace alongside Dr. Meena Andiappan's team of researchers",
+      "Developing and designing applications embedded with AI models such as GPT-3 for research projects",
+      "<span class='font-medium'>Technologies Used</span>: GPT-3, OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, JavaScript, Figma",
+    ],
+  },
+  {
+    role: "Software Engineer",
+    company: "AVIEW International",
+    chips: ["May 2022 — Present", "Toronto, ON"],
+    description: [
+      "Leading development on the startup's corporate website and user-oriented portal",
+      "Streamlining the company's digital growth, increasing its client base by 400% and generating a 115%+ MoM growth",
+      "Technologies Used: React.js, Next.js, Amazon Web Services (AWS), Tailwind CSS",
+    ],
+  },
+  {
+    role: "Technology Chairperson",
+    company: "Pierre Elliott Trudeau High School Student Council",
+    chips: ["September 2021 — June 2022", "Markham, ON"],
+    description: [
+      "Developed the high school's mobile application and student council website, cementing the school's digital presence",
+      "Programmed technological activities for student council events including a themed Wordle and match-making algorithm",
+      "Technologies used: React.js, Next.js, Firebase, HTML, CSS, JavaScript, Figma",
+    ],
+  },
+  {
+    role: "Tennis Coach",
+    company: "Unionville Tennis Club, Self-Employed",
+    chips: ["June 2020 — August 2022", "Markham, ON"],
+    description: [
+      "Taught over 700 hours of tennis professionally to dozens of students of various ages and skill levels",
+      "Obtained quintessential professional workplace experience in addition to vital leadership capabilities",
+      "Sharing my passion for the sport of tennis with community members, helping them reach their athletic goals",
+    ],
+  },
+];

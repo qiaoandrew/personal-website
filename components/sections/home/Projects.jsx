@@ -14,7 +14,7 @@ import openIcon from "../../../public/img/icons/open.svg";
 export default function Projects() {
   return (
     <section
-      className="m-horizontal mb-24 pt-8 3xs:pt-10 lg:pt-14 3xl:pt-20 4xl:pt-28"
+      className="m-horizontal mb-10 pt-8 3xs:mb-16 3xs:pt-10 lg:pt-14 2xl:mb-24 3xl:pt-20 4xl:pt-28"
       id="projects"
     >
       <Grid>
@@ -23,8 +23,8 @@ export default function Projects() {
             <div
               className={`transition-300 cursor-pointer ${
                 i % 2 == 1
-                  ? `hover:translate-y-9 md:translate-y-10`
-                  : "hover:-translate-y-1"
+                  ? `md:translate-y-10 md:hover:translate-y-9`
+                  : "md:hover:-translate-y-1"
               }`}
             >
               <GradientBorder borderWidth="rounded-xl 3xs:rounded-2xl xl:rounded-3xl">
