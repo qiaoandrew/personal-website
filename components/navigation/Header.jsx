@@ -1,21 +1,107 @@
+import { useContext, useState } from "react";
 import Link from "next/link";
 
+import ThemeContext from "../../store/theme-context";
+
+const ROUTES = [
+  { link: "/#home", text: "Home" },
+  { link: "/#projects", text: "Projects" },
+  { link: "/#experiences", text: "Experiences" },
+  { link: "/#about", text: "About" },
+  { link: "/#contact", text: "Contact" },
+];
+
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="mx-2 mt-9 flex items-center justify-between overflow-hidden rounded-full bg-transparent px-3 py-4 backdrop-blur-md">
-      <Link href="/" className="gradient-text gradient-2 text-lg font-medium">
-        Andrew Qiao
-      </Link>
-      <div className="flex gap-9">
-        <div className="h-6 w-6 rounded-full border border-black bg-purple">
-          <div className="-mt-0.25 -ml-0.25 h-6 w-3 rounded-l-full bg-black"></div>
+    <div className="relative z-10 mx-2 mb-8 flex flex-col pt-9 3xs:mb-10 sm:mx-4 md:mb-20 lg:mb-24 xl:mx-10 2xl:mb-32">
+      <header className="transition-300 flex items-center justify-between overflow-hidden rounded-full bg-lightPurple bg-opacity-20 px-3 py-3 dark:bg-darkPurple dark:bg-opacity-5 3xs:py-4 xs:px-5 xl:px-6">
+        <Link
+          href="/"
+          className="gradient-text gradient-1 dark:gradient-2 font-medium"
+        >
+          Andrew Qiao
+        </Link>
+        <div className="flex items-center gap-6 3xs:gap-9 xl:gap-12">
+          <DesktopMenu />
+          <ThemeToggle />
+          <MobileMenuButton
+            isMenuOpen={isMenuOpen}
+            setIsMenuOpen={setIsMenuOpen}
+          />
         </div>
-        <div className="flex flex-col gap-1.25">
-          <div className="h-1.5 w-6 rounded-full bg-black" />
-          <div className="h-1.5 w-9 rounded-full bg-black" />
-          <div className="h-1.5 w-6 self-end rounded-full bg-black" />
-        </div>
-      </div>
-    </header>
+      </header>
+      <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+    </div>
+  );
+}
+
+function DesktopMenu() {
+  return (
+    <nav className="hidden gap-16 font-[450] text-black dark:text-lightPurple xl:flex">
+      {ROUTES.map((route, i) => (
+        <Link className="" href={route.link} key={`route-${i}`}>
+          {route.text}
+        </Link>
+      ))}
+    </nav>
+  );
+}
+
+function ThemeToggle() {
+  const themeContext = useContext(ThemeContext);
+
+  return (
+    <div
+      className="transition-300 relative h-5 w-5 cursor-pointer rounded-full border border-black bg-purple dark:rotate-180 dark:border-purple 3xs:h-6 3xs:w-6"
+      onClick={themeContext.changeTheme}
+    >
+      <div className="absolute inset-y-0 left-0 w-1/2 rounded-l-full bg-black"></div>
+    </div>
+  );
+}
+
+function MobileMenuButton({ isMenuOpen, setIsMenuOpen }) {
+  return (
+    <div
+      className="flex cursor-pointer flex-col gap-1.25 xl:hidden"
+      onClick={() => setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen)}
+    >
+      <div
+        className={`transition-300 h-1.25 w-5 rounded-full bg-black dark:bg-lightPurple 3xs:h-1.5 3xs:w-6 ${
+          isMenuOpen && "translate-x-1/2"
+        }`}
+      />
+      <div className="transition-300 h-1.25 w-8 rounded-full bg-black dark:bg-lightPurple 3xs:h-1.5 3xs:w-9" />
+      <div
+        className={`transition-300 h-1.25 w-5 translate-x-1/2 rounded-full bg-black dark:bg-lightPurple 3xs:h-1.5 3xs:w-6 ${
+          isMenuOpen && "translate-x-0"
+        }`}
+      />
+    </div>
+  );
+}
+
+function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
+  return (
+    <nav
+      className={`transition-300 absolute top-[calc(100%+24px)] flex w-full flex-col gap-6 rounded-2xl bg-lightPurple bg-opacity-20 py-6 text-center font-medium opacity-0 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-5 xl:hidden ${
+        isMenuOpen && "opacity-100"
+      }`}
+    >
+      {ROUTES.map((route, i) => (
+        <Link
+          href={route.link}
+          onClick={() => setIsMenuOpen(false)}
+          className={!isMenuOpen && "pointer-events-none"}
+          key={`route-${i}`}
+        >
+          <span className="gradient-text gradient-1 dark:gradient-2">
+            {route.text}
+          </span>
+        </Link>
+      ))}
+    </nav>
   );
 }

@@ -23,11 +23,61 @@
 }
 
 @layer components {
+  .m-horizontal {
+    @apply mx-3 3xs:mx-5 xs:mx-7 sm:mx-9 xl:mx-16 5xl:mx-auto 5xl:max-w-[1600px];
+  }
+
+  .transition-300 {
+    @apply duration-300 ease-in-out;
+  }
+
   .gradient-text {
-    @apply inline-block bg-clip-text text-transparent;
+    @apply inline bg-clip-text text-transparent;
+  }
+
+  .gradient-1 {
+    @apply bg-gradient-to-tr from-purple via-black to-purple;
   }
 
   .gradient-2 {
-    @apply bg-gradient-to-tr from-purple via-black to-purple;
+    @apply bg-gradient-to-tr from-purple via-beige to-purple;
+  }
+
+  .gradient-uwaterloo {
+    @apply bg-gradient-to-tr from-yellow via-black to-yellow;
+  }
+
+  .gradient-uwaterloo-dark {
+    @apply bg-gradient-to-tr from-yellow via-beige to-yellow;
+  }
+
+  .gradient-aview {
+    @apply bg-gradient-to-tr from-pink via-cyan to-pink;
+  }
+
+  .gradient-uoft {
+    @apply bg-gradient-to-tr from-blue via-black to-blue;
+  }
+
+  .gradient-uoft-dark {
+    @apply bg-gradient-to-tr from-blue via-beige to-blue;
+  }
+
+  .gradient-card-light {
+    @apply bg-gradient-to-t from-[rgba(221,225,251,0.7)] to-[rgba(245,247,255,0)];
+  }
+
+  .gradient-card-dark {
+    @apply bg-gradient-to-t from-[rgba(77,84,132,0.7)] to-[rgba(77,84,132,0)];
+  }
+
+  .purple-filter {
+    filter: invert(85%) sepia(9%) saturate(911%) hue-rotate(198deg)
+      brightness(105%) contrast(97%);
+  }
+
+  .dark-purple-filter {
+    filter: invert(32%) sepia(50%) saturate(512%) hue-rotate(195deg)
+      brightness(87%) contrast(84%);
   }
 }
