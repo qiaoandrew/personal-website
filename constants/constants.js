@@ -227,7 +227,7 @@ export const EXPERIENCES = [
     description: [
       "Studying the role of AI in the workplace alongside Dr. Meena Andiappan's team of researchers",
       "Developing and designing applications embedded with AI models such as GPT-3 for research projects",
-      "<span class='font-medium'>Technologies Used</span>: GPT-3, OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, JavaScript, Figma",
+      "<span class='font-[450]'>Technologies Used</span>: GPT-3, OpenAI API, React.js, Next.js, Firebase, Tailwind CSS",
     ],
   },
   {
@@ -236,8 +236,8 @@ export const EXPERIENCES = [
     chips: ["May 2022 — Present", "Toronto, ON"],
     description: [
       "Leading development on the startup's corporate website and user-oriented portal",
-      "Streamlining the company's digital growth, increasing its client base by 400% and generating a 115%+ MoM growth",
-      "Technologies Used: React.js, Next.js, Amazon Web Services (AWS), Tailwind CSS",
+      "Streamlining the company's growth, increasing its client base by 400%, generating 115%+ MoM growth",
+      "<span class='font-[450]'>Technologies Used</span>: React.js, Next.js, Amazon Web Services (AWS), Tailwind CSS",
     ],
   },
   {
@@ -245,9 +245,9 @@ export const EXPERIENCES = [
     company: "Pierre Elliott Trudeau High School Student Council",
     chips: ["September 2021 — June 2022", "Markham, ON"],
     description: [
-      "Developed the high school's mobile application and student council website, cementing the school's digital presence",
-      "Programmed technological activities for student council events including a themed Wordle and match-making algorithm",
-      "Technologies used: React.js, Next.js, Firebase, HTML, CSS, JavaScript, Figma",
+      "Developed the high school's mobile application, Pethsapp, cementing the school's digital presence",
+      "Programmed activities for school events such as a themed Wordle and match-making algorithm",
+      "<span class='font-[450]'>Technologies Used</span>: React.js, Next.js, Flutter, Dart, Firebase, Figma",
     ],
   },
   {
@@ -256,8 +256,8 @@ export const EXPERIENCES = [
     chips: ["June 2020 — August 2022", "Markham, ON"],
     description: [
       "Taught over 700 hours of tennis professionally to dozens of students of various ages and skill levels",
-      "Obtained quintessential professional workplace experience in addition to vital leadership capabilities",
-      "Sharing my passion for the sport of tennis with community members, helping them reach their athletic goals",
+      "Shared my passion for tennis with community members while helping students reach their athletic goals",
+      "<span class='font-[450]'>Relevant Skills</span>: Leadership, teaching, communication, collaboration, critical thinking",
     ],
   },
 ];

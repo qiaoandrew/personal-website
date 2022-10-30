@@ -1,6 +1,11 @@
-export default function GradientBorder({ borderWidth, children }) {
+export default function GradientBorder({
+  borderRadius,
+  borderColor,
+  classes,
+  children,
+}) {
   return (
-    <div className={`gradient-1 dark:gradient-2 p-0.5 ${borderWidth}`}>
+    <div className={`p-0.25 ${borderRadius} ${borderColor} ${classes}`}>
       {children}
     </div>
   );

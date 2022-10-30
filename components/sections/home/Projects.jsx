@@ -27,7 +27,10 @@ export default function Projects() {
                   : "md:hover:-translate-y-1"
               }`}
             >
-              <GradientBorder borderWidth="rounded-xl 3xs:rounded-2xl xl:rounded-3xl">
+              <GradientBorder
+                borderColor="gradient-1 dark:gradient-2"
+                borderRadius="rounded-xl 3xs:rounded-2xl xl:rounded-3xl"
+              >
                 <ProjectCard project={project} />
               </GradientBorder>
             </div>
@@ -42,7 +45,7 @@ function ProjectCard({ project }) {
   const themeContext = useContext(ThemeContext);
 
   return (
-    <div className="transition-300 relative aspect-[32/21] overflow-hidden rounded-[10px] bg-beige dark:bg-black 3xs:rounded-[14px] xl:rounded-[22px]">
+    <div className="transition-300 relative aspect-[32/21] overflow-hidden rounded-[11px] bg-beige dark:bg-black 3xs:rounded-[15px] xl:rounded-[23px]">
       <h3 className="gradient-text gradient-1 dark:gradient-2 absolute bottom-4 left-4 z-20 font-medium 3xs:bottom-5 3xs:left-5 3xs:text-2xl xs:bottom-6 xs:left-6 xl:bottom-8 xl:left-8 2xl:text-4xl 3xl:bottom-10 3xl:left-10 3xl:text-5xl 3xl:font-[550]">
         {project.title}
       </h3>
@@ -71,7 +74,10 @@ function ProjectCard({ project }) {
         />
       </div>
       <div className="absolute top-3 right-3 3xs:top-4 3xs:right-4 xs:top-5 xs:right-5 xl:right-6 xl:top-6 2xl:top-8 2xl:right-8">
-        <GradientBorder borderWidth="rounded-full">
+        <GradientBorder
+          borderColor="gradient-1 dark:gradient-2"
+          borderRadius="rounded-full"
+        >
           <div className="gradient-2 dark:gradient-1 grid h-10 w-10 place-content-center rounded-full 3xs:h-12 3xs:w-12 xl:h-16 xl:w-16">
             <div className="dark:purple-filter dark-purple-filter relative h-6 w-6 xl:h-8 xl:w-8">
               <Image src={openIcon} fill alt="Open icon" />

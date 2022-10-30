@@ -43,6 +43,10 @@
     @apply bg-gradient-to-tr from-purple via-beige to-purple;
   }
 
+  .gradient-3 {
+    @apply bg-gradient-to-tr from-purple via-darkPurple to-purple;
+  }
+
   .gradient-uwaterloo {
     @apply bg-gradient-to-tr from-yellow via-black to-yellow;
   }

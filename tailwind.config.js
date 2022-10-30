@@ -19,7 +19,6 @@ module.exports = {
       transparent: "transparent",
     },
     fontSize: {
-      "2xs": ["10px", "12px"],
       xs: ["12px", "16px"],
       sm: ["14px", "20px"],
       base: ["16px", "24px"],
@@ -34,7 +33,7 @@ module.exports = {
       "8xl": ["48px", "80px"],
       "9xl": ["56px", "88px"],
       "10xl": ["72px", "112px"],
-      "11xl": ["80px", "124px"],
+      "11xl": ["80px", "120px"],
     },
     fontFamily: {
       sans: ["GeneralSans-Variable", "sans-serif"],
