@@ -15,8 +15,8 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="fixed left-2 right-2 z-30 flex flex-col pt-9 sm:left-4 sm:right-4 xl:left-10 xl:right-10">
-      <header className="transition-300 flex items-center justify-between overflow-hidden rounded-full bg-lightPurple bg-opacity-20 px-3 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-5 3xs:py-4 xs:px-5 xl:px-6">
+    <div className="relative z-10 mx-2 mb-8 flex flex-col pt-9 3xs:mb-10 sm:mx-4 md:mb-20 lg:mb-24 xl:mx-10 2xl:mb-32">
+      <header className="transition-300 flex items-center justify-between overflow-hidden rounded-full bg-lightPurple bg-opacity-20 px-3 py-3 dark:bg-darkPurple dark:bg-opacity-5 3xs:py-4 xs:px-5 xl:px-6">
         <Link
           href="/"
           className="gradient-text gradient-1 dark:gradient-2 font-medium"
@@ -86,15 +86,15 @@ function MobileMenuButton({ isMenuOpen, setIsMenuOpen }) {
 function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
   return (
     <nav
-      className={`transition-300 relative mt-4 flex w-full flex-col gap-8 rounded-2xl bg-lightPurple bg-opacity-20 py-6 text-center font-medium backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-5 xl:hidden ${
-        isMenuOpen ? "flex" : "hidden"
+      className={`transition-300 absolute top-[calc(100%+24px)] flex w-full flex-col gap-6 rounded-2xl bg-lightPurple bg-opacity-20 py-6 text-center font-medium backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-5 xl:hidden ${
+        isMenuOpen ? "opacity-100" : "opacity-0"
       }`}
     >
       {ROUTES.map((route, i) => (
         <Link
           href={route.link}
           onClick={() => setIsMenuOpen(false)}
-          className={!isMenuOpen && "pointer-events-none"}
+          className={isMenuOpen ? "pointer-events-auto" : "pointer-events-none"}
           key={`route-${i}`}
         >
           <span className="gradient-text gradient-1 dark:gradient-2">

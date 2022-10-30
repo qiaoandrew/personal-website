@@ -10,7 +10,7 @@ import pointIcon from "../../../public/img/icons/point.svg";
 export default function Experiences() {
   return (
     <section
-      className="m-horizontal mb-10 pt-8 3xs:mb-16 3xs:pt-10 lg:pt-24 2xl:mb-24 3xl:pt-30 4xl:pt-38"
+      className="m-horizontal mb-10 pt-8 3xs:mb-16 3xs:pt-10 lg:pt-20 2xl:mb-24"
       id="experiences"
     >
       <h2 className="gradient-text gradient-1 dark:gradient-2 mb-4 inline-block text-3xl font-[550] 3xs:text-4xl xs:mb-6 xs:text-6xl lg:text-8xl 3xl:mb-8 3xl:text-9xl">
