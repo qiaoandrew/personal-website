@@ -223,11 +223,11 @@ export const EXPERIENCES = [
   {
     role: "Research Intern",
     company: "University of Toronto",
-    chips: ["October 2022 — Present", "Toronto, ON"],
+    chips: ["Oct 2022 — Present", "Toronto, ON"],
     description: [
       "Studying the role of AI in the workplace alongside Dr. Meena Andiappan's team of researchers",
       "Developing and designing applications embedded with AI models such as GPT-3 for research projects",
-      "<span class='font-[450]'>Technologies Used</span>: GPT-3, OpenAI API, React.js, Next.js, Firebase, Tailwind CSS",
+      "<span class='font-[450]'>Technologies Used</span>: GPT-3, OpenAI API, React.js, Next.js, Firebase, JavaScript, Tailwind CSS",
     ],
   },
   {
@@ -237,23 +237,23 @@ export const EXPERIENCES = [
     description: [
       "Leading development on the startup's corporate website and user-oriented portal",
       "Streamlining the company's growth, increasing its client base by 400%, generating 115%+ MoM growth",
-      "<span class='font-[450]'>Technologies Used</span>: React.js, Next.js, Amazon Web Services (AWS), Tailwind CSS",
+      "<span class='font-[450]'>Technologies Used</span>: React.js, Next.js, Amazon Web Services (AWS), JavaScript, Tailwind CSS",
     ],
   },
   {
     role: "Technology Chairperson",
-    company: "Pierre Elliott Trudeau High School Student Council",
-    chips: ["September 2021 — June 2022", "Markham, ON"],
+    company: "PETHS Student Council",
+    chips: ["Sept 2021 — Jun 2022", "Markham, ON"],
     description: [
       "Developed the high school's mobile application, Pethsapp, cementing the school's digital presence",
       "Programmed activities for school events such as a themed Wordle and match-making algorithm",
-      "<span class='font-[450]'>Technologies Used</span>: React.js, Next.js, Flutter, Dart, Firebase, Figma",
+      "<span class='font-[450]'>Technologies Used</span>: React.js, Next.js, Flutter, Dart, Firebase, JavaScript, Figma",
     ],
   },
   {
-    role: "Tennis Coach",
-    company: "Unionville Tennis Club, Self-Employed",
-    chips: ["June 2020 — August 2022", "Markham, ON"],
+    role: "Tennis Professional",
+    company: "Unionville Tennis Club",
+    chips: ["Jun 2020 — Aug 2022", "Markham, ON"],
     description: [
       "Taught over 700 hours of tennis professionally to dozens of students of various ages and skill levels",
       "Shared my passion for tennis with community members while helping students reach their athletic goals",

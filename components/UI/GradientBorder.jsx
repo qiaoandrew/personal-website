@@ -5,7 +5,7 @@ export default function GradientBorder({
   children,
 }) {
   return (
-    <div className={`p-0.25 ${borderRadius} ${borderColor} ${classes}`}>
+    <div className={`h-full p-0.25 ${borderRadius} ${borderColor} ${classes}`}>
       {children}
     </div>
   );

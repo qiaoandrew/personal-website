@@ -80,7 +80,12 @@ function ProjectCard({ project }) {
         >
           <div className="gradient-2 dark:gradient-1 grid h-10 w-10 place-content-center rounded-full 3xs:h-12 3xs:w-12 xl:h-16 xl:w-16">
             <div className="dark:purple-filter dark-purple-filter relative h-6 w-6 xl:h-8 xl:w-8">
-              <Image src={openIcon} fill alt="Open icon" />
+              <Image
+                src={openIcon}
+                alt="Open icon"
+                fill
+                sizes="(max-width: 1024px) 24px, 32px"
+              />
             </div>
           </div>
         </GradientBorder>
