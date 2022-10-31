@@ -227,7 +227,7 @@ export const EXPERIENCES = [
     description: [
       "Studying the role of AI in the workplace alongside Dr. Meena Andiappan's team of researchers",
       "Developing and designing applications embedded with AI models such as GPT-3 for research projects",
-      "<span class='font-[450]'>Technologies Used</span>: GPT-3, OpenAI API, React.js, Next.js, Firebase, JavaScript, Tailwind CSS",
+      "<span class='font-medium'>Technologies Used</span>: GPT-3, OpenAI API, React.js, Next.js, Firebase, JavaScript, Tailwind CSS",
     ],
   },
   {
@@ -237,7 +237,7 @@ export const EXPERIENCES = [
     description: [
       "Leading development on the startup's corporate website and user-oriented portal",
       "Streamlining the company's growth, increasing its client base by 400%, generating 115%+ MoM growth",
-      "<span class='font-[450]'>Technologies Used</span>: React.js, Next.js, Amazon Web Services (AWS), JavaScript, Tailwind CSS",
+      "<span class='font-medium'>Technologies Used</span>: React.js, Next.js, Amazon Web Services (AWS), JavaScript, Tailwind CSS",
     ],
   },
   {
@@ -247,7 +247,7 @@ export const EXPERIENCES = [
     description: [
       "Developed the high school's mobile application, Pethsapp, cementing the school's digital presence",
       "Programmed activities for school events such as a themed Wordle and match-making algorithm",
-      "<span class='font-[450]'>Technologies Used</span>: React.js, Next.js, Flutter, Dart, Firebase, JavaScript, Figma",
+      "<span class='font-medium'>Technologies Used</span>: React.js, Next.js, Flutter, Dart, Firebase, JavaScript, Figma",
     ],
   },
   {
@@ -257,7 +257,7 @@ export const EXPERIENCES = [
     description: [
       "Taught over 700 hours of tennis professionally to dozens of students of various ages and skill levels",
       "Shared my passion for tennis with community members while helping students reach their athletic goals",
-      "<span class='font-[450]'>Relevant Skills</span>: Leadership, teaching, communication, collaboration, critical thinking",
+      "<span class='font-medium'>Relevant Skills</span>: Leadership, teaching, communication, collaboration, critical thinking",
     ],
   },
 ];

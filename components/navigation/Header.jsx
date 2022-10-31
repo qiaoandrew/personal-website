@@ -1,6 +1,5 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import Link from "next/link";
-
 import ThemeContext from "../../store/theme-context";
 
 const ROUTES = [
@@ -15,8 +14,8 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="relative z-10 mx-2 mb-8 flex flex-col pt-9 3xs:mb-10 sm:mx-4 md:mb-20 lg:mb-24 xl:mx-10 2xl:mb-32">
-      <header className="transition-300 flex items-center justify-between overflow-hidden rounded-full bg-lightPurple bg-opacity-20 px-3 py-3 dark:bg-darkPurple dark:bg-opacity-5 3xs:py-4 xs:px-5 xl:px-6">
+    <div className="relative z-10 mx-2 mb-8 mt-6 flex flex-col 3xs:mb-10 sm:mx-4 md:mb-20 lg:mb-24 xl:mx-10 xl:mt-12 2xl:mb-28">
+      <header className="transition-300 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-20 px-3 py-3 dark:bg-darkPurple dark:bg-opacity-5 3xs:py-4 xs:px-5 xl:px-6">
         <Link
           href="/"
           className="gradient-text gradient-1 dark:gradient-2 font-medium"
@@ -39,9 +38,13 @@ export default function Header() {
 
 function DesktopMenu() {
   return (
-    <nav className="hidden gap-16 font-[450] text-black dark:text-lightPurple xl:flex">
+    <nav className="hidden gap-16 xl:flex">
       {ROUTES.map((route, i) => (
-        <Link className="" href={route.link} key={`route-${i}`}>
+        <Link
+          href={route.link}
+          className="font-[450] text-black dark:text-lightPurple"
+          key={`route-${i}`}
+        >
           {route.text}
         </Link>
       ))}
