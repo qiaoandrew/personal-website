@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Landing() {
   return (
     <section className="m-horizontal relative mb-8 lg:mb-14 3xl:mb-20 4xl:mb-28">
@@ -27,8 +29,10 @@ export default function Landing() {
           University of Waterloo
         </span>
         , Software Engineer @{" "}
-        <span className="gradient-text gradient-aview">AVIEW</span>, and
-        Research Intern @{" "}
+        <a href="https://www.aviewint.com" target="_blank" rel="noreferrer">
+          <span className="gradient-text gradient-aview">AVIEW</span>
+        </a>
+        , and Research Intern @{" "}
         <span className="gradient-text gradient-uoft dark:gradient-uoft-dark">
           University of Toronto
         </span>

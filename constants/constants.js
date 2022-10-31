@@ -261,3 +261,11 @@ export const EXPERIENCES = [
     ],
   },
 ];
+
+export const ABOUT = [
+  "Hi! I'm Andrew, a first year CS student at the University of Waterloo.",
+  "Currently, I'm a Software Engineer at AVIEW International, leading development on the startup's website and using portal using React.js and AWS.",
+  "Additionally, I'm a Research Intern at the University of Toronto, studying the impact of AI in the workplace by building applications allowing users to interact with AI models such as GPT-3.",
+  "In my spare time, I like to play tennis, search for design inspiration, and solve Leetcode problems.",
+  "That said, I'd love to get to know you! Feel free to message me about new opportunities or to have a conversation!",
+];

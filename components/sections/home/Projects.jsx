@@ -10,7 +10,7 @@ import openIcon from "../../../public/img/icons/open.svg";
 export default function Projects() {
   return (
     <section
-      className="m-horizontal mb-12 3xs:mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64"
+      className="m-horizontal mb-16 3xs:mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64"
       id="projects"
     >
       <Grid>

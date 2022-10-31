@@ -21,10 +21,10 @@ module.exports = {
     fontSize: {
       xs: ["12px", "16px"],
       sm: ["14px", "22px"],
-      base: ["16px", "24px"],
+      base: ["16px", "26px"],
       lg: ["18px", "28px"],
-      xl: ["20px", "32px"],
-      "2xl": ["24px", "36px"],
+      xl: ["20px", "36px"],
+      "2xl": ["24px", "40px"],
       "3xl": ["28px", "44px"],
       "4xl": ["32px", "48px"],
       "5xl": ["36px", "56px"],
@@ -55,6 +55,7 @@ module.exports = {
       spacing: {
         0.25: "1px",
         1.25: "5px",
+        4.5: "18px",
         30: "120px",
         38: "152px",
       },
