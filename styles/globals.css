@@ -71,6 +71,14 @@
     @apply bg-gradient-to-t from-[rgba(77,84,132,0.7)] to-[rgba(77,84,132,0)];
   }
 
+  .gradient-form-light {
+    @apply bg-gradient-to-b from-lightPurple to-beige;
+  }
+
+  .gradient-form-light {
+    @apply bg-gradient-to-b from-darkPurple to-black;
+  }
+
   .purple-filter {
     filter: invert(85%) sepia(9%) saturate(911%) hue-rotate(198deg)
       brightness(105%) contrast(97%);
