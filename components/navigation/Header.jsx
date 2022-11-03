@@ -1,21 +1,24 @@
-import { useContext, useState } from "react";
-import Link from "next/link";
-import ThemeContext from "../../store/theme-context";
+import { useContext, useState } from 'react';
+import Link from 'next/link';
+import ThemeContext from '../../store/theme-context';
 
 const ROUTES = [
-  { link: "/#", text: "Home" },
-  { link: "/#projects", text: "Projects" },
-  { link: "/#experiences", text: "Experiences" },
-  { link: "/#about", text: "About" },
-  { link: "/#contact", text: "Contact" },
+  { link: '/#', text: 'Home' },
+  { link: '/#projects', text: 'Projects' },
+  { link: '/#experiences', text: 'Experiences' },
+  { link: '/#about', text: 'About' },
+  { link: '/#contact', text: 'Contact' },
 ];
 
+/**
+ * Website header, includes navigation links and theme toggle.
+ */
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="relative z-10 mx-2 mb-8 mt-6 flex flex-col 3xs:mb-10 xs:mb-16 sm:mx-4 md:mb-20 lg:mb-24 xl:mx-10 xl:mt-12 2xl:mb-28">
-      <header className="transition-300 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-20 px-3 py-3 dark:bg-darkPurple dark:bg-opacity-5 3xs:py-4 xs:px-5 xl:px-6">
+      <header className="transition-300 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-0 px-3 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-0 3xs:py-4 xs:px-5 xl:px-6">
         <Link
           href="/"
           className="gradient-text gradient-1 dark:gradient-2 font-medium"
@@ -36,6 +39,9 @@ export default function Header() {
   );
 }
 
+/**
+ * Navigation menu for desktop devices.
+ */
 function DesktopMenu() {
   return (
     <nav className="hidden gap-16 xl:flex">
@@ -52,6 +58,9 @@ function DesktopMenu() {
   );
 }
 
+/**
+ * Toggle to switch between light and dark theme.
+ */
 function ThemeToggle() {
   const themeContext = useContext(ThemeContext);
 
@@ -65,6 +74,12 @@ function ThemeToggle() {
   );
 }
 
+/**
+ * Button to toggle mobile menu.
+ *
+ * @param isMenuOpen is a state variable determining whether or not the mobile is showing.
+ * @param setIsMenu function that changes state variable.
+ */
 function MobileMenuButton({ isMenuOpen, setIsMenuOpen }) {
   return (
     <div
@@ -73,34 +88,40 @@ function MobileMenuButton({ isMenuOpen, setIsMenuOpen }) {
     >
       <div
         className={`transition-300 h-1.25 w-5 rounded-full bg-black dark:bg-lightPurple 3xs:h-1.5 3xs:w-6 ${
-          isMenuOpen && "translate-x-1/2"
+          isMenuOpen && 'translate-x-1/2'
         }`}
       />
       <div className="transition-300 h-1.25 w-8 rounded-full bg-black dark:bg-lightPurple 3xs:h-1.5 3xs:w-9" />
       <div
         className={`transition-300 h-1.25 w-5 translate-x-1/2 rounded-full bg-black dark:bg-lightPurple 3xs:h-1.5 3xs:w-6 ${
-          isMenuOpen && "translate-x-0"
+          isMenuOpen && 'translate-x-0'
         }`}
       />
     </div>
   );
 }
 
+/**
+ * Mobile navigation menu.
+ *
+ * @param isMenuOpen is a state variable determining whether or not the mobile is showing.
+ * @param setIsMenu function that changes state variable.
+ */
 function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
   return (
     <nav
-      className={`transition-300 absolute top-[calc(100%+24px)] flex w-full flex-col gap-6 rounded-2xl bg-lightPurple bg-opacity-20 py-6 text-center font-medium backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-5 xl:hidden ${
-        isMenuOpen ? "opacity-100" : "opacity-0"
+      className={`transition-300 absolute top-[calc(100%+24px)] flex w-full flex-col gap-6 rounded-2xl border border-purple bg-lightPurple bg-opacity-20 py-6 text-center backdrop-blur-md dark:border-darkPurple dark:bg-darkPurple dark:bg-opacity-5 xl:hidden ${
+        isMenuOpen ? 'opacity-100' : 'opacity-0'
       }`}
     >
       {ROUTES.map((route, i) => (
         <Link
           href={route.link}
           onClick={() => setIsMenuOpen(false)}
-          className={isMenuOpen ? "pointer-events-auto" : "pointer-events-none"}
+          className={isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}
           key={`route-${i}`}
         >
-          <span className="gradient-text gradient-1 dark:gradient-2">
+          <span className="gradient-text gradient-1 dark:gradient-2 font-medium">
             {route.text}
           </span>
         </Link>
