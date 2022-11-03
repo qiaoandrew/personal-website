@@ -11,7 +11,9 @@ export default function GradientBorder({
   children,
 }) {
   return (
-    <div className={`h-full p-0.25 ${borderRadius} ${borderColor}`}>
+    <div
+      className={`transition-300 h-full p-0.25 ${borderRadius} ${borderColor}`}
+    >
       {children}
     </div>
   );

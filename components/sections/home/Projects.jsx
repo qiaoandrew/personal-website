@@ -5,7 +5,7 @@ import ThemeContext from '../../../store/theme-context';
 import Grid from '../../layout/Grid';
 import GradientBorder from '../../UI/GradientBorder';
 import { PROJECTS } from '../../../constants/constants';
-import openIcon from '../../../public/img/icons/open.svg';
+import OpenButton from '../../UI/OpenButton';
 
 /**
  * Projects section on home page.
@@ -77,18 +77,7 @@ function ProjectCard({ project }) {
           alt={project.title}
         />
       </div>
-      <div className="absolute top-3 right-3 3xs:top-4 3xs:right-4 xs:top-5 xs:right-5 xl:right-6 xl:top-6 2xl:top-8 2xl:right-8">
-        <GradientBorder
-          borderColor="gradient-1 dark:gradient-2"
-          borderRadius="rounded-full"
-        >
-          <div className="gradient-2 dark:gradient-1 grid h-10 w-10 place-content-center rounded-full 3xs:h-12 3xs:w-12 xl:h-16 xl:w-16">
-            <div className="dark:purple-filter dark-purple-filter relative h-6 w-6 xl:h-8 xl:w-8">
-              <Image src={openIcon} alt="Open icon" fill />
-            </div>
-          </div>
-        </GradientBorder>
-      </div>
+      <OpenButton />
     </div>
   );
 }

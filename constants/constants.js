@@ -17,6 +17,13 @@ import aview1 from '../public/img/mockups/aview-1.png';
 import aview2 from '../public/img/mockups/aview-2.png';
 import aview3 from '../public/img/mockups/aview-3.png';
 
+import uoft from '../public/img/logos/u-of-t.png';
+import aview from '../public/img/logos/aview.png';
+import uwds from '../public/img/logos/uwds.png';
+import tsac from '../public/img/logos/tsac.png';
+import create from '../public/img/logos/create.png';
+import utc from '../public/img/logos/utc.png';
+
 export const PROJECTS = [
   {
     route: '/projects/pethsapp',
@@ -221,44 +228,70 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
+    route: '/experiences/university-of-toronto',
     role: 'Research Intern',
     company: 'University of Toronto',
-    chips: ['Oct 2022 — Present', 'Toronto, ON'],
-    description: [
-      "Studying the role of AI in the workplace alongside Dr. Meena Andiappan's team of researchers",
-      'Developing and designing applications embedded with AI models such as GPT-3 for research projects',
-      "<span class='font-medium'>Technologies Used</span>: GPT-3, OpenAI API, React.js, Next.js, Firebase, JavaScript, Tailwind CSS",
-    ],
+    logo: uoft,
+    duration: 'Oct 2022 — Present',
+    location: 'Toronto, ON',
+    images: [],
+    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
+    buttons: [{ text: '', link: '' }],
   },
   {
+    route: '/experiences/aview-international',
     role: 'Software Engineer',
     company: 'AVIEW International',
-    chips: ['May 2022 — Present', 'Toronto, ON'],
-    description: [
-      "Leading development on the startup's corporate website and user-oriented portal",
-      "Streamlining the company's growth, increasing its client base by 400%, generating 115%+ MoM growth",
-      "<span class='font-medium'>Technologies Used</span>: React.js, Next.js, Amazon Web Services (AWS), JavaScript, Tailwind CSS",
-    ],
+    logo: aview,
+    duration: 'May 2022 — Present',
+    location: 'Toronto, ON',
+    images: [],
+    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
+    buttons: [{ text: '', link: '' }],
   },
   {
-    role: 'Technology Chairperson',
+    route: '/experiences/waterloo-data-science-club',
+    role: 'Web Developer',
+    company: 'Waterloo Data Science Club',
+    logo: uwds,
+    duration: 'Oct 2022 — Present',
+    location: 'Waterloo, ON',
+    images: [],
+    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
+    buttons: [{ text: '', link: '' }],
+  },
+  {
+    route: '/experiences/peths-student-council',
+    role: 'Technology Chair',
     company: 'PETHS Student Council',
-    chips: ['Sept 2021 — Jun 2022', 'Markham, ON'],
-    description: [
-      "Developed the high school's mobile application, Pethsapp, cementing the school's digital presence",
-      'Programmed activities for school events such as a themed Wordle and match-making algorithm',
-      "<span class='font-medium'>Technologies Used</span>: React.js, Next.js, Flutter, Dart, Firebase, JavaScript, Figma",
-    ],
+    logo: tsac,
+    duration: 'Sept 2020 — Jun 2021',
+    location: 'Markham, ON',
+    images: [],
+    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
+    buttons: [{ text: '', link: '' }],
   },
   {
-    role: 'Tennis Professional',
+    route: '/experiences/create-markham',
+    role: 'Technology Chair',
+    company: 'CREATE Markham',
+    logo: create,
+    duration: 'Aug 2021 — Jul 2022',
+    location: 'Markham, ON',
+    images: [],
+    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
+    buttons: [{ text: '', link: '' }],
+  },
+  {
+    route: '/experiences/unionville-tennis-club',
+    role: 'Tennis Coach',
     company: 'Unionville Tennis Club',
-    chips: ['Jun 2020 — Aug 2022', 'Markham, ON'],
-    description: [
-      'Taught over 700 hours of tennis professionally to dozens of students of various ages and skill levels',
-      'Shared my passion for tennis with community members while helping students reach their athletic goals',
-      "<span class='font-medium'>Relevant Skills</span>: Leadership, teaching, communication, collaboration, critical thinking",
-    ],
+    logo: utc,
+    duration: 'Jun 2020 — Aug 2022',
+    location: 'Markham, ON',
+    images: [],
+    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
+    buttons: [{ text: '', link: '' }],
   },
 ];
 

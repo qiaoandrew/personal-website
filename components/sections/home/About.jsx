@@ -35,7 +35,7 @@ export default function About() {
       <Button purpose="route" link="/#contact" mobileFullWidth={false}>
         Contact Me
       </Button>
-      <div className="purple-filter dark:dark-purple-filter absolute right-[20%] top-[10%] -z-10 dark:opacity-40">
+      <div className="filter-purple dark:filter-dark-purple absolute right-[20%] top-[10%] -z-10 dark:opacity-40">
         <Image src={blob2} layout="responsive" priority alt="Blob 2" />
       </div>
     </section>
