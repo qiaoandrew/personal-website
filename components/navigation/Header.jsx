@@ -8,6 +8,10 @@ const ROUTES = [
   { link: '/#experiences', text: 'Experiences' },
   { link: '/#about', text: 'About' },
   { link: '/#contact', text: 'Contact' },
+  {
+    link: 'https://drive.google.com/file/d/19KgwxvKJerxSwFhsQRRv8dbP7qNq4W0p/view?usp=sharing',
+    text: 'Resume',
+  },
 ];
 
 /**
@@ -44,16 +48,28 @@ export default function Header() {
  */
 function DesktopMenu() {
   return (
-    <nav className="hidden gap-16 xl:flex">
-      {ROUTES.map((route, i) => (
-        <Link
-          href={route.link}
-          className="font-[450] text-black dark:text-lightPurple"
-          key={`route-${i}`}
-        >
-          {route.text}
-        </Link>
-      ))}
+    <nav className="hidden gap-14 xl:flex 2xl:gap-16">
+      {ROUTES.map((route, i) =>
+        route.text === 'Resume' ? (
+          <a
+            href={route.link}
+            target="_blank"
+            rel="noreferrer"
+            className="transition-300 font-[450] text-black hover:text-darkPurple dark:text-lightPurple dark:hover:text-beige"
+            key={`route-${i}`}
+          >
+            {route.text}
+          </a>
+        ) : (
+          <Link
+            href={route.link}
+            className="transition-300 font-[450] text-black hover:text-darkPurple dark:text-lightPurple dark:hover:text-beige"
+            key={`route-${i}`}
+          >
+            {route.text}
+          </Link>
+        )
+      )}
     </nav>
   );
 }
@@ -114,18 +130,37 @@ function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
         isMenuOpen ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      {ROUTES.map((route, i) => (
-        <Link
-          href={route.link}
-          onClick={() => setIsMenuOpen(false)}
-          className={isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}
-          key={`route-${i}`}
-        >
-          <span className="gradient-text gradient-1 dark:gradient-2 font-medium">
-            {route.text}
-          </span>
-        </Link>
-      ))}
+      {ROUTES.map((route, i) =>
+        route.text === 'Resume' ? (
+          <a
+            href={route.link}
+            target="_blank"
+            rel="noreferrer"
+            onClick={() => setIsMenuOpen(false)}
+            className={
+              isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'
+            }
+            key={`route-${i}`}
+          >
+            <span className="gradient-text gradient-1 dark:gradient-2 font-medium">
+              {route.text}
+            </span>
+          </a>
+        ) : (
+          <Link
+            href={route.link}
+            onClick={() => setIsMenuOpen(false)}
+            className={
+              isMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'
+            }
+            key={`route-${i}`}
+          >
+            <span className="gradient-text gradient-1 dark:gradient-2 font-medium">
+              {route.text}
+            </span>
+          </Link>
+        )
+      )}
     </nav>
   );
 }

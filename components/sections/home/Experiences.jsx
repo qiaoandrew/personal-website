@@ -62,7 +62,7 @@ function ExperienceCard({ experience }) {
         {experience.company}
       </p>
       <div className="relative z-20 hidden flex-wrap gap-x-4 gap-y-3 3xs:flex sm:gap-x-6 md:gap-x-4 2xl:gap-x-5 3xl:gap-x-6">
-        <div className="flex items-center gap-2 rounded-xl border border-purple bg-beige bg-opacity-40 py-1.5 px-3 dark:border-darkPurple dark:bg-black dark:bg-opacity-30 sm:gap-2.5 sm:rounded-2xl sm:py-2.5 sm:pl-4 sm:pr-4.5 md:gap-2 md:rounded-xl md:py-1.5 md:px-3 2xl:rounded-2xl 2xl:py-2.5 2xl:pl-4 2xl:pr-4.5 3xl:gap-3 3xl:py-3 3xl:pl-5 3xl:pr-6">
+        <div className="flex items-center gap-2 rounded-xl border border-purple bg-beige bg-opacity-40 py-1.5 px-3 dark:border-darkPurple dark:bg-black dark:bg-opacity-30 sm:gap-2.5 sm:rounded-2xl sm:py-2.5 sm:pl-4 sm:pr-4.5 md:gap-2 md:rounded-xl md:py-1.5 md:px-3 2xl:rounded-2xl 2xl:py-2.5 2xl:pl-4 2xl:pr-4.5 3xl:gap-3 3xl:py-3 3xl:pl-4.5 3xl:pr-6">
           <div className="filter-black dark:filter-purple hidden h-4.5 w-4.5 xs:block sm:h-5 sm:w-5 md:h-4.5 md:w-4.5 2xl:h-5 2xl:w-5 4xl:h-5.5 4xl:w-5.5">
             <Image src={clockIcon} alt="Clock icon" />
           </div>
@@ -70,7 +70,7 @@ function ExperienceCard({ experience }) {
             {experience.duration}
           </p>
         </div>
-        <div className="flex items-center gap-2 rounded-xl border border-purple bg-beige bg-opacity-40 py-1.5 px-3 dark:border-darkPurple dark:bg-black dark:bg-opacity-30 sm:gap-2.5 sm:rounded-2xl sm:py-2.5 sm:pl-4 sm:pr-4.5 md:gap-2 md:rounded-xl md:py-1.5 md:px-3 2xl:rounded-2xl 2xl:py-2.5 2xl:pl-4 2xl:pr-4.5 3xl:gap-3 3xl:py-3 3xl:pl-5 3xl:pr-6">
+        <div className="flex items-center gap-2 rounded-xl border border-purple bg-beige bg-opacity-40 py-1.5 px-3 dark:border-darkPurple dark:bg-black dark:bg-opacity-30 sm:gap-2.5 sm:rounded-2xl sm:py-2.5 sm:pl-4 sm:pr-4.5 md:gap-2 md:rounded-xl md:py-1.5 md:px-3 2xl:rounded-2xl 2xl:py-2.5 2xl:pl-4 2xl:pr-4.5 3xl:gap-3 3xl:py-3 3xl:pl-4.5 3xl:pr-6">
           <div className="filter-black dark:filter-purple hidden h-4.5 w-4.5 xs:block sm:h-5 sm:w-5 md:h-4.5 md:w-4.5 2xl:h-5 2xl:w-5 4xl:h-5.5 4xl:w-5.5">
             <Image src={locationIcon} alt="Clock icon" />
           </div>
