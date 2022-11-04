@@ -22,10 +22,10 @@ export default function Header() {
 
   return (
     <div className="relative z-10 mx-1 mb-8 mt-6 flex flex-col 3xs:mx-2 3xs:mb-10 xs:mb-16 sm:mx-4 md:mb-20 lg:mb-24 xl:mx-10 xl:mt-12">
-      <header className="transition-300 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-0 px-2 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-0 3xs:px-3 3xs:py-4 xs:px-5 xl:px-6">
+      <header className="transition-300 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-0 px-2 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-0 3xs:py-4 3xs:px-3 xs:px-5 xl:px-6">
         <Link
           href="/"
-          className="gradient-text gradient-main-light dark:gradient-main-dark font-medium"
+          className="gradient-text gradient-main-light dark:gradient-main-dark font-medium md:text-sm 2xl:text-base"
         >
           Andrew Qiao
         </Link>
@@ -55,7 +55,7 @@ function DesktopMenu() {
             href={route.link}
             target="_blank"
             rel="noreferrer"
-            className="transition-300 font-[450] text-black hover:text-darkPurple dark:text-lightPurple dark:hover:text-beige"
+            className="transition-300 text-sm font-[450] text-black hover:text-darkPurple dark:text-lightPurple dark:hover:text-beige 2xl:text-base"
             key={`route-${i}`}
           >
             {route.text}
@@ -63,7 +63,7 @@ function DesktopMenu() {
         ) : (
           <Link
             href={route.link}
-            className="transition-300 font-[450] text-black hover:text-darkPurple dark:text-lightPurple dark:hover:text-beige"
+            className="transition-300 text-sm font-[450] text-black hover:text-darkPurple dark:text-lightPurple dark:hover:text-beige 2xl:text-base"
             key={`route-${i}`}
           >
             {route.text}
@@ -126,7 +126,7 @@ function MobileMenuButton({ isMenuOpen, setIsMenuOpen }) {
 function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
   return (
     <nav
-      className={`transition-300 absolute top-[calc(100%+24px)] flex w-full flex-col gap-6 rounded-2xl border border-purple bg-lightPurple bg-opacity-20 py-6 text-center backdrop-blur-md dark:border-darkPurple dark:bg-darkPurple dark:bg-opacity-5 xl:hidden ${
+      className={`transition-300 absolute inset-x-2 top-[calc(100%+24px)] flex flex-col gap-6 rounded-2xl border border-purple bg-lightPurple bg-opacity-20 py-6 text-center backdrop-blur-md dark:border-darkPurple dark:bg-darkPurple dark:bg-opacity-5 3xs:inset-x-3 xs:inset-x-5 xl:inset-x-6 xl:hidden ${
         isMenuOpen ? 'opacity-100' : 'opacity-0'
       }`}
     >
