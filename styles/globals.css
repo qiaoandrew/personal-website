@@ -27,8 +27,12 @@ html {
 }
 
 @layer components {
-  .m-horizontal {
+  .m-horizontal-sm {
     @apply mx-3 3xs:mx-5 xs:mx-7 sm:mx-9 xl:mx-16 5xl:mx-auto 5xl:max-w-[1600px];
+  }
+
+  .m-horizontal-lg {
+    @apply mx-3 3xs:mx-5 xs:mx-7 sm:mx-9 xl:mx-16 3xl:mx-auto 3xl:max-w-[1200px];
   }
 
   .transition-300 {
@@ -39,12 +43,28 @@ html {
     @apply inline bg-clip-text text-transparent;
   }
 
-  .gradient-1 {
+  .gradient-main-light {
     @apply bg-gradient-to-tr from-purple via-black to-purple;
   }
 
-  .gradient-2 {
+  .gradient-main-dark {
     @apply bg-gradient-to-tr from-purple via-beige to-purple;
+  }
+
+  .gradient-card-light {
+    @apply bg-gradient-to-t from-translucentLightPurple to-transparent;
+  }
+
+  .gradient-card-dark {
+    @apply bg-gradient-to-t from-translucentDarkPurple to-transparent;
+  }
+
+  .gradient-project-intro-light {
+    @apply bg-gradient-to-tr from-[#f6f6ff] via-beige to-[#f6f6ff];
+  }
+
+  .gradient-project-intro-dark {
+    @apply bg-gradient-to-tr from-[#2D2F53] via-black to-[#2D2F53];
   }
 
   .gradient-uwaterloo {
@@ -65,22 +85,6 @@ html {
 
   .gradient-uoft-dark {
     @apply bg-gradient-to-tr from-blue via-beige to-blue;
-  }
-
-  .gradient-card-light {
-    @apply bg-gradient-to-t from-translucentLightPurple to-transparent;
-  }
-
-  .gradient-card-dark {
-    @apply bg-gradient-to-t from-translucentDarkPurple to-transparent;
-  }
-
-  .gradient-form-light {
-    @apply bg-gradient-to-b from-lightPurple to-beige;
-  }
-
-  .gradient-form-light {
-    @apply bg-gradient-to-b from-darkPurple to-black;
   }
 
   .filter-purple {

@@ -13,7 +13,7 @@ import OpenButton from '../../UI/OpenButton';
 export default function Projects() {
   return (
     <section
-      className="m-horizontal mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64"
+      className="m-horizontal-sm mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64"
       id="projects"
     >
       <Grid>
@@ -27,7 +27,7 @@ export default function Projects() {
               }`}
             >
               <GradientBorder
-                borderColor="gradient-1 dark:gradient-2"
+                borderColor="gradient-main-light dark:gradient-main-dark"
                 borderRadius="rounded-xl 3xs:rounded-2xl xl:rounded-3xl"
               >
                 <ProjectCard project={project} />
@@ -50,7 +50,7 @@ function ProjectCard({ project }) {
 
   return (
     <div className="transition-300 relative aspect-[32/21] overflow-hidden rounded-[11px] bg-beige dark:bg-black 3xs:rounded-[15px] xl:rounded-[23px]">
-      <h3 className="gradient-text gradient-1 dark:gradient-2 absolute bottom-4 left-4 z-20 text-xl font-[550] 3xs:bottom-5 3xs:left-5 3xs:text-2xl xs:bottom-8 xs:left-8 xs:text-3xl sm:left-10 sm:bottom-10 sm:text-4xl md:bottom-6 md:left-6 md:text-2xl xl:bottom-8 xl:left-8 2xl:bottom-10 2xl:left-10 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl">
+      <h3 className="gradient-text gradient-main-light dark:gradient-main-dark absolute bottom-4 left-4 z-20 text-xl font-[550] 3xs:bottom-5 3xs:left-5 3xs:text-2xl xs:bottom-8 xs:left-8 xs:text-3xl sm:left-10 sm:bottom-10 sm:text-4xl md:bottom-6 md:left-6 md:text-2xl xl:bottom-8 xl:left-8 2xl:bottom-10 2xl:left-10 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl">
         {project.title}
       </h3>
       <div className="gradient-card-light dark:gradient-card-dark absolute inset-0 z-10" />

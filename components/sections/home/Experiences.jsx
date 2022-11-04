@@ -13,10 +13,10 @@ import locationIcon from '../../../public/img/icons/location.svg';
 export default function Experiences() {
   return (
     <section
-      className="m-horizontal mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64"
+      className="m-horizontal-sm mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64"
       id="experiences"
     >
-      <h2 className="gradient-text gradient-1 dark:gradient-2 mb-4 inline-block text-3xl font-[550] 3xs:mb-6 3xs:text-4xl xs:text-6xl lg:text-7xl 2xl:text-8xl 3xl:mb-10 3xl:text-9xl">
+      <h2 className="gradient-text gradient-main-light dark:gradient-main-dark mb-4 inline-block text-3xl font-[550] 3xs:mb-6 3xs:text-4xl xs:text-6xl lg:text-7xl 2xl:text-8xl 3xl:mb-10 3xl:text-9xl">
         Experiences
       </h2>
       <Grid>
@@ -30,7 +30,7 @@ export default function Experiences() {
               }`}
             >
               <GradientBorder
-                borderColor="gradient-1 dark:gradient-2"
+                borderColor="gradient-main-light dark:gradient-main-dark"
                 borderRadius="rounded-xl 3xs:rounded-2xl xl:rounded-3xl"
               >
                 <ExperienceCard experience={experience} />
@@ -50,11 +50,11 @@ export default function Experiences() {
  */
 function ExperienceCard({ experience }) {
   return (
-    <div className="transition-300 relative h-full overflow-hidden rounded-[11px] bg-beige px-4 py-4 dark:bg-black 3xs:rounded-[15px] 3xs:px-5 3xs:py-5 xs:px-7 xs:py-7 sm:px-10 sm:py-10 md:px-6 md:py-6 xl:rounded-[23px] xl:px-8 xl:py-8 2xl:px-10 2xl:pt-10 2xl:pb-12">
+    <div className="transition-300 relative h-full overflow-hidden rounded-[11px] bg-beige px-4 py-4 dark:bg-black 3xs:rounded-[15px] 3xs:px-5 3xs:py-5 xs:px-7 xs:py-7 sm:px-10 sm:py-10 md:px-6 md:py-6 xl:rounded-[23px] xl:px-8 xl:py-8 2xl:px-10 2xl:py-10">
       <div className="gradient-card-light dark:gradient-card-dark absolute inset-0 z-10" />
       <div className="absolute inset-y-0 right-0 z-10 w-[70%] bg-gradient-to-r from-transparent to-translucentLightPurple dark:from-transparent dark:to-translucentDarkPurple" />
-      <h3 className="relative z-20 mb-1 text-xl font-[550] 3xs:mb-0.5 3xs:text-2xl xs:mb-1 xs:text-3xl sm:mb-2.5 sm:text-4xl md:mb-1 md:text-2xl xl:mb-1.5 xl:text-3xl 2xl:mb-2.5 2xl:text-4xl 3xl:text-5xl 4xl:mb-3 4xl:text-6xl">
-        <span className="gradient-text gradient-1 dark:gradient-2">
+      <h3 className="relative z-20 mb-1 text-xl font-[550] 3xs:mb-0.5 3xs:text-2xl xs:mb-1 xs:text-3xl sm:mb-2.5 sm:text-4xl md:mb-1 md:text-2xl xl:mb-1.5 xl:text-3xl 2xl:mb-2.5 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl">
+        <span className="gradient-text gradient-main-light dark:gradient-main-dark">
           {experience.role}
         </span>
       </h3>

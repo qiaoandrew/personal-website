@@ -1,3 +1,5 @@
+import ProjectPage from '../../components/sections/projects/ProjectPage';
+
 export default function AVIEW() {
-  return <div></div>;
+  return <ProjectPage idx={2} />;
 }

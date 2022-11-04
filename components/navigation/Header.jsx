@@ -21,11 +21,11 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="relative z-10 mx-1 mb-8 mt-6 flex flex-col 3xs:mx-2 3xs:mb-10 xs:mb-16 sm:mx-4 md:mb-20 lg:mb-24 xl:mx-10 xl:mt-12 2xl:mb-28">
+    <div className="relative z-10 mx-1 mb-8 mt-6 flex flex-col 3xs:mx-2 3xs:mb-10 xs:mb-16 sm:mx-4 md:mb-20 lg:mb-24 xl:mx-10 xl:mt-12">
       <header className="transition-300 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-0 px-2 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-0 3xs:px-3 3xs:py-4 xs:px-5 xl:px-6">
         <Link
           href="/"
-          className="gradient-text gradient-1 dark:gradient-2 font-medium"
+          className="gradient-text gradient-main-light dark:gradient-main-dark font-medium"
         >
           Andrew Qiao
         </Link>
@@ -142,7 +142,7 @@ function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
             }
             key={`route-${i}`}
           >
-            <span className="gradient-text gradient-1 dark:gradient-2 font-medium">
+            <span className="gradient-text gradient-main-light dark:gradient-main-dark font-medium">
               {route.text}
             </span>
           </a>
@@ -155,7 +155,7 @@ function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
             }
             key={`route-${i}`}
           >
-            <span className="gradient-text gradient-1 dark:gradient-2 font-medium">
+            <span className="gradient-text gradient-main-light dark:gradient-main-dark font-medium">
               {route.text}
             </span>
           </Link>
