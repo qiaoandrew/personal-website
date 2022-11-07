@@ -27,12 +27,8 @@ html {
 }
 
 @layer components {
-  .m-horizontal-sm {
-    @apply mx-3 3xs:mx-5 xs:mx-7 sm:mx-9 xl:mx-16 5xl:mx-auto 5xl:max-w-[1600px];
-  }
-
-  .m-horizontal-lg {
-    @apply mx-3 3xs:mx-5 xs:mx-7 sm:mx-9 xl:mx-16 3xl:mx-auto 3xl:max-w-[1200px];
+  .m-horizontal {
+    @apply mx-3 3xs:mx-5 xs:mx-7 sm:mx-9 xl:mx-16 3xl:mx-auto 3xl:max-w-[1280px];
   }
 
   .transition-300 {
