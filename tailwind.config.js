@@ -36,7 +36,7 @@ module.exports = {
       '8xl': ['48px', '80px'],
       '9xl': ['56px', '88px'],
       '10xl': ['72px', '112px'],
-      '11xl': ['80px', '120px'],
+      '11xl': ['80px', '118px'],
     },
     fontFamily: {
       sans: ['GeneralSans-Variable', 'sans-serif'],

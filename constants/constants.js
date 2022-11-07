@@ -28,7 +28,6 @@ export const PROJECTS = [
   {
     route: '/projects/pethsapp',
     title: 'Pethsapp',
-    type: 'Mobile App',
     mockups: [
       pethsapp1Light,
       pethsapp1Dark,
@@ -37,56 +36,36 @@ export const PROJECTS = [
       pethsapp3Light,
       pethsapp3Dark,
     ],
-    pageDescription:
+    description:
       "Pethsapp is my former high school's official mobile application. I led a team of developers and designers in revamping it using Flutter and Firebase.",
-    descriptions: [
-      {
-        id: 'description-1',
-        text: 'Pethsapp is the official mobile application of Pierre Elliott Trudeau High School and is used by over 1200 members of the school community.',
-      },
-      {
-        id: 'description-2',
-        text: 'At the peak of the COVID-19 pandemic, I began to notice a large population of students feeling removed from the school atmosphere.',
-      },
-      {
-        id: 'description-3',
-        text: 'Looking around me, I noticed a boom in technology, led by apps like Zoom. It then became obvious to me that technology was instrumental in tying the community back together.',
-      },
-      {
-        id: 'description-4',
-        text: "Thus, I started working on Pethsapp, my high school's mobile application. Throughout development, I led a team of developers and designers in revamping the app's user interface and functionalities.",
-      },
-      {
-        id: 'description-5',
-        text: 'Available on the App Store and Google Play, the app is used by over 1200 members of the school community. Its purpose is to provide users with up-to-date announcements, resources, essential links, and more.',
-      },
+    summary: [
+      'Pethsapp is the official mobile application of Pierre Elliott Trudeau High School and is used by over 1200 members of the school community.',
+      'At the peak of the COVID-19 pandemic, I began to notice a large population of students feeling removed from the school atmosphere.',
+      'Looking around me, I noticed a boom in technology, led by apps like Zoom. It then became obvious to me that technology was instrumental in tying the community back together.',
+      "Thus, I started working on Pethsapp, my high school's mobile application. Throughout development, I led a team of developers and designers in revamping the app's user interface and functionalities.",
+      'Available on the App Store and Google Play, the app is used by over 1200 members of the school community. Its purpose is to provide users with up-to-date announcements, resources, essential links, and more.',
     ],
-    infos: [
+    points: [
       {
-        id: 'info-1',
         title: 'Developed For',
         text: 'Pierre Elliott Trudeau High School',
       },
-      { id: 'info-2', title: 'Project Type', text: 'Mobile App' },
+      { title: 'Project Type', text: 'Mobile App' },
       {
-        id: 'info-3',
         title: 'Technologies',
         text: 'Flutter, Dart, Firebase, Figma',
       },
       {
-        id: 'info-4',
         title: 'Roles',
         text: 'Software Engineer, UI/UX Designer',
       },
     ],
     buttons: [
       {
-        id: 'button-1',
         text: 'App Store',
         link: 'https://apps.apple.com/ca/app/pethsapp/id1544635100',
       },
       {
-        id: 'button-2',
         text: 'Google Play',
         link: 'https://play.google.com/store/apps/details?id=com.trudeausac.pethsapp&hl=en_CA&gl=US',
       },
@@ -97,40 +76,26 @@ export const PROJECTS = [
     title: 'CREATE Markham',
     type: 'Website',
     mockups: [create1, create2, create3],
-    pageDescription:
+    description:
       "As Technology Chairperson of CREATE Markham, I revamped their website using HTML, CSS, and JavaScript to enhance the organization's digital presence.",
-    descriptions: [
-      {
-        id: 'description-1',
-        text: 'Website for CREATE Markham, a youth-led non-profit organization based in Markham, Ontario.',
-      },
-      {
-        id: 'description-2',
-        text: 'CREATE stands for Cultivating Realistic and Effective Actions Towards Everyone. They host an annual wintertime conference, followed by a summertime outdoors retreat centered around personal growth within the Markham youth.',
-      },
-      {
-        id: 'description-3',
-        text: 'Throughout the conference, delegates learn essential leadership, collaboration, and communication skills, preparing them for their future endeavors.',
-      },
-      {
-        id: 'description-4',
-        text: 'As Technology Chairperson from 2021-2022, I revamped their website, helping the organization to expand and solidify their digital presence.',
-      },
+    summary: [
+      'Website for CREATE Markham, a youth-led non-profit organization based in Markham, Ontario.',
+      'CREATE stands for Cultivating Realistic and Effective Actions Towards Everyone. They host an annual wintertime conference, followed by a summertime outdoors retreat centered around personal growth within the Markham youth.',
+      'Throughout the conference, delegates learn essential leadership, collaboration, and communication skills, preparing them for their future endeavors.',
+      'As Technology Chairperson from 2021-2022, I revamped their website, helping the organization to expand and solidify their digital presence.',
     ],
-    infos: [
-      { id: 'info-1', title: 'Developed For', text: 'CREATE Markham' },
-      { id: 'info-2', title: 'Project Type', text: 'Website' },
+    points: [
+      { title: 'Developed For', text: 'CREATE Markham' },
+      { title: 'Project Type', text: 'Website' },
       {
-        id: 'info-3',
         title: 'Technologies',
         text: 'React.js, Next.js, TypeScript, Tailwind CSS, Firebase, Figma',
       },
-      { id: 'info-4', title: 'Roles', text: 'Developer, UI/UX Designer' },
+      { title: 'Roles', text: 'Developer, UI/UX Designer' },
     ],
     buttons: [
-      { id: 'button-1', text: 'Website', link: 'https://createmarkham.ca/' },
+      { text: 'Website', link: 'https://createmarkham.ca/' },
       {
-        id: 'button-2',
         text: 'GitHub Repository',
         link: 'https://github.com/CREATE-Conference/create-website',
       },
@@ -141,40 +106,26 @@ export const PROJECTS = [
     title: 'AVIEW',
     type: 'Website',
     mockups: [aview1, aview2, aview3],
-    pageDescription:
+    description:
       "As a Software Engineer at AVIEW International, I led a team in developing their website using Next.js, streamlining the startup's digital growth.",
-    descriptions: [
-      {
-        id: 'description-1',
-        text: 'Website for AVIEW International, a startup centered around providing translation services for content creators.',
-      },
-      {
-        id: 'description-2',
-        text: 'AVIEW is a multimedia translation company designed to help content creators expand their fanbase through social media platforms. They focus on content creators who have developed a local fanbase and are seeking international expansion.',
-      },
-      {
-        id: 'description-3',
-        text: 'As a Software Engineer at the company, I am working with a group of other engineers and UI/UX designers in developing the website from both an aesthetic and functional standpoint.',
-      },
-      {
-        id: 'description-4',
-        text: "Since the implementation of the company's new website, its client base has increased by 300%, generating more than $200k in new revenue.",
-      },
+    summary: [
+      'Website for AVIEW International, a startup centered around providing translation services for content creators.',
+      'AVIEW is a multimedia translation company designed to help content creators expand their fanbase through social media platforms. They focus on content creators who have developed a local fanbase and are seeking international expansion.',
+      'As a Software Engineer at the company, I am working with a group of other engineers and UI/UX designers in developing the website from both an aesthetic and functional standpoint.',
+      "Since the implementation of the company's new website, its client base has increased by 300%, generating more than $200k in new revenue.",
     ],
-    infos: [
-      { id: 'info-1', title: 'Developed For', text: 'AVIEW International' },
-      { id: 'info-2', title: 'Project Type', text: 'Website' },
+    points: [
+      { title: 'Developed For', text: 'AVIEW International' },
+      { title: 'Project Type', text: 'Website' },
       {
-        id: 'info-3',
         title: 'Technologies',
         text: 'React.js, Next.js, JavaScript, Tailwind CSS, Figma',
       },
-      { id: 'info-4', title: 'Role', text: 'Software Engineer' },
+      { title: 'Role', text: 'Software Engineer' },
     ],
     buttons: [
-      { id: 'button-1', text: 'Website', link: 'https://www.aviewint.com/' },
+      { text: 'Website', link: 'https://www.aviewint.com/' },
       {
-        id: 'button-2',
         text: 'GitHub Repository',
         link: 'https://github.com/Aview-International/aviewint-website',
       },
@@ -192,37 +143,24 @@ export const PROJECTS = [
       tsac3Light,
       tsac3Dark,
     ],
-    pageDescription:
+    description:
       "As Technology Chairperson on my high school's student council during my senior year of high school, I revamped the council's website using Next.js and Firebase.",
-    descriptions: [
-      {
-        id: 'description-1',
-        text: "Website developed for Pierre Elliott Trudeau High School's Student Activities Council (TSAC).",
-      },
-      {
-        id: 'description-2',
-        text: "TSAC is Pierre Elliott Trudeau High School's student council and represents the student body and makes decisions on its behalf.",
-      },
-      {
-        id: 'description-3',
-        text: "Using TSAC's website, students are able to learn about the council and the school, including its clubs, external opportunities, and more.",
-      },
-      {
-        id: 'description-4',
-        text: "As Technology Chairperson during my senior year in high school, my role was the enhance the school's technologies including our school app and student council website.",
-      },
+    summary: [
+      "Website developed for Pierre Elliott Trudeau High School's Student Activities Council (TSAC).",
+      "TSAC is Pierre Elliott Trudeau High School's student council and represents the student body and makes decisions on its behalf.",
+      "Using TSAC's website, students are able to learn about the council and the school, including its clubs, external opportunities, and more.",
+      "As Technology Chairperson during my senior year in high school, my role was the enhance the school's technologies including our school app and student council website.",
     ],
-    infos: [
-      { id: 'info-1', title: 'Developed For', text: 'TSAC' },
-      { id: 'info-2', title: 'Project Type', text: 'Website' },
+    points: [
+      { title: 'Developed For', text: 'TSAC' },
+      { title: 'Project Type', text: 'Website' },
       {
-        id: 'info-3',
         title: 'Technologies',
         text: 'React.js, Next.js, JavaScript, Firebase, Figma',
       },
-      { id: 'info-4', title: 'Roles', text: 'Developer, UI/UX Designer' },
+      { title: 'Roles', text: 'Developer, UI/UX Designer' },
     ],
-    buttons: [{ id: 'button-1', text: 'Website', link: 'https://tsac.ca/' }],
+    buttons: [{ text: 'Website', link: 'https://tsac.ca/' }],
   },
 ];
 

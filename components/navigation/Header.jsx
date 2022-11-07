@@ -126,7 +126,7 @@ function MobileMenuButton({ isMenuOpen, setIsMenuOpen }) {
 function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
   return (
     <nav
-      className={`transition-300 absolute top-[calc(100%+24px)] flex w-full flex-col gap-6 rounded-2xl border border-purple bg-lightPurple bg-opacity-20 py-6 text-center backdrop-blur-md dark:border-darkPurple dark:bg-darkPurple dark:bg-opacity-5 xl:hidden ${
+      className={`transition-300 absolute top-[calc(100%+24px)] flex w-full flex-col gap-5 rounded-2xl border border-purple bg-lightPurple bg-opacity-20 py-6 text-center backdrop-blur-md dark:border-darkPurple dark:bg-darkPurple dark:bg-opacity-5 3xs:gap-6 xl:hidden ${
         isMenuOpen ? 'opacity-100' : 'opacity-0'
       }`}
     >
