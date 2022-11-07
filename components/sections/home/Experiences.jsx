@@ -58,7 +58,7 @@ function ExperienceCard({ experience }) {
           {experience.role}
         </span>
       </h3>
-      <p className="relative z-20 text-sm font-[450] text-darkPurple dark:text-purple 3xs:text-base 2xs:mb-4 xs:mb-5 xs:text-lg sm:mb-6 sm:text-xl md:mb-4 md:text-base xl:mb-5 xl:text-lg 2xl:mb-7 2xl:text-xl 3xl:mb-9">
+      <p className="relative z-20 text-sm font-[450] text-darkPurple dark:text-purple 3xs:text-base 2xs:mb-4 xs:mb-5 xs:text-lg sm:mb-6 sm:text-xl md:mb-4 md:text-base xl:mb-5 xl:text-lg 2xl:mb-7 2xl:text-xl 3xl:mb-9 3xl:text-2xl">
         {experience.company}
       </p>
       <div className="relative z-20 hidden flex-wrap gap-x-4 gap-y-3 2xs:flex sm:gap-x-6 md:gap-x-4 2xl:gap-x-5 3xl:gap-x-6">
