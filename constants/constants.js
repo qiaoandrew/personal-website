@@ -166,70 +166,110 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
-    route: '/experiences/university-of-toronto',
     role: 'Research Intern',
     company: 'University of Toronto',
     logo: uoft,
     duration: 'Oct 2022 — Present',
     location: 'Toronto, ON',
-    images: [],
-    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
-    buttons: [{ text: '', link: '' }],
+    description: [
+      {
+        lg: "Studying the impact of AI in the worksplace alongside Dr. Meena Andiappan's team of researchers",
+        sm: "Studying AI's workplace impact alongside Dr. Meena Andiappan's research team",
+      },
+      {
+        lg: 'Developing and designing applications embedded with AI models such as GPT-3 for research projects',
+        sm: 'Developing and designing applications embedded with AI models such as GPT-3',
+      },
+      {
+        lg: '<span class="font-medium">Technologies Used:</span> GPT-3, OpenAI API, React.js, Next.js, Tailwind CSS, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> GPT-3, OpenAI API, React.js, Next.js, Tailwind CSS, Figma',
+      },
+    ],
   },
   {
-    route: '/experiences/aview-international',
     role: 'Software Engineer',
     company: 'AVIEW International',
     logo: aview,
     duration: 'May 2022 — Present',
     location: 'Toronto, ON',
-    images: [],
-    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
-    buttons: [{ text: '', link: '' }],
+    description: [
+      {
+        lg: "Leading full stack development on the startup's corporate website and user portal",
+        sm: "Leading development on the startup's corporate website and user portal",
+      },
+      {
+        lg: "Amplified the company's growth, increasing its client base by 400% and generating 115%+ MoM growth",
+        sm: 'Amplified company growth, resulting in a 400% client increase and 115% MoM growth',
+      },
+      {
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Amazon Web Services (AWS), Tailwind CSS',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Amazon Web Services (AWS), Tailwind CSS',
+      },
+    ],
   },
+  // {
+  //   role: 'Web Developer',
+  //   company: 'UWaterloo Data Science Club',
+  //   duration: 'Oct 2021 — Aug 2022',
+  //   location: 'Waterloo, ON',
+  //   description: [
+  //     '',
+  //     '',
+  //     "<span class='font-medium'>Technologies Used:</span>",
+  //   ],
+  // },
   {
-    route: '/experiences/waterloo-data-science-club',
-    role: 'Web Developer',
-    company: 'Waterloo Data Science Club',
-    logo: uwds,
-    duration: 'Oct 2022 — Present',
-    location: 'Waterloo, ON',
-    images: [],
-    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
-    buttons: [{ text: '', link: '' }],
-  },
-  {
-    route: '/experiences/peths-student-council',
     role: 'Technology Chair',
     company: 'PETHS Student Council',
     logo: tsac,
-    duration: 'Sept 2020 — Jun 2021',
+    duration: 'Sept 2021 — Jun 2022',
     location: 'Markham, ON',
-    images: [],
-    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
-    buttons: [{ text: '', link: '' }],
+    description: [
+      {
+        lg: "Developed the school's mobile app, <Link href='/projects/pethsapp'>Pethsapp</Link>, used by 1,200+ members of the school community",
+        sm: "Developed the school's mobile app, <Link href='/projects/pethsapp'>Pethsapp</Link>, with 1,200+ users",
+      },
+      {
+        lg: 'Revamped the student council website, generating 21,000+ search impressions and improving site loading speed by 77%',
+        sm: "Revamped the council's website, generating 21,000+ search impressions and improving site speed by 77%",
+      },
+      {
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Flutter, Dart, Firebase, JavaScript, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Flutter, Dart, Firebase, JavaScript, Figma',
+      },
+    ],
   },
+  // {
+  //   role: 'Technology Chairperson',
+  //   company: 'CREATE Markham',
+  //   duration: 'Aug 2021 — Aug 2022',
+  //   location: 'Markham, ON',
+  //   description: [
+  //     'Promoted student leadership and wellness throughout the annual conference and its following events',
+  //     'Worked alongside council members in planning and carrying out events for the enjoyment of participants',
+  //     "Revamped the organization's website using Next.js and Tailwind CSS to enhance their online presence",
+  //   ],
+  // },
   {
-    route: '/experiences/create-markham',
-    role: 'Technology Chair',
-    company: 'CREATE Markham',
-    logo: create,
-    duration: 'Aug 2021 — Jul 2022',
-    location: 'Markham, ON',
-    images: [],
-    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
-    buttons: [{ text: '', link: '' }],
-  },
-  {
-    route: '/experiences/unionville-tennis-club',
     role: 'Tennis Coach',
     company: 'Unionville Tennis Club',
     logo: utc,
     duration: 'Jun 2020 — Aug 2022',
     location: 'Markham, ON',
-    images: [],
-    description: ['', "<span class='font-medium'>Technologies Used</span>: "],
-    buttons: [{ text: '', link: '' }],
+    description: [
+      {
+        lg: 'Taught 700+ hours of tennis professionally to dozens of students of various ages and skill levels',
+        sm: 'Taught 700+ hours of tennis to students of all ages and skill levels',
+      },
+      {
+        lg: 'Obtained quintessential professional workplace experience in addition to vital leadership capabilities',
+        sm: 'Obtained professional workplace experience and vital leadership capabilities',
+      },
+      {
+        lg: '<span class="font-medium">Relevant Skills:</span> Leadership, teaching, communication, collaboration, critical thinking',
+        sm: '<span class="font-medium">Relevant Skills:</span> Leadership, teaching, communication, critical thinking',
+      },
+    ],
   },
 ];
 

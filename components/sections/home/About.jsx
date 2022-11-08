@@ -25,7 +25,7 @@ export default function About() {
       <div className="mx-auto mb-12 flex max-w-[680px] flex-col gap-5 text-left 2xs:mb-20 md:mb-24 xl:mb-32 xl:gap-8">
         {ABOUT.map((about, i) => (
           <p
-            className="text-base text-black dark:text-lightPurple 2xs:text-lg md:text-xl"
+            className="text-base text-black dark:text-lightPurple sm:text-sm md:text-xl"
             key={`about-${i}`}
           >
             {about}

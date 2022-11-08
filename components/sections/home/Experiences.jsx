@@ -1,11 +1,9 @@
+import { Fragment } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Grid from '../../layout/Grid';
 import GradientBorder from '../../UI/GradientBorder';
-import OpenButton from '../../UI/OpenButton';
 import { EXPERIENCES } from '../../../constants/constants';
-import clockIcon from '../../../public/img/icons/clock.svg';
-import locationIcon from '../../../public/img/icons/location.svg';
+import pointIcon from '../../../public/img/icons/point.svg';
 
 /**
  * Experiences section on homepage.
@@ -21,22 +19,21 @@ export default function Experiences() {
       </h2>
       <Grid>
         {EXPERIENCES.map((experience, i) => (
-          <Link href={experience.route} key={`project-${i}`}>
-            <div
-              className={`transition-300 group h-full cursor-pointer ${
-                i % 2 == 1
-                  ? `md:translate-y-10 md:hover:translate-y-9`
-                  : 'md:hover:-translate-y-1'
-              }`}
+          <div
+            className={`transition-300 h-full ${
+              i % 2 == 1
+                ? `md:translate-y-10 md:hover:translate-y-9`
+                : 'md:hover:-translate-y-1'
+            }`}
+            key={`project-${i}`}
+          >
+            <GradientBorder
+              borderColor="gradient-main-light dark:gradient-main-dark"
+              borderRadius="rounded-xl 3xs:rounded-2xl 2xs:rounded-3xl"
             >
-              <GradientBorder
-                borderColor="gradient-main-light dark:gradient-main-dark"
-                borderRadius="rounded-xl 3xs:rounded-2xl xl:rounded-3xl"
-              >
-                <ExperienceCard experience={experience} />
-              </GradientBorder>
-            </div>
-          </Link>
+              <ExperienceCard experience={experience} />
+            </GradientBorder>
+          </div>
         ))}
       </Grid>
     </section>
@@ -50,56 +47,84 @@ export default function Experiences() {
  */
 function ExperienceCard({ experience }) {
   return (
-    <div className="transition-300 relative h-full overflow-hidden rounded-[11px] bg-beige px-4 pt-4 pb-5 dark:bg-black 3xs:rounded-[15px] 3xs:px-5 3xs:pt-5 3xs:pb-6 xs:px-7 xs:pt-7 xs:pb-8 sm:px-10 sm:pt-10 sm:pb-11 md:px-6 md:py-6 xl:rounded-[23px] xl:px-8 xl:py-8 2xl:px-10 2xl:py-10">
+    <div className="transition-300 relative h-full overflow-hidden rounded-[11px] bg-beige px-5 pt-5 pb-6 dark:bg-black 3xs:rounded-[15px] 2xs:rounded-[23px] xs:px-6 xs:pt-6 xs:pb-8 sm:px-9 sm:pt-9 sm:pb-10 md:px-5 md:pt-5 md:pb-6 lg:px-6 lg:pt-6 lg:pb-8 xl:px-8 xl:pt-7 xl:pb-10 2xl:px-10 2xl:pt-10 2xl:pb-12">
       <div className="gradient-card-light dark:gradient-card-dark absolute inset-0 z-10" />
       <div className="absolute inset-y-0 right-0 z-10 w-[70%] bg-gradient-to-r from-transparent to-translucentLightPurple dark:from-transparent dark:to-translucentDarkPurple" />
-      <h3 className="relative z-20 mb-1 text-xl font-[550] 3xs:mb-1.5 2xs:text-2xl xs:text-3xl sm:mb-2.5 sm:text-4xl md:mb-1 md:text-2xl xl:mb-1.5 xl:text-3xl 2xl:mb-2.5 2xl:text-4xl 3xl:mb-3 3xl:text-5xl">
+      <div
+        className={`absolute opacity-20 
+        ${
+          experience.company === 'University of Toronto' &&
+          'right-[-12%] top-[60%] w-[60%] -translate-y-1/2'
+        }
+        ${
+          experience.company === 'AVIEW International' &&
+          'right-[-10%] bottom-[-10%] w-[60%]'
+        }
+        ${
+          experience.company === 'PETHS Student Council' &&
+          'right-[-10%] bottom-[-5%] w-[50%]'
+        }
+        ${
+          experience.company === 'Unionville Tennis Club' &&
+          'right-[-10%] bottom-[-5%] w-[60%]'
+        }
+        `}
+      >
+        <Image src={experience.logo} alt={experience.company} />
+      </div>
+      <h3 className="relative z-20 mb-1 text-xl font-semibold xs:mb-1.5 xs:text-2xl sm:mb-2 sm:text-3xl md:mb-1.5 md:text-xl lg:text-2xl xl:mb-2 xl:text-3xl 2xl:mb-2.5">
         <span className="gradient-text gradient-main-light dark:gradient-main-dark">
           {experience.role}
         </span>
       </h3>
-      <p className="relative z-20 text-sm font-[450] text-darkPurple dark:text-purple 3xs:text-base 2xs:mb-4 xs:mb-5 xs:text-lg sm:mb-6 sm:text-xl md:mb-4 md:text-base xl:mb-5 xl:text-lg 2xl:mb-7 2xl:text-xl 3xl:mb-9 3xl:text-2xl">
+      <p className="text-blue-1 dark:text-white relative z-20 mb-3 text-sm italic xs:mb-4 xs:text-base sm:mb-5 sm:text-lg md:mb-3 md:text-sm lg:mb-4 xl:mb-5 xl:text-base 2xl:text-lg">
         {experience.company}
       </p>
-      <div className="relative z-20 hidden flex-wrap gap-x-4 gap-y-3 2xs:flex sm:gap-x-6 md:gap-x-4 2xl:gap-x-5 3xl:gap-x-6">
-        <div className="flex items-center gap-2 rounded-xl border border-purple bg-beige bg-opacity-40 py-1.5 px-3 dark:border-darkPurple dark:bg-black dark:bg-opacity-30 sm:gap-2.5 sm:rounded-2xl sm:py-2.5 sm:px-4 md:gap-2 md:rounded-xl md:py-1.5 md:px-3 2xl:rounded-2xl 2xl:py-2.5 3xl:gap-3 3xl:px-4.5 3xl:py-3">
-          <p className="text-sm text-black dark:text-lightPurple xs:text-base sm:text-lg md:text-sm 2xl:text-base 3xl:text-lg">
-            {experience.duration}
-          </p>
-        </div>
-        <div className="flex items-center gap-2 rounded-xl border border-purple bg-beige bg-opacity-40 py-1.5 px-3 dark:border-darkPurple dark:bg-black dark:bg-opacity-30 sm:gap-2.5 sm:rounded-2xl sm:py-2.5 sm:px-4 md:gap-2 md:rounded-xl md:py-1.5 md:px-3 2xl:rounded-2xl 2xl:py-2.5 3xl:gap-3 3xl:py-3 3xl:px-4.5">
-          <p className="text-sm text-black dark:text-lightPurple xs:text-base sm:text-lg md:text-sm 2xl:text-base 3xl:text-lg">
-            {experience.location}
-          </p>
-        </div>
+      <div className="relative z-20 mb-3 hidden flex-wrap gap-2 3xs:flex xs:mb-4 xs:gap-4 sm:mb-5 md:mb-3 lg:mb-4 2xl:mb-6 2xl:gap-5">
+        <GradientBorder
+          borderRadius="rounded-full"
+          borderColor="gradient-main-light dark:gradient-main-dark"
+          classes="inline-block"
+        >
+          <div className="inline-block rounded-full bg-beige px-3 py-1.5 last:mr-0 dark:bg-black xs:px-4 md:px-3 md:py-1.5 xl:px-4">
+            <p className="text-blue-4 dark:text-blue-5 text-xs xs:text-sm md:text-xs xl:text-sm">
+              {experience.duration}
+            </p>
+          </div>
+        </GradientBorder>
+        <GradientBorder
+          borderRadius="rounded-full"
+          borderColor="gradient-main-light dark:gradient-main-dark"
+          classes="inline-block"
+        >
+          <div className="inline-block rounded-full bg-beige px-3 py-1.5 last:mr-0 dark:bg-black xs:px-4 md:px-3 md:py-1.5 lg:px-4">
+            <p className="text-blue-4 dark:text-blue-5 text-xs xs:text-sm md:text-xs xl:text-sm">
+              {experience.location}
+            </p>
+          </div>
+        </GradientBorder>
       </div>
-      <OpenButton />
-      <div
-        className={`absolute z-0 opacity-50
-      ${
-        experience.company === 'University of Toronto' &&
-        'top-1/2 right-[5%] w-[50%] max-w-[180px] -translate-y-1/2'
-      }
-      ${
-        (experience.company === 'AVIEW International' ||
-          experience.company === 'Unionville Tennis Club') &&
-        '-right-[5%] -bottom-[20%] w-[40%]'
-      }
-      ${
-        experience.company === 'Waterloo Data Science Club' &&
-        '-bottom-[20%] -right-[8%] w-[40%] -scale-x-[1]'
-      }
-      ${
-        experience.company === 'PETHS Student Council' &&
-        '-right-[2%] -bottom-[10%] w-[30%]'
-      }
-      ${
-        experience.company === 'CREATE Markham' &&
-        'right-[2%] -bottom-[10%] w-[40%]'
-      }
-      `}
-      >
-        <Image src={experience.logo} alt={`${experience.company}-logo`} />
+      <div className="relative z-20 grid gap-2 3xs:grid-cols-[repeat(2,auto)] xs:gap-3 md:gap-2 lg:gap-3 xl:gap-4">
+        {experience.description.map((point, i) => (
+          <Fragment key={`point-${i}`}>
+            <div className="relative mt-0.5 hidden h-4 w-4 3xs:inline xs:mt-1 xs:h-5 xs:w-5 md:mt-0.5 md:h-4 md:w-4 lg:mt-1 lg:h-5 lg:w-5">
+              <Image
+                src={pointIcon}
+                alt="Point icon"
+                className="icon-filter-1-light dark:icon-filter-1-dark"
+                fill
+              />
+            </div>
+            <p
+              className="text-blue-1 dark:text-white text-sm xs:text-base sm:hidden md:block md:text-sm xl:hidden"
+              dangerouslySetInnerHTML={{ __html: point.sm }}
+            />
+            <p
+              className="text-blue-1 dark:text-white hidden text-sm xs:text-base sm:block md:hidden md:text-sm xl:block xl:text-base"
+              dangerouslySetInnerHTML={{ __html: point.lg }}
+            />
+          </Fragment>
+        ))}
       </div>
     </div>
   );
