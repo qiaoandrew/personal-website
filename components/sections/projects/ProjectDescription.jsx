@@ -2,7 +2,7 @@ import Button from '../../UI/Button';
 
 export default function ProjectDescription({ project }) {
   return (
-    <section className="mb-12">
+    <section className="mb-12 2xs:mb-16 lg:mb-20 2xl:mb-24">
       <div className="grid gap-9 2xs:gap-12 lg:mb-16 lg:grid-cols-[1fr_2fr] 2xl:mb-24 2xl:grid-cols-[2fr_5fr]">
         <div className="flex flex-col gap-12">
           <div className="flex flex-col gap-5 2xs:gap-6">

@@ -55,11 +55,11 @@ html {
     @apply bg-gradient-to-t from-translucentDarkPurple to-transparent;
   }
 
-  .gradient-project-intro-light {
+  .gradient-project-light {
     @apply bg-gradient-to-tr from-[#f6f6ff] via-beige to-[#f6f6ff];
   }
 
-  .gradient-project-intro-dark {
+  .gradient-project-dark {
     @apply bg-gradient-to-tr from-[#2D2F53] via-black to-[#2D2F53];
   }
 

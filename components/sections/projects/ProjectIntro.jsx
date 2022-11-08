@@ -24,10 +24,10 @@ export default function ProjectIntro({ project }) {
       </h1>
       <GradientBorder
         borderColor="gradient-main-light dark:gradient-main-dark"
-        borderRadius="rounded-2xl 3xs:rounded-3xl"
+        borderRadius="rounded-xl 3xs:rounded-2xl 2xs:rounded-3xl"
         classes="group"
       >
-        <div className="gradient-project-intro-light dark:gradient-project-intro-dark relative h-[360px] overflow-hidden rounded-2xl 3xs:h-[420px] 3xs:rounded-3xl 2xs:h-[480px] xs:h-[580x] xl:h-[620px] 3xl:h-[640px]">
+        <div className="gradient-project-light dark:gradient-project-dark relative h-[360px] overflow-hidden rounded-[11px] 3xs:h-[420px] 3xs:rounded-[15px] 2xs:h-[480px] 2xs:rounded-[23px] xs:h-[580x] xl:h-[620px] 3xl:h-[640px]">
           <div
             className={`transition-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:group-hover:scale-[1.02] 
             ${project.title === 'Pethsapp' && 'w-[85%] max-w-[375px]'}

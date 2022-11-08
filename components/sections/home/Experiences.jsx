@@ -77,7 +77,7 @@ function ExperienceCard({ experience }) {
           {experience.role}
         </span>
       </h3>
-      <p className="text-blue-1 dark:text-white relative z-20 mb-3 text-sm italic xs:mb-4 xs:text-base sm:mb-5 sm:text-lg md:mb-3 md:text-sm lg:mb-4 xl:mb-5 xl:text-base 2xl:text-lg">
+      <p className="relative z-20 mb-3 text-sm italic text-darkPurple dark:text-lightPurple xs:mb-4 xs:text-base sm:mb-5 sm:text-lg md:mb-3 md:text-sm lg:mb-4 xl:mb-5 xl:text-base 2xl:text-lg">
         {experience.company}
       </p>
       <div className="relative z-20 mb-3 hidden flex-wrap gap-2 3xs:flex xs:mb-4 xs:gap-4 sm:mb-5 md:mb-3 lg:mb-4 2xl:mb-6 2xl:gap-5">
@@ -87,7 +87,7 @@ function ExperienceCard({ experience }) {
           classes="inline-block"
         >
           <div className="inline-block rounded-full bg-beige px-3 py-1.5 last:mr-0 dark:bg-black xs:px-4 md:px-3 md:py-1.5 xl:px-4">
-            <p className="text-blue-4 dark:text-blue-5 text-xs xs:text-sm md:text-xs xl:text-sm">
+            <p className="text-xs text-darkPurple dark:text-lightPurple xs:text-sm md:text-xs xl:text-sm">
               {experience.duration}
             </p>
           </div>
@@ -97,8 +97,8 @@ function ExperienceCard({ experience }) {
           borderColor="gradient-main-light dark:gradient-main-dark"
           classes="inline-block"
         >
-          <div className="inline-block rounded-full bg-beige px-3 py-1.5 last:mr-0 dark:bg-black xs:px-4 md:px-3 md:py-1.5 lg:px-4">
-            <p className="text-blue-4 dark:text-blue-5 text-xs xs:text-sm md:text-xs xl:text-sm">
+          <div className="inline-block rounded-full bg-beige px-3 py-1.5 last:mr-0 dark:bg-black xs:px-4 md:px-3 md:py-1.5 xl:px-4">
+            <p className="text-xs text-darkPurple dark:text-lightPurple xs:text-sm md:text-xs xl:text-sm">
               {experience.location}
             </p>
           </div>
@@ -111,16 +111,16 @@ function ExperienceCard({ experience }) {
               <Image
                 src={pointIcon}
                 alt="Point icon"
-                className="icon-filter-1-light dark:icon-filter-1-dark"
+                className="icon-filter-1-light dark:icon-filter-1-dark filter-black dark:filter-purple"
                 fill
               />
             </div>
             <p
-              className="text-blue-1 dark:text-white text-sm xs:text-base sm:hidden md:block md:text-sm xl:hidden"
+              className="text-sm text-black dark:text-lightPurple xs:text-base sm:hidden md:block md:text-sm xl:hidden"
               dangerouslySetInnerHTML={{ __html: point.sm }}
             />
             <p
-              className="text-blue-1 dark:text-white hidden text-sm xs:text-base sm:block md:hidden md:text-sm xl:block xl:text-base"
+              className="hidden text-sm text-black dark:text-lightPurple xs:text-base sm:block md:hidden md:text-sm xl:block xl:text-base"
               dangerouslySetInnerHTML={{ __html: point.lg }}
             />
           </Fragment>
