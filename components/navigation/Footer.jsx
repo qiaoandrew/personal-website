@@ -11,18 +11,18 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="m-horizontal mb-12">
-      <div className="gradient-main-light dark:gradient-main-dark mb-8 h-0.25 w-full" />
-      <div className="flex flex-col items-center justify-between gap-6 2xs:flex-row 2xs:gap-0">
+    <footer className="m-horizontal mb-10 xs:mb-12">
+      <div className="gradient-main-light dark:gradient-main-dark mb-6 h-0.25 w-full xs:mb-8" />
+      <div className="flex flex-col items-center justify-between gap-4 2xs:flex-row 2xs:gap-0">
         <div className="text-center 2xs:text-left">
-          <p className="mb-0.5 text-2xl font-[550]">
+          <p className="mb-0.5 text-xl font-[550] xs:text-2xl">
             <span className="gradient-main-light dark:gradient-main-dark gradient-text">
               Andrew Qiao
             </span>
           </p>
           <a
             href="mailto:andrewqiao2004@gmail.com"
-            className="text-base text-black dark:text-lightPurple"
+            className="text-sm text-black dark:text-lightPurple xs:text-base"
           >
             andrewqiao2004@gmail.com
           </a>
