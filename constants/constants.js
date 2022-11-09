@@ -24,6 +24,43 @@ import tsac from '../public/img/logos/tsac.png';
 import create from '../public/img/logos/create.png';
 import utc from '../public/img/logos/utc.png';
 
+export const METADATA = {
+  '/': {
+    title: 'Andrew Qiao',
+    description:
+      "Hi! I'm Andrew, a first year CS student at the University of Waterloo. Welcome to my personal website.",
+    keywords:
+      'Andrew Qiao, University of Waterloo, Computer Science, Pethsapp, TSAC, CREATE Markham, AVIEW International, Software Engineer',
+  },
+  '/projects/pethsapp': {
+    title: 'Pethsapp | Andrew Qiao',
+    description:
+      "Pethsapp is my former high school's official mobile application. I led a team of developers and designers in revamping it using Flutter and Firebase.",
+    keywords:
+      'Pethsapp, Pierre Elliott Trudeau High School, Flutter, Firebase, Andrew Qiao',
+  },
+  '/projects/create-markham': {
+    title: 'CREATE Markham | Andrew Qiao',
+    description:
+      "As Technology Chairperson of CREATE Markham, I revamped their website using React.js, Next.js, and Firebase to enhance the organization's digital presence.",
+    keywords: 'CREATE Markham, React.js, Next.js, Firebase, Andrew Qiao',
+  },
+  '/projects/aview': {
+    title: 'AVIEW International | Andrew Qiao',
+    description:
+      'As a Software Engineer at AVIEW International, I led a team of engineers in developing their website using React.js, Next.js, Firebase, and AWS to boost their digital growth.',
+    keywords:
+      'AVIEW, AVIEW International, React.js, Next.js, Firebase, AWS, Andrew Qiao',
+  },
+  '/projects/tsac': {
+    title: 'TSAC | Andrew Qiao',
+    description:
+      "As Technology Chairperson on my high school's student council during my senior year, I revamped the council's website using React.js, Next.js, and Firebase.",
+    keywords:
+      'TSAC, Pierre Elliott Trudeau High School, Next.js, Firebase, Andrew Qiao',
+  },
+};
+
 export const PROJECTS = [
   {
     route: '/projects/pethsapp',

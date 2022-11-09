@@ -72,7 +72,7 @@ function ExperienceCard({ experience }) {
       >
         <Image src={experience.logo} alt={experience.company} />
       </div>
-      <h3 className="relative z-20 mb-1 text-xl font-semibold xs:mb-1.5 xs:text-2xl sm:mb-2 sm:text-3xl md:mb-1.5 md:text-xl lg:text-2xl xl:mb-2 xl:text-3xl 2xl:mb-2.5">
+      <h3 className="relative z-20 mb-1 text-xl font-semibold xs:mb-1.5 xs:text-2xl sm:mb-2 sm:text-3xl md:mb-1.5 md:text-xl lg:text-2xl xl:text-3xl">
         <span className="gradient-text gradient-main-light dark:gradient-main-dark">
           {experience.role}
         </span>
