@@ -35,7 +35,7 @@ export default function Button({
         <div
           className={`relative rounded-full bg-beige dark:bg-black lg:flex lg:gap-2 ${
             size === 'sm'
-              ? `px-5 py-3 md:px-6 md:py-4 ${
+              ? `px-5 py-3 md:px-8 md:py-4 ${
                   showOpenIcon && 'lg:pl-6 lg:pr-5.5'
                 }`
               : 'px-7 py-4 md:px-9 md:py-4.5'
@@ -65,6 +65,12 @@ export default function Button({
       <a href={link} target="_blank" rel="noreferrer">
         {buttonContent}
       </a>
+    );
+  } else if (purpose === 'submit') {
+    return (
+      <button className={mobileFullWidth && 'w-full lg:w-auto'} type="submit">
+        {buttonContent}
+      </button>
     );
   } else {
     return <div onClick={onClick}>{buttonContent}</div>;

@@ -21,7 +21,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="m-horizontal relative z-10 mb-8 mt-6 flex flex-col 3xs:mb-10 xs:mb-16 md:mb-20 lg:mb-24 xl:mt-12">
+    <div className="m-horizontal relative z-10 mb-8 mt-6 flex flex-col 3xs:mb-10 xs:mb-16 md:mb-20 lg:mb-24 xl:mt-12 2xl:mb-28">
       <header className="transition-300 -mx-2 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-0 px-2 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-0 3xs:-mx-3 3xs:py-4 3xs:px-3 xs:-mx-5 xs:px-5 xl:-mx-6 xl:px-6">
         <Link
           href="/"
