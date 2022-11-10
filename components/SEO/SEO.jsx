@@ -26,10 +26,26 @@ export default function SEO() {
         content="https://www.andrewqiao.com/img/favicons/og-image.png"
       />
       <link rel="canonical" href={`www.andrewqiao.com${path}`} />
-      <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-      <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-      <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-      <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+      <link
+        rel="apple-touch-icon"
+        sizes="57x57"
+        href="/img/favicons/apple-icon-57x57.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="60x60"
+        href="/img/favicons/apple-icon-60x60.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="72x72"
+        href="/img/favicons/apple-icon-72x72.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="76x76"
+        href="/img/favicons/apple-icon-76x76.png"
+      />
       <link
         rel="apple-touch-icon"
         sizes="114x114"
