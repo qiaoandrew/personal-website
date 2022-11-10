@@ -1,5 +1,6 @@
-import { Fragment } from 'react';
+import { Fragment, useContext } from 'react';
 import Image from 'next/image';
+import ThemeContext from '../../../store/theme-context';
 import ID from '../../navigation/ID';
 import Grid from '../../layout/Grid';
 import GradientBorder from '../../UI/GradientBorder';
@@ -45,6 +46,8 @@ export default function Experiences() {
  * @param experience is an Object containing information about the experience
  */
 function ExperienceCard({ experience }) {
+  const themeContext = useContext(ThemeContext);
+
   return (
     <div className="transition-300 relative h-full overflow-hidden rounded-[11px] bg-beige px-5 pt-5 pb-6 dark:bg-black 3xs:rounded-[15px] 2xs:rounded-[23px] xs:px-6 xs:pt-6 xs:pb-8 sm:px-9 sm:pt-9 sm:pb-10 md:px-5 md:pt-5 md:pb-6 lg:px-6 lg:pt-6 lg:pb-8 xl:px-8 xl:pt-7 xl:pb-10 2xl:px-10 2xl:pt-10 2xl:pb-12">
       <div className="gradient-card-light dark:gradient-card-dark absolute inset-0 z-10" />
@@ -106,14 +109,15 @@ function ExperienceCard({ experience }) {
       <div className="relative z-20 grid gap-2 3xs:grid-cols-[repeat(2,auto)] xs:gap-3 md:gap-2 lg:gap-3 xl:gap-4">
         {experience.description.map((point, i) => (
           <Fragment key={`point-${i}`}>
-            <div className="relative mt-0.5 hidden h-4 w-4 3xs:inline xs:mt-1 xs:h-5 xs:w-5 md:mt-0.5 md:h-4 md:w-4 lg:mt-1 lg:h-5 lg:w-5">
-              <Image
-                src={pointIcon}
-                alt="Point icon"
-                className="icon-filter-1-light dark:icon-filter-1-dark filter-black dark:filter-purple"
-                fill
-              />
-            </div>
+            <Image
+              src={pointIcon}
+              alt="Point icon"
+              className={`mt-0.5 hidden w-4 3xs:inline xs:mt-1 xs:w-5 md:mt-0.5 md:w-4 lg:mt-1 lg:w-5 2xl:mt-0 2xl:w-6 ${
+                themeContext.theme === 'light'
+                  ? 'filter-black'
+                  : 'filter-purple'
+              }`}
+            />
             <p
               className="text-sm text-black dark:text-lightPurple xs:text-base sm:hidden md:block md:text-sm xl:hidden"
               dangerouslySetInnerHTML={{ __html: point.sm }}

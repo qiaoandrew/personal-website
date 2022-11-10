@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ThemeContext from '../../store/theme-context';
 import GradientBorder from './GradientBorder';
 import openIcon from '../../public/img/icons/open.svg';
 
@@ -22,6 +24,8 @@ export default function Button({
   showOpenIcon,
   children,
 }) {
+  const themeContext = useContext(ThemeContext);
+
   const buttonContent = (
     <div
       className={`transition-300 inline-block cursor-pointer text-center md:hover:-translate-y-1 ${
@@ -33,7 +37,7 @@ export default function Button({
         borderRadius="rounded-full"
       >
         <div
-          className={`relative rounded-full bg-beige dark:bg-black lg:flex lg:gap-2 ${
+          className={`transition-300 relative rounded-full bg-beige dark:bg-black lg:flex lg:gap-2 ${
             size === 'sm'
               ? `px-5 py-3 md:px-8 md:py-4 ${
                   showOpenIcon && 'lg:pl-6 lg:pr-5.5'
@@ -49,9 +53,15 @@ export default function Button({
             {children}
           </p>
           {showOpenIcon && (
-            <div className="filter-dark-purple dark:filter-purple absolute top-1/2 right-5 h-6 w-6 -translate-y-1/2 lg:relative lg:top-auto lg:right-auto lg:translate-x-0 lg:translate-y-0">
-              <Image src={openIcon} alt="Open icon" fill />
-            </div>
+            <Image
+              src={openIcon}
+              alt="Open icon"
+              className={`absolute top-1/2 right-5 w-6 -translate-y-1/2 lg:relative lg:top-auto lg:right-auto lg:w-7 lg:translate-x-0 lg:translate-y-0 ${
+                themeContext.theme === 'light'
+                  ? 'filter-dark-purple'
+                  : 'filter-purple'
+              }`}
+            />
           )}
         </div>
       </GradientBorder>

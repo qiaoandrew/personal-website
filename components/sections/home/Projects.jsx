@@ -48,7 +48,7 @@ function ProjectCard({ project }) {
   const themeContext = useContext(ThemeContext);
 
   return (
-    <div className="transition-300 relative aspect-[32/21] overflow-hidden rounded-[11px] bg-beige dark:bg-black 3xs:rounded-[15px] 2xs:rounded-[23px]">
+    <div className="transition-300 relative aspect-[32/23] overflow-hidden rounded-[11px] bg-beige dark:bg-black 3xs:rounded-[15px] 2xs:rounded-[23px]">
       <h3 className="gradient-text gradient-main-light dark:gradient-main-dark absolute bottom-4 left-4 z-20 text-xl font-[550] 3xs:bottom-5 3xs:left-5 3xs:text-2xl xs:bottom-8 xs:left-8 xs:text-3xl sm:left-10 sm:bottom-10 sm:text-4xl md:bottom-6 md:left-6 md:text-2xl xl:bottom-8 xl:left-8 2xl:bottom-10 2xl:left-10 2xl:text-4xl 3xl:text-5xl">
         {project.title}
       </h3>

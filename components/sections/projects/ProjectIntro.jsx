@@ -39,6 +39,7 @@ export default function ProjectIntro({ project }) {
             <Image
               src={themeContext.theme === 'light' ? lightMockup : darkMockup}
               alt={`${project.title} mockup`}
+              priority
             />
           </div>
         </div>

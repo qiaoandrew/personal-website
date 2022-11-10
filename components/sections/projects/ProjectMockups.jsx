@@ -30,6 +30,7 @@ export default function ProjectMockups({ project }) {
             <Image
               src={themeContext.theme === 'light' ? mockup.light : mockup.dark}
               alt={project.title}
+              priority
               className={`transition-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:group-hover:scale-[1.02]
                 ${i === 0 && project.title === 'Pethsapp' && 'w-[60%]'}
                 ${i === 1 && project.title === 'Pethsapp' && 'w-[100%]'}

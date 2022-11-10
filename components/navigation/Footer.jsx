@@ -1,9 +1,13 @@
+import { useContext } from 'react';
 import Image from 'next/image';
+import ThemeContext from '../../store/theme-context';
 import linkedinIcon from '../../public/img/icons/linkedin.svg';
 import githubIcon from '../../public/img/icons/github.svg';
 import instagramIcon from '../../public/img/icons/instagram.svg';
 
 export default function Footer() {
+  const themeContext = useContext(ThemeContext);
+
   const socials = [
     { link: '', icon: linkedinIcon },
     { link: '', icon: githubIcon },
@@ -11,7 +15,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="m-horizontal mb-10 xs:mb-12">
+    <footer className="m-horizontal mb-16">
       <div className="gradient-main-light dark:gradient-main-dark mb-6 h-0.25 w-full xs:mb-8" />
       <div className="flex flex-col items-center justify-between gap-4 2xs:flex-row 2xs:gap-0">
         <div className="text-center 2xs:text-left">
@@ -39,7 +43,11 @@ export default function Footer() {
               <Image
                 src={social.icon}
                 alt="Social icon"
-                className="filter-dark-purple dark:filter-purple w-6"
+                className={`w-6 ${
+                  themeContext.theme === 'light'
+                    ? 'filter-dark-purple'
+                    : 'filter-purple'
+                }`}
               />
             </a>
           ))}

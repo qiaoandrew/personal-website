@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import Image from 'next/image';
+import ThemeContext from '../../../store/theme-context';
 import ID from '../../navigation/ID';
 import GradientBorder from '../../UI/GradientBorder';
 import Button from '../../UI/Button';
@@ -10,6 +12,8 @@ import blob2 from '../../../public/img/graphics/blob-2.png';
  * About section of homepage.
  */
 export default function About() {
+  const themeContext = useContext(ThemeContext);
+
   return (
     <section className="m-horizontal relative mb-16 text-center 3xs:mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64">
       <ID id="about" />
@@ -34,9 +38,17 @@ export default function About() {
       <Button purpose="route" link="/#contact" mobileFullWidth={false}>
         Contact Me
       </Button>
-      <div className="filter-purple dark:filter-dark-purple absolute right-[20%] top-[10%] -z-10 dark:opacity-40">
-        <Image src={blob2} layout="responsive" priority alt="Blob 2" />
-      </div>
+      <Image
+        src={blob2}
+        layout="responsive"
+        priority
+        alt="Blob 2"
+        className={`absolute right-[20%] top-[10%] -z-10 dark:opacity-40 ${
+          themeContext.theme === 'light'
+            ? 'filter-purple'
+            : 'filter-dark-purple'
+        }`}
+      />
     </section>
   );
 }
