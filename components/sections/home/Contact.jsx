@@ -1,4 +1,5 @@
 import { useFormik } from 'formik';
+import ID from '../../navigation/Id';
 import Button from '../../UI/Button';
 import Input from '../../UI/Input';
 import TextArea from '../../UI/TextArea';
@@ -6,13 +7,11 @@ import handleSubmit from '../../../utils/submitForm';
 
 export default function Contact() {
   return (
-    <section
-      className="bg-gradient-to-b from-translucentLightPurple to-transparent dark:from-translucentDarkPurple"
-      id="contact"
-    >
-      <div className="m-horizontal pt-10 pb-16 3xs:pb-20 sm:pt-12 lg:grid xl:grid-cols-[2fr_3fr] xl:gap-24 xl:pt-20 xl:pb-32 2xl:pt-24 2xl:pb-36">
+    <section className="relative bg-gradient-to-b from-translucentLightPurple to-transparent dark:from-translucentDarkPurple">
+      <ID id="contact" />
+      <div className="m-horizontal pt-10 pb-16 3xs:pb-20 sm:pt-12 lg:grid xl:grid-cols-[2fr_3fr] xl:gap-24 xl:pt-20 xl:pb-32 2xl:grid-cols-[4fr_5fr] 2xl:pt-24 2xl:pb-36">
         <div>
-          <h2 className="mb-2 text-2xl font-semibold 3xs:mb-3 3xs:text-3xl 2xs:text-4xl sm:text-5xl md:text-6xl xl:mb-4 xl:text-7xl 2xl:text-8xl">
+          <h2 className="mb-2 text-2xl font-semibold 3xs:mb-3 3xs:text-3xl 2xs:text-4xl sm:text-5xl md:text-6xl xl:mb-4 xl:text-7xl 2xl:text-8xl 3xl:mb-5 3xl:text-9xl">
             <span className="gradient-text gradient-main-light dark:gradient-main-dark">
               Let&apos;s get in touch.
             </span>

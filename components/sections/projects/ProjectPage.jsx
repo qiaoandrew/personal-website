@@ -5,10 +5,10 @@ import { PROJECTS } from '../../../constants/constants';
 
 export default function ProjectPage({ idx }) {
   return (
-    <main className="m-horizontal">
+    <div className="m-horizontal">
       <ProjectIntro project={PROJECTS[idx]} />
       <ProjectDescription project={PROJECTS[idx]} />
       <ProjectMockups project={PROJECTS[idx]} />
-    </main>
+    </div>
   );
 }

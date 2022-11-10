@@ -6,16 +6,15 @@ import Grid from '../../layout/Grid';
 import GradientBorder from '../../UI/GradientBorder';
 import { PROJECTS } from '../../../constants/constants';
 import OpenButton from '../../UI/OpenButton';
+import ID from '../../navigation/Id';
 
 /**
  * Projects section on home page.
  */
 export default function Projects() {
   return (
-    <section
-      className="m-horizontal mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64"
-      id="projects"
-    >
+    <section className="m-horizontal relative mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64">
+      <ID id="projects" />
       <Grid>
         {PROJECTS.map((project, i) => (
           <Link href={project.route} key={`project-${i}`}>

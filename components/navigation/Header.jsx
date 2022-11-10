@@ -21,8 +21,8 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="m-horizontal relative z-10 mb-8 mt-6 flex flex-col 3xs:mb-10 xs:mb-16 md:mb-20 lg:mb-24 xl:mt-12 2xl:mb-28">
-      <header className="transition-300 -mx-2 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-0 px-2 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-0 3xs:-mx-3 3xs:py-4 3xs:px-3 xs:-mx-5 xs:px-5 xl:-mx-6 xl:px-6">
+    <div className="fixed inset-x-1 top-6 z-50 flex flex-col 3xs:inset-x-2 sm:inset-x-4 xl:inset-x-16 xl:top-12 3xl:mx-auto 3xl:max-w-[1280px]">
+      <header className="transition-300 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-10 px-2 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-5 3xs:py-4 3xs:px-3 xs:px-5 xl:-mx-6 xl:px-6">
         <Link
           href="/"
           className="gradient-text gradient-main-light dark:gradient-main-dark font-medium md:text-sm 2xl:text-base"
@@ -127,7 +127,7 @@ function MobileMenu({ isMenuOpen, setIsMenuOpen }) {
   return (
     <nav
       className={`transition-300 absolute top-[calc(100%+24px)] flex w-full flex-col gap-5 rounded-2xl border border-purple bg-lightPurple bg-opacity-20 py-6 text-center backdrop-blur-md dark:border-darkPurple dark:bg-darkPurple dark:bg-opacity-5 3xs:gap-6 xl:hidden ${
-        isMenuOpen ? 'opacity-100' : 'opacity-0'
+        isMenuOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
       }`}
     >
       {ROUTES.map((route, i) =>

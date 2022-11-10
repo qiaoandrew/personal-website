@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import Image from 'next/image';
+import ID from '../../navigation/Id';
 import Grid from '../../layout/Grid';
 import GradientBorder from '../../UI/GradientBorder';
 import { EXPERIENCES } from '../../../constants/constants';
@@ -10,10 +11,8 @@ import pointIcon from '../../../public/img/icons/point.svg';
  */
 export default function Experiences() {
   return (
-    <section
-      className="m-horizontal mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64"
-      id="experiences"
-    >
+    <section className="m-horizontal relative mb-20 2xs:mb-24 xs:mb-32 sm:mb-38 md:mb-44 2xl:mb-48 3xl:mb-64">
+      <ID id="experiences" />
       <h2 className="gradient-text gradient-main-light dark:gradient-main-dark mb-4 inline-block text-3xl font-[550] 3xs:mb-6 3xs:text-4xl xs:text-6xl lg:text-7xl 2xl:text-8xl 3xl:mb-10 3xl:text-9xl">
         Experiences
       </h2>
