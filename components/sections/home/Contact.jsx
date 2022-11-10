@@ -56,7 +56,7 @@ function ContactForm() {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit} className="xl:mt-4">
+    <form onSubmit={formik.handleSubmit} className="xl:mt-4" netlify>
       <div className="mb-10 flex flex-col gap-5 3xs:mb-12 3xs:gap-6 xl:mb-16 xl:gap-8">
         <div className="flex flex-col gap-2.5">
           <Input
