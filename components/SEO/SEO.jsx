@@ -8,8 +8,6 @@ export default function SEO() {
 
   const { title, description, keywords } = METADATA[path];
 
-  console.log(title, description, keywords);
-
   return (
     <Head>
       <title>{title}</title>
