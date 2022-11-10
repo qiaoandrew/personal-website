@@ -11,7 +11,7 @@ export default function Contact() {
       <ID id="contact" />
       <div className="m-horizontal pt-10 pb-16 3xs:pb-20 sm:pt-12 lg:grid xl:grid-cols-[2fr_3fr] xl:gap-24 xl:pt-20 xl:pb-32 2xl:grid-cols-[4fr_5fr] 2xl:pt-24 2xl:pb-36">
         <div>
-          <h2 className="mb-2 text-2xl font-semibold 3xs:mb-3 3xs:text-3xl 2xs:text-4xl sm:text-5xl md:text-6xl xl:mb-4 xl:text-7xl 2xl:text-8xl 3xl:mb-5 3xl:text-9xl">
+          <h2 className="mb-2 text-2xl font-semibold 3xs:mb-3 3xs:text-3xl 2xs:text-5xl md:text-6xl xl:mb-4 xl:text-7xl 2xl:text-8xl 3xl:mb-5 3xl:text-9xl">
             <span className="gradient-text gradient-main-light dark:gradient-main-dark">
               Let&apos;s get in touch.
             </span>
@@ -56,7 +56,12 @@ function ContactForm() {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit} className="xl:mt-4" netlify>
+    <form
+      name="contact"
+      onSubmit={formik.handleSubmit}
+      className="xl:mt-4"
+      netlify
+    >
       <div className="mb-10 flex flex-col gap-5 3xs:mb-12 3xs:gap-6 xl:mb-16 xl:gap-8">
         <div className="flex flex-col gap-2.5">
           <Input
