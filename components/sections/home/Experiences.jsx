@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import Image from 'next/image';
-import ID from '../../navigation/Id';
+import ID from '../../navigation/ID';
 import Grid from '../../layout/Grid';
 import GradientBorder from '../../UI/GradientBorder';
 import { EXPERIENCES } from '../../../constants/constants';

@@ -2,11 +2,11 @@ import { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import ThemeContext from '../../../store/theme-context';
+import ID from '../../navigation/ID';
 import Grid from '../../layout/Grid';
 import GradientBorder from '../../UI/GradientBorder';
 import { PROJECTS } from '../../../constants/constants';
 import OpenButton from '../../UI/OpenButton';
-import ID from '../../navigation/Id';
 
 /**
  * Projects section on home page.
