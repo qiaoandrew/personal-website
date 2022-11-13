@@ -9,20 +9,26 @@ import { METADATA } from '../constants/constants';
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
-  return (
-    <ThemeContextProvider>
-      {router.pathname in METADATA && <SEO />}
-      <Header />
-      <main
-        className={`mt-24 3xs:mt-32 xs:mt-36 lg:mt-40 xl:mt-44 ${
-          router.pathname === '/' && '2xl:mt-52'
-        }`}
-      >
-        <Component {...pageProps} />
-      </main>
-      <Footer />
-    </ThemeContextProvider>
-  );
+  const pageExists = router.pathname in METADATA;
+
+  if (pageExists) {
+    return (
+      <ThemeContextProvider>
+        <SEO />
+        <Header />
+        <main
+          className={`mt-24 3xs:mt-32 xs:mt-36 lg:mt-40 xl:mt-44 ${
+            router.pathname === '/' && '2xl:mt-52'
+          }`}
+        >
+          <Component {...pageProps} />
+        </main>
+        <Footer />
+      </ThemeContextProvider>
+    );
+  } else {
+    return <Component {...pageProps} />;
+  }
 }
 
 export default MyApp;

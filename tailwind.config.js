@@ -56,6 +56,9 @@ module.exports = {
       '5xl': '1800px',
     },
     extend: {
+      borderRadius: {
+        '4xl': '36px',
+      },
       spacing: {
         0.25: '1px',
         1.25: '5px',

@@ -1,3 +1,8 @@
+/**
+ * ID element that is moved upwards to avoid navbar blocking the top of a section upon navigation.
+ *
+ * @param id is the HTML ID of the section
+ */
 export default function ID({ id }) {
   return (
     <div

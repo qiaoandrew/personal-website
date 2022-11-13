@@ -6,7 +6,6 @@ import GradientBorder from '../../UI/GradientBorder';
 import Button from '../../UI/Button';
 import { ABOUT } from '../../../constants/constants';
 import andrewPicture from '../../../public/img/graphics/andrew.png';
-import blob2 from '../../../public/img/graphics/blob-2.png';
 
 /**
  * About section of homepage.
@@ -28,7 +27,7 @@ export default function About() {
       <div className="mx-auto mb-12 flex max-w-[680px] flex-col gap-5 text-left 2xs:mb-20 md:mb-24 xl:mb-32 xl:gap-8">
         {ABOUT.map((about, i) => (
           <p
-            className="text-base text-black dark:text-lightPurple sm:text-sm md:text-xl"
+            className="text-base text-black dark:text-lightPurple md:text-xl"
             key={`about-${i}`}
           >
             {about}
@@ -38,17 +37,6 @@ export default function About() {
       <Button purpose="route" link="/#contact" mobileFullWidth={false}>
         Contact Me
       </Button>
-      <Image
-        src={blob2}
-        layout="responsive"
-        priority
-        alt="Blob 2"
-        className={`absolute right-[20%] top-[10%] -z-10 dark:opacity-40 ${
-          themeContext.theme === 'light'
-            ? 'filter-purple'
-            : 'filter-dark-purple'
-        }`}
-      />
     </section>
   );
 }

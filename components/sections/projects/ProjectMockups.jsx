@@ -22,11 +22,11 @@ export default function ProjectMockups({ project }) {
       {projectMockups.map((mockup, i) => (
         <GradientBorder
           borderColor="gradient-main-light dark:gradient-main-dark"
-          borderRadius="rounded-xl 3xs:rounded-2xl 2xs:rounded-3xl"
+          borderRadius="rounded-xl 3xs:rounded-2xl 2xs:rounded-3xl 2xl:rounded-4xl"
           classes="block group"
           key={`mockup-${i}`}
         >
-          <div className="gradient-project-light dark:gradient-project-dark relative aspect-[8/7] overflow-hidden rounded-[11px] 3xs:rounded-[15px] 2xs:rounded-[23px]">
+          <div className="gradient-project-light dark:gradient-project-dark relative aspect-[8/7] overflow-hidden rounded-[11px] 3xs:rounded-[15px] 2xs:rounded-[23px] 2xl:rounded-[35px]">
             <Image
               src={themeContext.theme === 'light' ? mockup.light : mockup.dark}
               alt={project.title}

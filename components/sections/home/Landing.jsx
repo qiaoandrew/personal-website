@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import Image from 'next/image';
 import ThemeContext from '../../../store/theme-context';
-import blob1 from '../../../public/img/graphics/blob-1.png';
 
 /**
  * First section of home page.
@@ -46,17 +45,6 @@ export default function Landing() {
         </span>
         . Here&apos;s some of my work.
       </p>
-      <Image
-        src={blob1}
-        layout="responsive"
-        priority
-        alt="Blob 1"
-        className={`absolute right-[10%] top-[10%] -z-10 dark:opacity-40 ${
-          themeContext.theme === 'light'
-            ? 'filter-purple'
-            : 'filter-dark-purple'
-        }`}
-      />
     </section>
   );
 }

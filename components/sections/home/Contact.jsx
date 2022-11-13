@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import { useFormik } from 'formik';
 import ID from '../../navigation/ID';
 import Button from '../../UI/Button';
@@ -46,12 +47,15 @@ const validate = (values) => {
 };
 
 function ContactForm() {
+  const router = useRouter();
+
   const formik = useFormik({
     initialValues: { name: '', email: '', message: '' },
     validate,
     onSubmit: (values, actions) => {
       handleSubmit('contact', values);
       actions.resetForm();
+      router.push('/success');
     },
   });
 

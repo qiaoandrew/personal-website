@@ -39,10 +39,10 @@ export default function Button({
         <div
           className={`transition-300 relative rounded-full bg-beige dark:bg-black lg:flex lg:gap-2 ${
             size === 'sm'
-              ? `px-5 py-3 md:px-8 md:py-4 ${
+              ? `px-5 py-3 md:px-7 md:py-3.5 ${
                   showOpenIcon && 'lg:pl-6 lg:pr-5.5'
                 }`
-              : 'px-7 py-4 md:px-9 md:py-4.5'
+              : 'px-7 py-3.5 md:px-8'
           }`}
         >
           <p
