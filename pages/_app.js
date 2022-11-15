@@ -27,7 +27,11 @@ function MyApp({ Component, pageProps }) {
       </ThemeContextProvider>
     );
   } else {
-    return <Component {...pageProps} />;
+    return (
+      <ThemeContextProvider>
+        <Component {...pageProps} />
+      </ThemeContextProvider>
+    );
   }
 }
 

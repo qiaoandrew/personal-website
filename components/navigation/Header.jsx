@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <div className="fixed inset-x-1 top-6 z-50 flex flex-col 3xs:inset-x-2 sm:inset-x-4 xl:inset-x-16 xl:top-12 3xl:mx-auto 3xl:max-w-[1280px]">
-      <header className="transition-300 flex items-center justify-between rounded-full bg-lightPurple bg-opacity-10 px-2 py-3 backdrop-blur-md dark:bg-darkPurple dark:bg-opacity-5 3xs:py-4 3xs:px-3 xs:px-5 xl:-mx-6 xl:px-6">
+      <header className="transition-300 flex items-center justify-between rounded-full bg-transparent px-2 py-3 backdrop-blur-md 3xs:py-4 3xs:px-3 xs:px-5 xl:-mx-6 xl:px-6">
         <Link
           href="/"
           className="gradient-text gradient-main-light dark:gradient-main-dark font-medium md:text-sm 2xl:text-base"
