@@ -148,8 +148,8 @@ export const PROJECTS = [
     summary: [
       'Website for AVIEW International, a startup centered around providing translation services for content creators.',
       'AVIEW is a multimedia translation company designed to help content creators expand their fanbase through social media platforms. They focus on content creators who have developed a local fanbase and are seeking international expansion.',
-      'As a Software Engineer at the company, I am working with a group of other engineers and UI/UX designers in developing the website from both an aesthetic and functional standpoint.',
-      "Since the implementation of the company's new website, its client base has increased by 300%, generating more than $200k in new revenue.",
+      "As a Software Engineer at the company, I am leading full stack development on the startup's website and user portal. Furthermore, I continuously communicate with UI/UX Designers and marketing professionals to improve the website's utility and aesthetics.",
+      "Since the implementation of the company's new website, its client base has increased by 400%, in addition to 115%+ MoM growth.",
     ],
     points: [
       { title: 'Developed For', text: 'AVIEW International' },
@@ -210,7 +210,7 @@ export const EXPERIENCES = [
     location: 'Toronto, ON',
     description: [
       {
-        lg: "Studying the impact of AI in the worksplace alongside Dr. Meena Andiappan's team of researchers",
+        lg: "Studying the impact of AI in the workforce alongside Dr. Meena Andiappan's team of researchers",
         sm: "Studying AI's workplace impact alongside Dr. Meena Andiappan's research team",
       },
       {

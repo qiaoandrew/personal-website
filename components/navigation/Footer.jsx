@@ -9,9 +9,9 @@ export default function Footer() {
   const themeContext = useContext(ThemeContext);
 
   const socials = [
-    { link: '', icon: linkedinIcon },
-    { link: '', icon: githubIcon },
-    { link: '', icon: instagramIcon },
+    { link: 'https://www.linkedin.com/in/andrewqiao/', icon: linkedinIcon },
+    { link: 'https://github.com/qiaoandrew', icon: githubIcon },
+    { link: 'https://www.instagram.com/andrew.qiao/', icon: instagramIcon },
   ];
 
   return (

@@ -18,7 +18,7 @@ export default function ProjectMockups({ project }) {
         ];
 
   return (
-    <section className="mb-20 grid gap-9 lg:grid-cols-2">
+    <section className="mb-20 grid gap-9 lg:mb-36 lg:grid-cols-2">
       {projectMockups.map((mockup, i) => (
         <GradientBorder
           borderColor="gradient-main-light dark:gradient-main-dark"

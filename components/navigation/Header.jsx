@@ -9,7 +9,7 @@ const ROUTES = [
   { link: '/#about', text: 'About' },
   { link: '/#contact', text: 'Contact' },
   {
-    link: 'https://drive.google.com/file/d/19KgwxvKJerxSwFhsQRRv8dbP7qNq4W0p/view?usp=sharing',
+    link: '/resume.pdf',
     text: 'Resume',
   },
 ];

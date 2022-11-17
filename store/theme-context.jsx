@@ -5,16 +5,16 @@ const ThemeContext = createContext();
 export default ThemeContext;
 
 export function ThemeContextProvider({ children }) {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => setInitialTheme());
 
   function setInitialTheme() {
     const savedTheme = localStorage.getItem('theme');
 
-    if (savedTheme === 'dark') {
-      document.querySelector('html').classList.add('dark');
-      setTheme('dark');
+    if (savedTheme === 'light') {
+      setTheme('light');
+      document.querySelector('html').classList.remove('dark');
     }
   }
 

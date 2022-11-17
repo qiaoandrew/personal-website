@@ -82,7 +82,7 @@ function ExperienceCard({ experience }) {
       <p className="transition-300 relative z-20 mb-3 text-sm italic text-darkPurple dark:text-lightPurple xs:mb-4 xs:text-base sm:mb-5 sm:text-lg md:mb-3 md:text-sm lg:mb-4 xl:mb-5 xl:text-base 2xl:text-lg">
         {experience.company}
       </p>
-      <div className="relative z-20 mb-3 hidden flex-wrap gap-2 3xs:flex xs:mb-4 xs:gap-4 sm:mb-5 md:mb-3 lg:mb-4 2xl:mb-6 2xl:gap-5">
+      <div className="relative z-20 mb-3 hidden flex-wrap gap-3 3xs:flex xs:mb-4 xs:gap-4 sm:mb-5 md:mb-3 lg:mb-4 2xl:mb-6 2xl:gap-5">
         <GradientBorder
           borderRadius="rounded-full"
           borderColor="gradient-main-light dark:gradient-main-dark"
