@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { useContext } from 'react';
+import ThemeContext from '../../store/theme-context';
 import { METADATA } from '../../constants/constants';
 
 export default function SEO() {
+  const themeContext = useContext(ThemeContext);
+
   const router = useRouter();
   const path = router.pathname;
 
@@ -96,12 +100,18 @@ export default function SEO() {
         href="/img/favicons/favicon-16x16.png"
       />
       <link rel="manifest" href="/img/favicons/manifest.json" />
-      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta
+        name="msapplication-TileColor"
+        content={themeContext.theme === 'dark' ? '#161724' : '#F7F7F1'}
+      />
       <meta
         name="msapplication-TileImage"
         content="/img/favicons/ms-icon-144x144.png"
       />
-      <meta name="theme-color" content="#ffffff" />
+      <meta
+        name="theme-color"
+        content={themeContext.theme === 'dark' ? '#161724' : '#F7F7F1'}
+      />
     </Head>
   );
 }
