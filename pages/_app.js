@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         <SEO />
         <Header />
         <main
-          className={`mt-24 3xs:mt-30 xs:mt-36 lg:mt-40 xl:mt-44 ${
+          className={`mt-26 3xs:mt-30 xs:mt-36 lg:mt-40 xl:mt-44 ${
             router.pathname === '/' && '2xl:mt-52'
           }`}
         >
