@@ -21,12 +21,25 @@ export default function SEO() {
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="robots" content="index, follow" />
-      <meta property="og:title" content={title} />
-      {description && <meta name="og:description" content={description} />}
+      <meta name="title" property="og:title" content={title} />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content={`https://www.andrewqiao.com${path}`} />
+      {description && (
+        <meta
+          name="description"
+          property="og:description"
+          content={description}
+        />
+      )}
       <meta
+        name="image"
         property="og:image"
+        content="https://www.andrewqiao.com/img/favicons/og-image.png"
+      />
+      <meta name="author" content="Andrew Qiao" />
+      <meta name="twitter:card" content="summary" />
+      {description && <meta name="twitter:description" content={description} />}
+      <meta
+        name="twitter:image"
         content="https://www.andrewqiao.com/img/favicons/og-image.png"
       />
       <link rel="canonical" href={`www.andrewqiao.com${path}`} />
