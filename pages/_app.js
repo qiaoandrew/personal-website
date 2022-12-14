@@ -5,6 +5,7 @@ import Header from '../components/navigation/Header';
 import Footer from '../components/navigation/Footer';
 import '../styles/globals.css';
 import { METADATA } from '../constants/constants';
+import Blobs from '../components/UI/Blobs';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -15,10 +16,11 @@ function MyApp({ Component, pageProps }) {
     return (
       <ThemeContextProvider>
         <SEO />
+        <Blobs />
         <Header />
         <main
-          className={`mt-26 3xs:mt-30 xs:mt-36 lg:mt-40 xl:mt-44 ${
-            router.pathname === '/' && '2xl:mt-52'
+          className={`xs:mp-36 pt-26 3xs:pt-30 lg:pt-40 xl:pt-44 ${
+            router.pathname === '/' && '2xl:pt-52'
           }`}
         >
           <Component {...pageProps} />
