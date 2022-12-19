@@ -32,6 +32,13 @@ export const METADATA = {
     keywords:
       'Andrew Qiao, University of Waterloo, Computer Science, Pethsapp, TSAC, CREATE Markham, AVIEW International, Software Engineer',
   },
+  '/pethsapp': {
+    title: 'Pethsapp | Andrew Qiao',
+    description:
+      "Pethsapp is my former high school's official mobile application. I led a team of developers and designers in revamping it using Flutter and Firebase.",
+    keywords:
+      'Pethsapp, Pierre Elliott Trudeau High School, Flutter, Firebase, Andrew Qiao',
+  },
   '/projects/pethsapp': {
     title: 'Pethsapp | Andrew Qiao',
     description:
