@@ -2,15 +2,12 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import ThemeContext from '../../store/theme-context';
-import { METADATA } from '../../constants/constants';
 
-export default function SEO() {
+export default function SEO({ title, description, keywords }) {
   const themeContext = useContext(ThemeContext);
 
   const router = useRouter();
   const path = router.pathname;
-
-  const { title, description, keywords } = METADATA[path];
 
   return (
     <Head>
@@ -23,13 +20,11 @@ export default function SEO() {
       <meta name="robots" content="index, follow" />
       <meta name="title" property="og:title" content={title} />
       <meta property="og:type" content="website" />
-      {description && (
-        <meta
-          name="description"
-          property="og:description"
-          content={description}
-        />
-      )}
+      <meta
+        name="description"
+        property="og:description"
+        content={description}
+      />
       <meta
         name="image"
         property="og:image"
@@ -37,7 +32,7 @@ export default function SEO() {
       />
       <meta name="author" content="Andrew Qiao" />
       <meta name="twitter:card" content="summary" />
-      {description && <meta name="twitter:description" content={description} />}
+      <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
         content="https://www.andrewqiao.com/img/favicons/og-image.png"

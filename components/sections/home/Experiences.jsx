@@ -55,7 +55,7 @@ function ExperienceCard({ experience }) {
       <Image
         src={experience.logo}
         alt={experience.company}
-        className={`absolute opacity-20 dark:opacity-50 
+        className={`absolute opacity-30 dark:opacity-40 
         ${
           experience.company === 'University of Toronto' &&
           'right-[-12%] top-[60%] w-[60%] -translate-y-1/2'
@@ -69,8 +69,8 @@ function ExperienceCard({ experience }) {
           'right-[-10%] bottom-[-5%] w-[50%]'
         }
         ${
-          experience.company === 'Unionville Tennis Club' &&
-          'right-[-10%] bottom-[-5%] w-[60%]'
+          experience.company === 'UWaterloo Data Science Club' &&
+          'right-[-5%] bottom-[-5%] w-[60%]'
         }
         `}
       />

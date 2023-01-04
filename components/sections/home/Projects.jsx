@@ -61,7 +61,6 @@ function ProjectCard({ project }) {
         }
         ${project.title === 'CREATE Markham' && '-top-[5%] w-[110%]'}
         ${project.title === 'AVIEW' && 'left-[5%] bottom-[10%] w-[130%]'}
-        ${project.title === 'TSAC' && 'left-[5%] w-[95%]'}
       `}
       >
         <Image

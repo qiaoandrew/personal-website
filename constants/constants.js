@@ -19,54 +19,10 @@ import aview3 from '../public/img/mockups/aview-3.png';
 
 import uoft from '../public/img/logos/u-of-t.png';
 import aview from '../public/img/logos/aview.png';
-import uwds from '../public/img/logos/uwds.png';
+import uwdsc from '../public/img/logos/uwdsc.png';
 import tsac from '../public/img/logos/tsac.png';
 import create from '../public/img/logos/create.png';
 import utc from '../public/img/logos/utc.png';
-
-export const METADATA = {
-  '/': {
-    title: 'Andrew Qiao',
-    description:
-      "Hi! I'm Andrew, a first year CS student at the University of Waterloo. Welcome to my personal website.",
-    keywords:
-      'Andrew Qiao, University of Waterloo, Computer Science, Pethsapp, TSAC, CREATE Markham, AVIEW International, Software Engineer',
-  },
-  '/pethsapp': {
-    title: 'Pethsapp | Andrew Qiao',
-    description:
-      "Pethsapp is my former high school's official mobile application. I led a team of developers and designers in revamping it using Flutter and Firebase.",
-    keywords:
-      'Pethsapp, Pierre Elliott Trudeau High School, Flutter, Firebase, Andrew Qiao',
-  },
-  '/projects/pethsapp': {
-    title: 'Pethsapp | Andrew Qiao',
-    description:
-      "Pethsapp is my former high school's official mobile application. I led a team of developers and designers in revamping it using Flutter and Firebase.",
-    keywords:
-      'Pethsapp, Pierre Elliott Trudeau High School, Flutter, Firebase, Andrew Qiao',
-  },
-  '/projects/create-markham': {
-    title: 'CREATE Markham | Andrew Qiao',
-    description:
-      "As Technology Chairperson of CREATE Markham, I revamped their website using React.js, Next.js, and Firebase to enhance the organization's digital presence.",
-    keywords: 'CREATE Markham, React.js, Next.js, Firebase, Andrew Qiao',
-  },
-  '/projects/aview': {
-    title: 'AVIEW International | Andrew Qiao',
-    description:
-      'As a Software Engineer at AVIEW International, I led a team of engineers in developing their website using React.js, Next.js, Firebase, and AWS to boost their digital growth.',
-    keywords:
-      'AVIEW, AVIEW International, React.js, Next.js, Firebase, AWS, Andrew Qiao',
-  },
-  '/projects/tsac': {
-    title: 'TSAC | Andrew Qiao',
-    description:
-      "As Technology Chairperson on my high school's student council during my senior year, I revamped the council's website using React.js, Next.js, and Firebase.",
-    keywords:
-      'TSAC, Pierre Elliott Trudeau High School, Next.js, Firebase, Andrew Qiao',
-  },
-};
 
 export const PROJECTS = [
   {
@@ -210,23 +166,44 @@ export const PROJECTS = [
 
 export const EXPERIENCES = [
   {
-    role: 'Research Intern',
+    role: 'Research Assistant',
     company: 'University of Toronto',
     logo: uoft,
     duration: 'Oct 2022 — Present',
     location: 'Toronto, ON',
     description: [
       {
+        lg: 'Developing and designing applications embedded with AI models such as GPT-3 for research projects with 900+ participants',
+        sm: 'Developing and designing applications embedded with AI models such as GPT-3',
+      },
+      {
         lg: "Studying the impact of AI in the workforce alongside Dr. Meena Andiappan's team of researchers",
         sm: "Studying AI's workplace impact alongside Dr. Meena Andiappan's research team",
       },
       {
-        lg: 'Developing and designing applications embedded with AI models such as GPT-3 for research projects',
-        sm: 'Developing and designing applications embedded with AI models such as GPT-3',
+        lg: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
+      },
+    ],
+  },
+  {
+    role: 'VP of Web Development',
+    company: 'UWaterloo Data Science Club',
+    logo: uwdsc,
+    duration: 'Dec 2022 — Present',
+    location: 'Waterloo, ON',
+    description: [
+      {
+        lg: "Leading a team of 6 developers and designers in revamping the club's website",
+        sm: "Leading a team of 6 developers and designers in revamping the club's website",
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> GPT-3, OpenAI API, React.js, Next.js, Tailwind CSS, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> GPT-3, OpenAI API, React.js, Next.js, Tailwind CSS, Figma',
+        lg: 'Collaborating with fellow council members in organizing events for 400+ club members to increase interest in Data Science',
+        sm: 'Collaborating with fellow council members in organizing events for 400+ club members',
+      },
+      {
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firebase, Google Apps Script, Tailwind CSS',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firebase, Google Apps Script, Tailwind CSS',
       },
     ],
   },
@@ -242,8 +219,8 @@ export const EXPERIENCES = [
         sm: "Leading development on the startup's corporate website and user portal",
       },
       {
-        lg: "Amplified the company's growth, increasing its client base by 400% and generating 115%+ MoM growth",
-        sm: 'Amplified company growth, resulting in a 400% client increase and 115% MoM growth',
+        lg: "Strengthening the company's growth, averaging 115%+ MoM growth throughout 2022 while approaching $100,000 in monthly revenue",
+        sm: 'Amplifying company growth, achieving 115%+ MoM growth while approaching $100,000 monthly revenue',
       },
       {
         lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Amazon Web Services (AWS), Tailwind CSS',
@@ -251,17 +228,6 @@ export const EXPERIENCES = [
       },
     ],
   },
-  // {
-  //   role: 'Web Developer',
-  //   company: 'UWaterloo Data Science Club',
-  //   duration: 'Oct 2021 — Aug 2022',
-  //   location: 'Waterloo, ON',
-  //   description: [
-  //     '',
-  //     '',
-  //     "<span class='font-medium'>Technologies Used:</span>",
-  //   ],
-  // },
   {
     role: 'Technology Chair',
     company: 'PETHS Student Council',
@@ -294,33 +260,33 @@ export const EXPERIENCES = [
   //     "Revamped the organization's website using Next.js and Tailwind CSS to enhance their online presence",
   //   ],
   // },
-  {
-    role: 'Tennis Coach',
-    company: 'Unionville Tennis Club',
-    logo: utc,
-    duration: 'Jun 2020 — Aug 2022',
-    location: 'Markham, ON',
-    description: [
-      {
-        lg: 'Taught 700+ hours of tennis professionally to dozens of students of various ages and skill levels',
-        sm: 'Taught 700+ hours of tennis to students of all ages and skill levels',
-      },
-      {
-        lg: 'Obtained quintessential professional workplace experience in addition to vital leadership capabilities',
-        sm: 'Obtained professional workplace experience and vital leadership capabilities',
-      },
-      {
-        lg: '<span class="font-medium">Relevant Skills:</span> Leadership, teaching, communication, collaboration, critical thinking',
-        sm: '<span class="font-medium">Relevant Skills:</span> Leadership, teaching, communication, critical thinking',
-      },
-    ],
-  },
+  // {
+  //   role: 'Tennis Coach',
+  //   company: 'Unionville Tennis Club',
+  //   logo: utc,
+  //   duration: 'Jun 2020 — Aug 2022',
+  //   location: 'Markham, ON',
+  //   description: [
+  //     {
+  //       lg: 'Taught 700+ hours of tennis professionally to dozens of students of various ages and skill levels',
+  //       sm: 'Taught 700+ hours of tennis to students of all ages and skill levels',
+  //     },
+  //     {
+  //       lg: 'Obtained quintessential professional workplace experience in addition to vital leadership capabilities',
+  //       sm: 'Obtained professional workplace experience and vital leadership capabilities',
+  //     },
+  //     {
+  //       lg: '<span class="font-medium">Relevant Skills:</span> Leadership, teaching, communication, collaboration, critical thinking',
+  //       sm: '<span class="font-medium">Relevant Skills:</span> Leadership, teaching, communication, critical thinking',
+  //     },
+  //   ],
+  // },
 ];
 
 export const ABOUT = [
   "Hi! I'm Andrew, a CS student at the University of Waterloo.",
   "Currently, I'm a Software Engineer at AVIEW International, leading development on the startup's website and using portal using React.js and AWS.",
-  "Additionally, I'm a Research Intern at the University of Toronto, studying the utility and perception of AI in the workplace through building applications embedded with AI models such as GPT-3.",
+  "Additionally, I'm a Research Assistant at the University of Toronto, studying the utility and perception of AI in the workplace through building applications embedded with AI models such as GPT-3.",
   'Some of the things I like to do in my free time include playing tennis, searching for design inspiration, and solving Leetcode problems.',
   "That said, I'd love to get to know you! Feel free to message me about new opportunities or to have a conversation!",
 ];
