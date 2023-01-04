@@ -67,7 +67,7 @@ function ContactForm() {
       data-netlify="true"
     >
       <div className="mb-10 flex flex-col gap-5 3xs:mb-12 3xs:gap-6 xl:mb-16 xl:gap-8">
-        <div className="flex flex-col gap-2.5">
+        <div className="flex flex-col gap-2.5 lg:gap-3">
           <Input
             id="name"
             name="name"
@@ -84,7 +84,7 @@ function ContactForm() {
             </p>
           )}
         </div>
-        <div className="flex flex-col gap-2.5">
+        <div className="flex flex-col gap-2.5 lg:gap-3">
           <Input
             id="email"
             name="email"
@@ -120,7 +120,7 @@ function ContactForm() {
           )}
           {submitted && (
             <p className="text-sm text-darkGreen dark:text-lightGreen lg:text-base">
-              Success! We will email you back shortly.
+              Success! I will get back to you ASAP!
             </p>
           )}
         </div>
