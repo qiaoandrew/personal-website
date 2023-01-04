@@ -21,8 +21,6 @@ import uoft from '../public/img/logos/u-of-t.png';
 import aview from '../public/img/logos/aview.png';
 import uwdsc from '../public/img/logos/uwdsc.png';
 import tsac from '../public/img/logos/tsac.png';
-import create from '../public/img/logos/create.png';
-import utc from '../public/img/logos/utc.png';
 
 export const PROJECTS = [
   {
@@ -190,7 +188,7 @@ export const EXPERIENCES = [
     role: 'VP of Web Development',
     company: 'UWaterloo Data Science Club',
     logo: uwdsc,
-    duration: 'Dec 2022 — Present',
+    duration: 'Nov 2022 — Present',
     location: 'Waterloo, ON',
     description: [
       {
