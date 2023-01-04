@@ -19,6 +19,8 @@ module.exports = {
       pink: '#FC00FF',
       cyan: '#1BE4FF',
       red: '#EF8D8D',
+      lightGreen: '#89C66D',
+      darkGreen: '#497763',
       transparent: 'transparent',
     },
     fontSize: {

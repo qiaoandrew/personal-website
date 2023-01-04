@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { useFormik } from 'formik';
 import ID from '../../navigation/ID';
 import Button from '../../UI/Button';
@@ -47,7 +47,7 @@ const validate = (values) => {
 };
 
 function ContactForm() {
-  const router = useRouter();
+  const [submitted, setSubmitted] = useState(false);
 
   const formik = useFormik({
     initialValues: { name: '', email: '', message: '' },
@@ -55,7 +55,7 @@ function ContactForm() {
     onSubmit: (values, actions) => {
       handleSubmit('contact', values);
       actions.resetForm();
-      router.push('/success');
+      setSubmitted(true);
     },
   });
 
@@ -75,10 +75,13 @@ function ContactForm() {
             placeholder="Name"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
+            onFocus={() => setSubmitted(false)}
             value={formik.values.name}
           />
           {formik.errors.name && formik.touched.name && (
-            <p className="text-sm text-red">{formik.errors.name}</p>
+            <p className="text-sm text-red lg:text-base">
+              {formik.errors.name}
+            </p>
           )}
         </div>
         <div className="flex flex-col gap-2.5">
@@ -89,13 +92,16 @@ function ContactForm() {
             placeholder="Email"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
+            onFocus={() => setSubmitted(false)}
             value={formik.values.email}
           />
           {formik.errors.email && formik.touched.email && (
-            <p className="text-sm text-red">{formik.errors.email}</p>
+            <p className="text-sm text-red lg:text-base">
+              {formik.errors.email}
+            </p>
           )}
         </div>
-        <div className="flex flex-col gap-2.5">
+        <div className="flex flex-col gap-2.5 lg:gap-3">
           <TextArea
             id="message"
             name="message"
@@ -104,10 +110,18 @@ function ContactForm() {
             placeholder="Message"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
+            onFocus={() => setSubmitted(false)}
             value={formik.values.message}
           />
           {formik.errors.message && formik.touched.message && (
-            <p className="text-sm text-red">{formik.errors.message}</p>
+            <p className="text-sm text-red lg:text-base">
+              {formik.errors.message}
+            </p>
+          )}
+          {submitted && (
+            <p className="text-sm text-darkGreen dark:text-lightGreen lg:text-base">
+              Success! We will email you back shortly.
+            </p>
           )}
         </div>
       </div>

@@ -7,6 +7,7 @@ export default function Input({
   placeholder,
   onChange,
   onBlur,
+  onFocus,
   value,
 }) {
   return (
@@ -21,6 +22,7 @@ export default function Input({
         placeholder={placeholder}
         onChange={onChange}
         onBlur={onBlur}
+        onFocus={onFocus}
         value={value}
         className="w-full rounded-[7px] bg-beige px-4 py-3 text-base text-black focus:outline-none dark:bg-black dark:text-lightPurple"
       />

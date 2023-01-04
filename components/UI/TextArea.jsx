@@ -7,6 +7,7 @@ export default function TextArea({
   rows,
   onChange,
   onBlur,
+  onFocus,
   value,
 }) {
   return (
@@ -21,6 +22,7 @@ export default function TextArea({
         rows={rows}
         onChange={onChange}
         onBlur={onBlur}
+        onFocus={onFocus}
         value={value}
         className="-mb-1.5 w-full resize-none rounded-[7px] bg-beige px-4 py-3 text-base text-black focus:outline-none dark:bg-black dark:text-lightPurple"
       />
