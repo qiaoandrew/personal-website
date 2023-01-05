@@ -31,9 +31,13 @@ export default function ProjectIntro({ project }) {
           <div
             className={`transition-300 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:group-hover:scale-[1.02] 
             ${project.title === 'Pethsapp' && 'w-[85%] max-w-[375px]'}
-            ${project.title === 'TSAC' && 'w-[150%] max-w-[1000px]'}
             ${project.title === 'CREATE Markham' && 'w-[150%] max-w-[1000px]'}
+            ${project.title === 'TSAC' && 'w-[150%] max-w-[1000px]'}
             ${project.title === 'AVIEW' && 'w-[140%] max-w-[1200px]'}
+            ${
+              project.title === 'UW Data Science Club' &&
+              'w-[120%] max-w-[800px] xs:w-[80%]'
+            }
             `}
           >
             <Image

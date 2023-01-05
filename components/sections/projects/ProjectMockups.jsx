@@ -40,6 +40,16 @@ export default function ProjectMockups({ project }) {
                 ${i === 1 && project.title === 'AVIEW' && 'w-[80%]'}
                 ${i === 0 && project.title === 'TSAC' && 'w-[80%]'}
                 ${i === 1 && project.title === 'TSAC' && 'w-[70%]'}
+                ${
+                  i === 0 &&
+                  project.title === 'UW Data Science Club' &&
+                  'w-[80%]'
+                }
+                ${
+                  i === 1 &&
+                  project.title === 'UW Data Science Club' &&
+                  'w-[98%]'
+                }
               `}
             />
           </div>

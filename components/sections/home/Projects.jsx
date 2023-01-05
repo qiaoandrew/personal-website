@@ -56,11 +56,17 @@ function ProjectCard({ project }) {
       <div
         className={`transition-300 absolute group-hover:scale-[1.01]
         ${
-          project.title === 'Pethsapp' &&
-          'top-1/2 right-[10%] w-[45%] -translate-y-1/2'
+          project.title === 'Pethsapp'
+            ? 'top-1/2 right-[10%] w-[45%] -translate-y-1/2'
+            : ''
         }
-        ${project.title === 'CREATE Markham' && '-top-[5%] w-[110%]'}
-        ${project.title === 'AVIEW' && 'left-[5%] bottom-[10%] w-[130%]'}
+        ${project.title === 'CREATE Markham' ? '-top-[5%] w-[110%]' : ''}
+        ${project.title === 'AVIEW' ? 'left-[5%] bottom-[10%] w-[130%]' : ''}
+        ${
+          project.title === 'UW Data Science Club'
+            ? 'left-[7%] -top-[10%] w-[90%]'
+            : ''
+        }
       `}
       >
         <Image

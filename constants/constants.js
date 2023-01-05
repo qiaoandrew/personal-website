@@ -4,25 +4,29 @@ import pethsapp2Light from '../public/img/mockups/pethsapp-2-light.png';
 import pethsapp2Dark from '../public/img/mockups/pethsapp-2-dark.png';
 import pethsapp3Light from '../public/img/mockups/pethsapp-3-light.png';
 import pethsapp3Dark from '../public/img/mockups/pethsapp-3-dark.png';
-import tsac1Light from '../public/img/mockups/tsac-1-light.png';
-import tsac1Dark from '../public/img/mockups/tsac-1-dark.png';
-import tsac2Light from '../public/img/mockups/tsac-2-light.png';
-import tsac2Dark from '../public/img/mockups/tsac-2-dark.png';
-import tsac3Light from '../public/img/mockups/tsac-3-light.png';
-import tsac3Dark from '../public/img/mockups/tsac-3-dark.png';
+import uwdsc1Light from '../public/img/mockups/uwdsc-1-light.png';
+import uwdsc1Dark from '../public/img/mockups/uwdsc-1-dark.png';
+import uwdsc2Light from '../public/img/mockups/uwdsc-2-light.png';
+import uwdsc2Dark from '../public/img/mockups/uwdsc-2-dark.png';
+import uwdsc3Light from '../public/img/mockups/uwdsc-3-light.png';
+import uwdsc3Dark from '../public/img/mockups/uwdsc-3-dark.png';
 import create1 from '../public/img/mockups/create-1.png';
 import create2 from '../public/img/mockups/create-2.png';
 import create3 from '../public/img/mockups/create-3.png';
 import aview1 from '../public/img/mockups/aview-1.png';
 import aview2 from '../public/img/mockups/aview-2.png';
 import aview3 from '../public/img/mockups/aview-3.png';
+import tsac1Light from '../public/img/mockups/tsac-1-light.png';
+import tsac1Dark from '../public/img/mockups/tsac-1-dark.png';
+import tsac2Light from '../public/img/mockups/tsac-2-light.png';
+import tsac2Dark from '../public/img/mockups/tsac-2-dark.png';
+import tsac3Light from '../public/img/mockups/tsac-3-light.png';
+import tsac3Dark from '../public/img/mockups/tsac-3-dark.png';
 
 import uoft from '../public/img/logos/u-of-t.png';
 import aview from '../public/img/logos/aview.png';
 import uwdsc from '../public/img/logos/uwdsc.png';
 import tsac from '../public/img/logos/tsac.png';
-import create from '../public/img/logos/create.png';
-import utc from '../public/img/logos/utc.png';
 
 export const PROJECTS = [
   {
@@ -72,35 +76,72 @@ export const PROJECTS = [
     ],
   },
   {
-    route: '/projects/create-markham',
-    title: 'CREATE Markham',
+    route: '/projects/uwdsc',
+    title: 'UW Data Science Club',
     type: 'Website',
-    mockups: [create1, create2, create3],
+    mockups: [
+      uwdsc1Light,
+      uwdsc1Dark,
+      uwdsc2Light,
+      uwdsc2Dark,
+      uwdsc3Light,
+      uwdsc3Dark,
+    ],
     description:
-      "As Technology Chairperson of CREATE Markham, I revamped their website using HTML, CSS, and JavaScript to enhance the organization's digital presence.",
+      "As VP of Web Development of the University of Waterloo's Data Science Club, I am leading a team of developers and designers in developing the club's website.",
     summary: [
-      'Website for CREATE Markham, a youth-led non-profit organization based in Markham, Ontario.',
-      'CREATE stands for Cultivating Realistic and Effective Actions Towards Everyone. They host an annual wintertime conference, followed by a summertime outdoors retreat centered around personal growth within the Markham youth.',
-      'Throughout the conference, delegates learn essential leadership, collaboration, and communication skills, preparing them for their future endeavors.',
-      'As Technology Chairperson from 2021-2022, I revamped their website, helping the organization to expand and solidify their digital presence.',
+      "As VP of Web Development of the University of Waterloo's Data Science Club, I am leading a team of developers and designers in developing the club's website.",
+      "The club's goal is to inspire the data science leaders of the future by building an inclusive and supportive student community with the goal of bridging the gap between academics and the industry.",
+      "Through the club's website, students at the University of Waterloo are able to learn more about the club, keep track of upcoming events, and also access a wide variety of data science resoures.",
+      'Currently, I am leading a team consisting of 7 developers and 3 designers in developing and maintaining the website.',
     ],
     points: [
-      { title: 'Developed For', text: 'CREATE Markham' },
+      { title: 'Developed For', text: 'UWaterloo Data Science Club' },
       { title: 'Project Type', text: 'Website' },
       {
         title: 'Technologies',
-        text: 'React.js, Next.js, TypeScript, Tailwind CSS, Firebase, Figma',
+        text: 'React.js, Next.js, Firebase, JavaScript, Figma',
       },
       { title: 'Roles', text: 'Developer, UI/UX Designer' },
     ],
     buttons: [
-      { text: 'Website', link: 'https://createmarkham.ca/' },
+      { text: 'Website', link: 'https://uwdatascience.ca/' },
       {
         text: 'GitHub Repository',
-        link: 'https://github.com/CREATE-Conference/create-website',
+        link: 'https://github.com/uw-datasci/uwdatasci-website',
       },
     ],
   },
+  // {
+  //   route: '/projects/create-markham',
+  //   title: 'CREATE Markham',
+  //   type: 'Website',
+  //   mockups: [create1, create2, create3],
+  //   description:
+  //     "As Technology Chairperson of CREATE Markham, I revamped their website using HTML, CSS, and JavaScript to enhance the organization's digital presence.",
+  //   summary: [
+  //     'Website for CREATE Markham, a youth-led non-profit organization based in Markham, Ontario.',
+  //     'CREATE stands for Cultivating Realistic and Effective Actions Towards Everyone. They host an annual wintertime conference, followed by a summertime outdoors retreat centered around personal growth within the Markham youth.',
+  //     'Throughout the conference, delegates learn essential leadership, collaboration, and communication skills, preparing them for their future endeavors.',
+  //     'As Technology Chairperson from 2021-2022, I revamped their website, helping the organization to expand and solidify their digital presence.',
+  //   ],
+  //   points: [
+  //     { title: 'Developed For', text: 'CREATE Markham' },
+  //     { title: 'Project Type', text: 'Website' },
+  //     {
+  //       title: 'Technologies',
+  //       text: 'React.js, Next.js, TypeScript, Tailwind CSS, Firebase, Figma',
+  //     },
+  //     { title: 'Roles', text: 'Developer, UI/UX Designer' },
+  //   ],
+  //   buttons: [
+  //     { text: 'Website', link: 'https://createmarkham.ca/' },
+  //     {
+  //       text: 'GitHub Repository',
+  //       link: 'https://github.com/CREATE-Conference/create-website',
+  //     },
+  //   ],
+  // },
   {
     route: '/projects/aview',
     title: 'AVIEW',

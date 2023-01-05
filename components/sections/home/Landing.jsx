@@ -30,7 +30,7 @@ export default function Landing() {
         <a href="https://www.aviewint.com" target="_blank" rel="noreferrer">
           <span className="gradient-text gradient-aview">AVIEW</span>
         </a>
-        , and Research Intern @&nbsp;
+        , and Research Assistant @&nbsp;
         <span className="gradient-text gradient-uoft dark:gradient-uoft-dark">
           University of Toronto
         </span>
