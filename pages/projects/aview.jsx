@@ -10,7 +10,7 @@ export default function AVIEW() {
         description="As Technology Chairperson on my high school's student council during my senior year, I revamped the council's website using React.js, Next.js, and Firebase."
         keywords="TSAC,Pierre Elliott Trudeau High School,Next.js,Firebase,Andrew Qiao"
       />
-      <ProjectPage idx={2} />
+      <ProjectPage idx={3} />
       <Footer />
     </>
   );

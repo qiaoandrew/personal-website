@@ -16,12 +16,12 @@ import create3 from '../public/img/mockups/create-3.png';
 import aview1 from '../public/img/mockups/aview-1.png';
 import aview2 from '../public/img/mockups/aview-2.png';
 import aview3 from '../public/img/mockups/aview-3.png';
-import tsac1Light from '../public/img/mockups/tsac-1-light.png';
-import tsac1Dark from '../public/img/mockups/tsac-1-dark.png';
-import tsac2Light from '../public/img/mockups/tsac-2-light.png';
-import tsac2Dark from '../public/img/mockups/tsac-2-dark.png';
-import tsac3Light from '../public/img/mockups/tsac-3-light.png';
-import tsac3Dark from '../public/img/mockups/tsac-3-dark.png';
+// import tsac1Light from '../public/img/mockups/tsac-1-light.png';
+// import tsac1Dark from '../public/img/mockups/tsac-1-dark.png';
+// import tsac2Light from '../public/img/mockups/tsac-2-light.png';
+// import tsac2Dark from '../public/img/mockups/tsac-2-dark.png';
+// import tsac3Light from '../public/img/mockups/tsac-3-light.png';
+// import tsac3Dark from '../public/img/mockups/tsac-3-dark.png';
 
 import uoft from '../public/img/logos/u-of-t.png';
 import aview from '../public/img/logos/aview.png';
@@ -112,36 +112,36 @@ export const PROJECTS = [
       },
     ],
   },
-  // {
-  //   route: '/projects/create-markham',
-  //   title: 'CREATE Markham',
-  //   type: 'Website',
-  //   mockups: [create1, create2, create3],
-  //   description:
-  //     "As Technology Chairperson of CREATE Markham, I revamped their website using HTML, CSS, and JavaScript to enhance the organization's digital presence.",
-  //   summary: [
-  //     'Website for CREATE Markham, a youth-led non-profit organization based in Markham, Ontario.',
-  //     'CREATE stands for Cultivating Realistic and Effective Actions Towards Everyone. They host an annual wintertime conference, followed by a summertime outdoors retreat centered around personal growth within the Markham youth.',
-  //     'Throughout the conference, delegates learn essential leadership, collaboration, and communication skills, preparing them for their future endeavors.',
-  //     'As Technology Chairperson from 2021-2022, I revamped their website, helping the organization to expand and solidify their digital presence.',
-  //   ],
-  //   points: [
-  //     { title: 'Developed For', text: 'CREATE Markham' },
-  //     { title: 'Project Type', text: 'Website' },
-  //     {
-  //       title: 'Technologies',
-  //       text: 'React.js, Next.js, TypeScript, Tailwind CSS, Firebase, Figma',
-  //     },
-  //     { title: 'Roles', text: 'Developer, UI/UX Designer' },
-  //   ],
-  //   buttons: [
-  //     { text: 'Website', link: 'https://createmarkham.ca/' },
-  //     {
-  //       text: 'GitHub Repository',
-  //       link: 'https://github.com/CREATE-Conference/create-website',
-  //     },
-  //   ],
-  // },
+  {
+    route: '/projects/create-markham',
+    title: 'CREATE Markham',
+    type: 'Website',
+    mockups: [create1, create2, create3],
+    description:
+      "As Technology Chairperson of CREATE Markham, I revamped their website using React.js, Next.js, Firebase, and Tailwind CSS to enhance the organization's digital presence.",
+    summary: [
+      'Website for CREATE Markham, a youth-led non-profit organization based in Markham, Ontario.',
+      'CREATE stands for Cultivating Realistic and Effective Actions Towards Everyone. They host an annual wintertime conference, followed by a summertime outdoors retreat centered around personal growth within the Markham youth.',
+      'Throughout the conference, delegates learn essential leadership, collaboration, and communication skills, preparing them for their future endeavors.',
+      'As Technology Chairperson from 2021-2022, I revamped their website, helping the organization to expand and solidify their digital presence.',
+    ],
+    points: [
+      { title: 'Developed For', text: 'CREATE Markham' },
+      { title: 'Project Type', text: 'Website' },
+      {
+        title: 'Technologies',
+        text: 'React.js, Next.js, TypeScript, Tailwind CSS, Firebase, Figma',
+      },
+      { title: 'Roles', text: 'Developer, UI/UX Designer' },
+    ],
+    buttons: [
+      { text: 'Website', link: 'https://createmarkham.ca/' },
+      {
+        text: 'GitHub Repository',
+        link: 'https://github.com/CREATE-Conference/create-website',
+      },
+    ],
+  },
   {
     route: '/projects/aview',
     title: 'AVIEW',
@@ -172,37 +172,37 @@ export const PROJECTS = [
       },
     ],
   },
-  {
-    route: '/projects/tsac',
-    title: 'TSAC',
-    type: 'Website',
-    mockups: [
-      tsac1Light,
-      tsac1Dark,
-      tsac2Light,
-      tsac2Dark,
-      tsac3Light,
-      tsac3Dark,
-    ],
-    description:
-      "As Technology Chairperson on my high school's student council during my senior year of high school, I revamped the council's website using Next.js and Firebase.",
-    summary: [
-      "Website developed for Pierre Elliott Trudeau High School's Student Activities Council (TSAC).",
-      "TSAC is Pierre Elliott Trudeau High School's student council and represents the student body and makes decisions on its behalf.",
-      "Using TSAC's website, students are able to learn about the council and the school, including its clubs, external opportunities, and more.",
-      "As Technology Chairperson during my senior year in high school, my role was the enhance the school's technologies including our school app and student council website.",
-    ],
-    points: [
-      { title: 'Developed For', text: 'TSAC' },
-      { title: 'Project Type', text: 'Website' },
-      {
-        title: 'Technologies',
-        text: 'React.js, Next.js, JavaScript, Firebase, Figma',
-      },
-      { title: 'Roles', text: 'Developer, UI/UX Designer' },
-    ],
-    buttons: [{ text: 'Website', link: 'https://tsac.ca/' }],
-  },
+  // {
+  //   route: '/projects/tsac',
+  //   title: 'TSAC',
+  //   type: 'Website',
+  //   mockups: [
+  //     tsac1Light,
+  //     tsac1Dark,
+  //     tsac2Light,
+  //     tsac2Dark,
+  //     tsac3Light,
+  //     tsac3Dark,
+  //   ],
+  //   description:
+  //     "As Technology Chairperson on my high school's student council during my senior year of high school, I revamped the council's website using Next.js and Firebase.",
+  //   summary: [
+  //     "Website developed for Pierre Elliott Trudeau High School's Student Activities Council (TSAC).",
+  //     "TSAC is Pierre Elliott Trudeau High School's student council and represents the student body and makes decisions on its behalf.",
+  //     "Using TSAC's website, students are able to learn about the council and the school, including its clubs, external opportunities, and more.",
+  //     "As Technology Chairperson during my senior year in high school, my role was the enhance the school's technologies including our school app and student council website.",
+  //   ],
+  //   points: [
+  //     { title: 'Developed For', text: 'TSAC' },
+  //     { title: 'Project Type', text: 'Website' },
+  //     {
+  //       title: 'Technologies',
+  //       text: 'React.js, Next.js, JavaScript, Firebase, Figma',
+  //     },
+  //     { title: 'Roles', text: 'Developer, UI/UX Designer' },
+  //   ],
+  //   buttons: [{ text: 'Website', link: 'https://tsac.ca/' }],
+  // },
 ];
 
 export const EXPERIENCES = [
