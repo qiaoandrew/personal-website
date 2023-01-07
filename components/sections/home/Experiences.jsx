@@ -65,7 +65,7 @@ function ExperienceCard({ experience }) {
           'right-[-10%] bottom-[-10%] w-[60%]'
         }
         ${
-          experience.company === 'PETHS Student Council' &&
+          experience.company === 'Pierre Elliott Trudeau HS Student Council' &&
           'right-[-10%] bottom-[-5%] w-[50%]'
         }
         ${

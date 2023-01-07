@@ -271,7 +271,7 @@ export const EXPERIENCES = [
   },
   {
     role: 'Technology Chair',
-    company: 'PETHS Student Council',
+    company: 'Pierre Elliott Trudeau HS Student Council',
     logo: tsac,
     duration: 'Sept 2021 — Jun 2022',
     location: 'Markham, ON',
