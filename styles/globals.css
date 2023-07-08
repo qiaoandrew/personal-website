@@ -27,7 +27,7 @@ html {
 }
 
 @layer components {
-  .m-horizontal {
+  .mx-horizontal {
     @apply mx-3 3xs:mx-5 xs:mx-7 sm:mx-9 xl:mx-16 3xl:mx-auto 3xl:max-w-[1280px];
   }
 
@@ -39,58 +39,51 @@ html {
     @apply inline bg-clip-text text-transparent;
   }
 
-  .dark-gradient-1 {
-    @apply bg-gradient-to-tr from-purple via-black to-purple;
+  .dark-main-gradient {
+    @apply bg-gradient-to-tr from-purple3 via-black to-purple3;
   }
 
-  .light-gradient-1 {
-    @apply bg-gradient-to-tr from-purple via-beige to-purple;
+  .light-main-gradient {
+    @apply bg-gradient-to-tr from-purple3 via-beige to-purple3;
   }
 
-  .dark-gardient-card {
-    @apply bg-gradient-to-t from-translucentLightPurple to-transparent;
+  .dark-card-gradient {
+    @apply bg-gradient-to-t from-purple1 to-transparent;
   }
 
-  .light-gradient-card {
-    @apply bg-gradient-to-t from-translucentDarkPurple to-transparent;
+  .light-card-gradient {
+    @apply bg-gradient-to-t from-purple4 to-transparent;
   }
 
-  .gradient-project-light {
-    @apply bg-gradient-to-tr from-[#f6f6ff] via-beige to-[#f6f6ff];
-  }
-
-  .gradient-project-dark {
+  .dark-project-gradient {
     @apply bg-gradient-to-tr from-[#2D2F53] via-black to-[#2D2F53];
   }
 
-  .gradient-uwaterloo {
+  .light-project-gradient {
+    @apply bg-gradient-to-tr from-[#f6f6ff] via-beige to-[#f6f6ff];
+  }
+
+  .dark-uwaterloo-gradient {
     @apply bg-gradient-to-tr from-yellow via-black to-yellow;
   }
 
-  .gradient-uwaterloo-dark {
+  .light-uwaterloo-gradient {
     @apply bg-gradient-to-tr from-yellow via-beige to-yellow;
   }
 
-  .gradient-uoft {
+  .dark-uoft-gradient {
     @apply bg-gradient-to-tr from-blue via-black to-blue;
   }
 
-  .gradient-uoft-dark {
+  .light-uoft-gradient {
     @apply bg-gradient-to-tr from-blue via-beige to-blue;
   }
 
-  .filter-purple {
-    filter: invert(85%) sepia(9%) saturate(911%) hue-rotate(198deg)
-      brightness(105%) contrast(97%);
+  .dark-td-gradient {
+    @apply bg-gradient-to-tr from-lightGreen via-black to-lightGreen;
   }
 
-  .filter-dark-purple {
-    filter: invert(32%) sepia(50%) saturate(512%) hue-rotate(195deg)
-      brightness(87%) contrast(84%);
-  }
-
-  .filter-black {
-    filter: invert(5%) sepia(7%) saturate(4967%) hue-rotate(198deg)
-      brightness(93%) contrast(90%);
+  .light-td-gradient {
+    @apply bg-gradient-to-tr from-darkGreen via-beige to-darkGreen;
   }
 }
