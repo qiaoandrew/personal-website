@@ -1,0 +1,15 @@
+export const COLORS = {
+  black: '#161724',
+  beige: '#F7F7F1',
+  purple1: 'rgba(221,225,251,0.7)',
+  purple2: '#DDE1FB',
+  purple3: '#B4BEFF',
+  purple4: 'rgba(77,84,132,0.7)',
+  purple5: '#4D5484',
+  yellow: '#E3B429',
+  blue: '#68ADFF',
+  red: '#EF8D8D',
+  lightGreen: '#89C66D',
+  darkGreen: '#497763',
+  transparent: 'transparent',
+};
