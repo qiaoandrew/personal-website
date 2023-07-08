@@ -48,11 +48,11 @@ html {
   }
 
   .dark-card-gradient {
-    @apply bg-gradient-to-t from-purple1 to-transparent;
+    @apply bg-gradient-to-t from-purple4 to-transparent;
   }
 
   .light-card-gradient {
-    @apply bg-gradient-to-t from-purple4 to-transparent;
+    @apply bg-gradient-to-t from-purple1 to-transparent;
   }
 
   .dark-project-gradient {
