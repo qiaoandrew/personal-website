@@ -19,7 +19,9 @@ function ThemeInitialState({ children }: Props) {
 
   useEffect(() => {
     const theme = window.localStorage.getItem('theme');
-    if (theme) dispatch(setTheme(theme));
+    if (theme) {
+      dispatch(setTheme(theme));
+    }
   }, [dispatch]);
 
   return <>{children}</>;

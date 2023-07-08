@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     borderRadius: {
       '2xs': '4px',
@@ -53,6 +54,18 @@ module.exports = {
       '10xl': '56px',
       '11xl': '60px',
       '12xl': '64px',
+      '13xl': '72px',
+      '14xl': '76px',
+      '15xl': '80px',
+      '16xl': '84px',
+      '17xl': '88px',
+      '18xl': '92px',
+      '19xl': '96px',
+      '20xl': '100px',
+      '21xl': '104px',
+      '22xl': '108px',
+      '23xl': '112px',
+      '24xl': '118px',
     },
     screens: {
       '3xs': '300px',
@@ -67,7 +80,17 @@ module.exports = {
       '4xl': '1600px',
       '5xl': '1800px',
     },
-    extend: {},
+    extend: {
+      spacing: {
+        0.25: '1px',
+        1.25: '5px',
+        4.5: '18px',
+        5.5: '22px',
+        26: '104px',
+        30: '120px',
+        38: '152px',
+      },
+    },
   },
   plugins: [],
 };

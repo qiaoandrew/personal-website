@@ -27,7 +27,7 @@ html {
 }
 
 @layer components {
-  .mx-horizontal {
+  .mx-container {
     @apply mx-3 3xs:mx-5 xs:mx-7 sm:mx-9 xl:mx-16 3xl:mx-auto 3xl:max-w-[1280px];
   }
 
