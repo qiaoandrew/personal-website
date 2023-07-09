@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { ArrowRight } from 'react-feather';
 
 import GradientBorder from '@/components/UI/GradientBorder';
+import Chip from '@/components/UI/Chip';
 
 import { RootState } from '@/store/store';
 import { COLORS } from '@/constants/colors';
@@ -43,28 +44,8 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           {experience.company}
         </p>
         <div className='relative z-20 mb-3 hidden flex-wrap gap-3 3xs:flex xs:mb-4 xs:gap-4 sm:mb-5 md:mb-3 lg:mb-4 2xl:mb-6 2xl:gap-5'>
-          <GradientBorder
-            borderRadius='rounded-full'
-            borderColor='dark:light-main-gradient dark-main-gradient'
-            classes='inline-block'
-          >
-            <div className='transition-300 inline-block rounded-full bg-beige px-3 py-1.5 last:mr-0 dark:bg-black xs:px-4 md:px-3 md:py-1.5 xl:px-4'>
-              <p className='transition-300 text-xs text-purple5 dark:text-purple2 xs:text-sm md:text-xs xl:text-sm'>
-                {experience.date}
-              </p>
-            </div>
-          </GradientBorder>
-          <GradientBorder
-            borderRadius='rounded-full'
-            borderColor='dark:light-main-gradient dark-main-gradient'
-            classes='inline-block'
-          >
-            <div className='transition-300 inline-block rounded-full bg-beige px-3 py-1.5 last:mr-0 dark:bg-black xs:px-4 md:px-3 md:py-1.5 xl:px-4'>
-              <p className='transition-300 text-xs text-purple5 dark:text-purple2 xs:text-sm md:text-xs xl:text-sm'>
-                {experience.location}
-              </p>
-            </div>
-          </GradientBorder>
+          <Chip>{experience.date}</Chip>
+          <Chip>{experience.location}</Chip>
         </div>
         <div className='relative z-20 grid gap-2 3xs:grid-cols-[repeat(2,auto)] xs:gap-3 md:gap-2 lg:gap-3 xl:gap-4'>
           {experience.description.map((point, i) => (

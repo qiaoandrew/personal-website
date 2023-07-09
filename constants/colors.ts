@@ -9,7 +9,7 @@ export const COLORS = {
   yellow: '#E3B429',
   blue: '#68ADFF',
   red: '#EF8D8D',
-  lightGreen: '#89C66D',
-  darkGreen: '#497763',
+  green1: '#89C66D',
+  green2: '#497763',
   transparent: 'transparent',
 };

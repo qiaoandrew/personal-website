@@ -80,10 +80,10 @@ html {
   }
 
   .dark-td-gradient {
-    @apply bg-gradient-to-tr from-lightGreen via-black to-lightGreen;
+    @apply from-green1 to-green1 bg-gradient-to-tr via-black;
   }
 
   .light-td-gradient {
-    @apply bg-gradient-to-tr from-darkGreen via-beige to-darkGreen;
+    @apply bg-gradient-to-tr from-green2 via-beige to-green2;
   }
 }

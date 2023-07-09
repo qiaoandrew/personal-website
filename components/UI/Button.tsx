@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import GradientBorder from './GradientBorder';
 
 type ButtonProps = {
   type: 'route' | 'link' | 'button' | 'submit';

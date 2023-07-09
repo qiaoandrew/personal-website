@@ -4,9 +4,10 @@ import { useFormik } from 'formik';
 import ID from '@/components/navigation/ID';
 import TextInput from '@/components/UI/TextInput';
 import TextArea from '@/components/UI/TextArea';
+import Button from '@/components/UI/Button';
+import InputFeedback from '@/components/UI/InputFeedback';
 
 import { handleSubmit, validateContactForm } from '@/util/form';
-import Button from '@/components/UI/Button';
 
 export default function Contact() {
   const [success, setSuccess] = useState(false);
@@ -55,7 +56,7 @@ export default function Contact() {
           data-netlify='true'
         >
           <div className='mb-10 flex flex-col gap-5 3xs:mb-12 3xs:gap-6 xl:mb-16 xl:gap-8'>
-            <div className='flex flex-col gap-2.5 lg:gap-3'>
+            <div>
               <TextInput
                 id='name'
                 name='name'
@@ -67,12 +68,12 @@ export default function Contact() {
                 value={formik.values.name}
               />
               {formik.errors.name && formik.touched.name && (
-                <p className='text-sm text-red lg:text-md'>
+                <InputFeedback state='error'>
                   {formik.errors.name}
-                </p>
+                </InputFeedback>
               )}
             </div>
-            <div className='flex flex-col gap-2.5 lg:gap-3'>
+            <div>
               <TextInput
                 id='email'
                 name='email'
@@ -84,12 +85,12 @@ export default function Contact() {
                 value={formik.values.email}
               />
               {formik.errors.email && formik.touched.email && (
-                <p className='text-sm text-red lg:text-md'>
+                <InputFeedback state='error'>
                   {formik.errors.email}
-                </p>
+                </InputFeedback>
               )}
             </div>
-            <div className='flex flex-col gap-2.5 lg:gap-3'>
+            <div>
               <TextArea
                 id='message'
                 name='message'
@@ -101,19 +102,20 @@ export default function Contact() {
                 value={formik.values.message}
               />
               {formik.errors.message && formik.touched.message && (
-                <p className='text-sm text-red lg:text-md'>
+                <InputFeedback state='error'>
                   {formik.errors.message}
-                </p>
+                </InputFeedback>
               )}
               {success && (
-                <p className='text-sm text-darkGreen dark:text-lightGreen lg:text-md'>
-                  Success! I will get back to you ASAP!
-                </p>
+                <InputFeedback state='success'>
+                  Message sent successfully! I&apos;ll get back to you as soon
+                  as possible.
+                </InputFeedback>
               )}
               {error && (
-                <p className='text-sm text-red lg:text-md'>
+                <InputFeedback state='error'>
                   Oops! Something went wrong. Please try again.
-                </p>
+                </InputFeedback>
               )}
             </div>
           </div>
