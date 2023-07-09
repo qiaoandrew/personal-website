@@ -4,6 +4,10 @@ import investrack1 from '@/public/img/mockups/investrack-1.png';
 import remax1 from '@/public/img/mockups/remax-1.png';
 import pethsapp1 from '@/public/img/mockups/pethsapp-1.png';
 import pethsapp2 from '@/public/img/mockups/pethsapp-2.png';
+import pethsapp3 from '@/public/img/mockups/pethsapp-3.png';
+import pethsapp4 from '@/public/img/mockups/pethsapp-4.png';
+import pethsapp5 from '@/public/img/mockups/pethsapp-5.png';
+import pethsapp6 from '@/public/img/mockups/pethsapp-6.png';
 import uwdsc1 from '@/public/img/mockups/uwdsc-1.png';
 import uwdsc2 from '@/public/img/mockups/uwdsc-2.png';
 
@@ -26,7 +30,7 @@ export const PROJECTS: Project[] = [
     ],
     roles: [],
     links: [],
-    mockups: [investrack1],
+    mockups: [investrack1, investrack1, investrack1],
   },
   {
     id: 'remax',
@@ -45,7 +49,7 @@ export const PROJECTS: Project[] = [
     ],
     roles: [],
     links: [],
-    mockups: [remax1],
+    mockups: [remax1, remax1, remax1],
   },
   {
     id: 'pethsapp',
@@ -80,7 +84,7 @@ export const PROJECTS: Project[] = [
         url: 'https://play.google.com/store/apps/details?id=com.trudeausac.pethsapp&hl=en_CA&gl=US',
       },
     ],
-    mockups: [pethsapp1, pethsapp2],
+    mockups: [pethsapp1, pethsapp2, pethsapp3, pethsapp4, pethsapp5, pethsapp6],
   },
   {
     id: 'uwdsc',
@@ -100,6 +104,6 @@ export const PROJECTS: Project[] = [
     summary: [],
     roles: [],
     links: [],
-    mockups: [uwdsc1, uwdsc2],
+    mockups: [uwdsc1, uwdsc2, uwdsc1, uwdsc1, uwdsc1, uwdsc1],
   },
 ];

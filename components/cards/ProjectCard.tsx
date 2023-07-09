@@ -41,16 +41,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <Image
             src={
               theme === 'light'
-                ? project.mockups[0]
-                : project.mockups.length === 6
-                ? project.mockups[1]
+                ? project.mockups.length === 6
+                  ? project.mockups[1]
+                  : project.mockups[0]
                 : project.mockups[0]
             }
             priority
             alt={project.title}
           />
         </div>
-        <div className='dark-card-gradient dark:light-gradient-card absolute inset-0 z-10' />
+        <div className='light-card-gradient dark:dark-card-gradient absolute inset-0 z-10' />
       </Link>
     </GradientBorder>
   );

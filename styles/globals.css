@@ -52,7 +52,7 @@ html {
   }
 
   .light-card-gradient {
-    @apply bg-gradient-to-t from-purple1 to-transparent;
+    @apply bg-gradient-to-t from-purple2 to-transparent;
   }
 
   .dark-project-gradient {
@@ -80,7 +80,7 @@ html {
   }
 
   .dark-td-gradient {
-    @apply from-green1 to-green1 bg-gradient-to-tr via-black;
+    @apply bg-gradient-to-tr from-green1 via-black to-green1;
   }
 
   .light-td-gradient {
