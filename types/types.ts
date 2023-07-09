@@ -13,6 +13,7 @@ export type Project = {
     label: string;
     url: string;
   }[];
+  mockups: StaticImageData[];
 };
 
 export type Experience = {
