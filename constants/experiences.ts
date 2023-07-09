@@ -15,11 +15,11 @@ export const EXPERIENCES: Experience[] = [
     logo: tdLogo,
     description: [
       {
-        lg: "Implementing financial analytics software using React.js and Redux to help the firm's Portfolio Managers manage $421B+ in client assets",
+        lg: "Implementing responsive and intuitive financial analytics software using React.js and Redux to help the firm's Portfolio Managers manage $421B+ in client assets",
         sm: 'Implementing financial analytics software using React.js and Redux in aiding Portfolio Managers',
       },
       {
-        lg: 'Leveraging Django, Python, Pandas, and SQL to build financial data pipelines and automate the generation of client reports',
+        lg: 'Leveraging Django, Python, Pandas, and SQL to build financial data pipelines in automating client reports',
         sm: 'Building data pipelines and automating client reports using Django, Python, Pandas, and SQL',
       },
       {
