@@ -11,7 +11,7 @@ export default function Header() {
       <div className='transition-300 flex items-center justify-between rounded-full bg-transparent px-2 py-3 backdrop-blur-md 3xs:px-3 3xs:py-4 xs:px-5 xl:-mx-6 xl:px-6'>
         <Link
           href='/'
-          className='gradient-text dark-main-gradient dark:light-main-gradient font-medium md:text-sm 2xl:text-base'
+          className='gradient-text dark-main-gradient dark:light-main-gradient font-medium md:text-sm 2xl:text-md'
         >
           Andrew Qiao
         </Link>

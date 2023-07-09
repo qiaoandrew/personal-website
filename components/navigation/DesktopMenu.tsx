@@ -4,7 +4,7 @@ import { ROUTES } from '@/constants/routes';
 
 export default function DesktopMenu() {
   const linkClasses =
-    'transition-300 text-sm font-[450] text-black hover:text-purple5 dark:text-purple2 dark:hover:text-beige 2xl:text-base';
+    'transition-300 text-sm font-[450] text-black hover:text-purple5 dark:text-purple2 dark:hover:text-beige 2xl:text-md';
 
   return (
     <nav className='hidden gap-14 xl:flex 2xl:gap-16'>
