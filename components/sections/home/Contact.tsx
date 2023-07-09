@@ -44,7 +44,7 @@ export default function Contact() {
               Let&apos;s get in touch.
             </span>
           </h2>
-          <p className='transition-300 mb-6 max-w-[600px] text-black dark:text-purple2 3xs:mb-8 lg:mb-10 lg:text-lg xl:mb-0 2xl:text-xl'>
+          <p className='transition-300 mb-6 max-w-[600px] leading-loose text-black dark:text-purple2 3xs:mb-8 lg:mb-10 lg:text-lg xl:mb-0 2xl:text-xl'>
             Have a question, new opportunity, or just want to have a quick chat?
             Feel free to send me a message.
           </p>

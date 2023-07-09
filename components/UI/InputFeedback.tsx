@@ -5,7 +5,11 @@ type InputFeedbackProps = {
 
 export default function InputFeedback({ state, children }: InputFeedbackProps) {
   return (
-    <p className={`mt-3 ${state === 'error' ? 'text-red' : 'text-green2'}`}>
+    <p
+      className={`mt-3 md:mt-5 ${
+        state === 'error' ? 'text-red' : 'text-green2'
+      }`}
+    >
       {children}
     </p>
   );
