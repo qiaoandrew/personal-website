@@ -119,7 +119,9 @@ export default function Contact() {
               )}
             </div>
           </div>
-          <Button type='submit'>Let&apos;s Chat!</Button>
+          <Button type='submit' classes='w-full sm:w-auto'>
+            Let&apos;s Chat!
+          </Button>
         </form>
       </div>
     </section>

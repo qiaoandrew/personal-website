@@ -20,7 +20,7 @@ export default function Button({
   route,
   link,
   onClick,
-  text = 'text-purple5 dark:text-purple3',
+  text = 'text-black dark:text-purple2',
   font = 'font-medium',
   bg = 'bg-beige dark:bg-black',
   padding = 'px-6 py-4',
