@@ -35,7 +35,7 @@ export default function TextInput({
         onBlur={onBlur}
         onFocus={onFocus}
         value={value}
-        className='w-full rounded-md bg-beige p-5 text-md text-black focus:outline-none dark:bg-black dark:text-purple2'
+        className='transition-300 w-full rounded-md bg-beige p-5 text-md text-black focus:outline-none dark:bg-black dark:text-purple2'
       />
     </GradientBorder>
   );

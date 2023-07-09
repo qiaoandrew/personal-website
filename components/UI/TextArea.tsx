@@ -35,7 +35,7 @@ export default function TextArea({
         onBlur={onBlur}
         onFocus={onFocus}
         value={value}
-        className='-mb-1.5 w-full resize-none rounded-md bg-beige p-5 text-md text-black focus:outline-none dark:bg-black dark:text-purple2'
+        className='transition-300 -mb-1.5 w-full resize-none rounded-md bg-beige p-5 text-md text-black focus:outline-none dark:bg-black dark:text-purple2'
       />
     </GradientBorder>
   );

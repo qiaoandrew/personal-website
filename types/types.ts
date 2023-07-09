@@ -3,6 +3,16 @@ import { StaticImageData } from 'next/image';
 export type Project = {
   id: string;
   title: string;
+  description: string;
+  summary: string[];
+  developedFor?: string;
+  projectType: string;
+  techStack: string[];
+  roles: string[];
+  links: {
+    label: string;
+    url: string;
+  }[];
 };
 
 export type Experience = {
