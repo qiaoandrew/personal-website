@@ -28,12 +28,16 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
         <Image
           src={experience.logo}
           alt={experience.company}
-          className={`absolute z-0 opacity-30 dark:opacity-40 
+          className={`absolute z-0 
         ${
           experience.id === 'uoft'
             ? 'right-[-12%] top-[60%] w-[60%] -translate-y-1/2'
             : 'bottom-[-5%] right-[-5%] w-[60%]'
-        }`}
+        } ${
+            experience.id === 'stealth'
+              ? 'opacity-40 dark:opacity-100'
+              : 'opacity-70 dark:opacity-40'
+          }`}
         />
         <h3 className='relative z-20 mb-1 text-xl font-[550] xs:mb-1.5 xs:text-2xl sm:mb-2 sm:text-3xl md:mb-1.5 md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl'>
           <span className='gradient-text dark-main-gradient dark:light-main-gradient'>
@@ -56,11 +60,11 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
                 className='transition-300'
               />
               <p
-                className='transition-300 text-sm text-black dark:text-purple2 xs:text-md sm:hidden md:block md:text-sm xl:hidden'
+                className='transition-300 text-sm leading-normal text-black dark:text-purple2 xs:text-md sm:hidden md:block md:text-sm xl:hidden'
                 dangerouslySetInnerHTML={{ __html: point.sm }}
               />
               <p
-                className='transition-300 hidden text-sm text-black dark:text-purple2 xs:text-md sm:block md:hidden md:text-sm xl:block xl:text-md'
+                className='transition-300 hidden text-sm leading-relaxed text-black dark:text-purple2 xs:text-md sm:block md:hidden md:text-sm xl:block xl:text-md'
                 dangerouslySetInnerHTML={{ __html: point.lg }}
               />
             </Fragment>

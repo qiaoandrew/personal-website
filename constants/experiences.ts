@@ -15,16 +15,16 @@ export const EXPERIENCES: Experience[] = [
     logo: tdLogo,
     description: [
       {
-        lg: "Implementing portfolio analytics software to help the firm's Portfolio Managers manage $421B+ in client assets",
-        sm: 'Developing and designing applications embedded with AI models such as GPT-3',
+        lg: "Implementing portfolio analytics software using React.js and Redux to help the firm's Portfolio Managers manage $421B+ in client assets",
+        sm: 'Implementing portfolio analytics software using React.js and Redux in aiding Portfolio Managers',
       },
       {
-        lg: "Studying the impact of AI in the workforce alongside Dr. Meena Andiappan's team of researchers",
-        sm: "Studying AI's workplace impact alongside Dr. Meena Andiappan's research team",
+        lg: 'Leveraging Django, Python, Pandas, and SQL to build financial data pipelines and automate the generation of client reports',
+        sm: 'Building data pipelines and automating client reports using Django, Python, Pandas, and SQL',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Django, Python, Pandas, SQL, Redux, Celery, JavaScript, JIRA',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Django, Python, Pandas, SQL, Redux, Celery, JavaScript, JIRA',
       },
     ],
   },
@@ -37,16 +37,16 @@ export const EXPERIENCES: Experience[] = [
     logo: stealthLogo,
     description: [
       {
-        lg: "Implementing portfolio analytics software to help the firm's Portfolio Managers manage $421B+ in client assets",
-        sm: 'Developing and designing applications embedded with AI models such as GPT-3',
+        lg: 'Reimagining the way healthcare providers interact with their patients through an innovative data-driven application',
+        sm: 'Reimaging doctor and patient interactions through an innovative data-driven application',
       },
       {
-        lg: "Studying the impact of AI in the workforce alongside Dr. Meena Andiappan's team of researchers",
-        sm: "Studying AI's workplace impact alongside Dr. Meena Andiappan's research team",
+        lg: 'Preparing pitches to investors and healthcare professionals in raising seed funding and expanding our product',
+        sm: 'Preparing investor pitches and raising seed funding to expand our product',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firestore, Firebase Auth, Tailwind CSS, Python, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firestore, Firebase Auth, Tailwind CSS, Python, Figma',
       },
     ],
   },
@@ -63,12 +63,12 @@ export const EXPERIENCES: Experience[] = [
         sm: 'Developing and designing applications embedded with AI models such as GPT-3',
       },
       {
-        lg: "Studying the impact of AI in the workforce alongside Dr. Meena Andiappan's team of researchers",
-        sm: "Studying AI's workplace impact alongside Dr. Meena Andiappan's research team",
+        lg: 'Networking with organizations like Solana University and Waterloo Blockchain to deliver a hackthon and events to 1000+ students',
+        sm: 'Networking with organizations in delivering a hackathon and events to 1000+ students',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Node.js, Firebase Auth, Realtime Database, Tailwind CSS, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Node.js, Firebase Auth, Realtime Database, Tailwind CSS, Figma',
       },
     ],
   },
@@ -81,12 +81,12 @@ export const EXPERIENCES: Experience[] = [
     logo: uoftLogo,
     description: [
       {
-        lg: "Implementing portfolio analytics software to help the firm's Portfolio Managers manage $421B+ in client assets",
-        sm: 'Developing and designing applications embedded with AI models such as GPT-3',
+        lg: 'Spearheaded development of a full stack application to integrate AI models into a research study with 500+ participants',
+        sm: 'Developed a full stack application integrating AI models into a study with 500+ participants',
       },
       {
-        lg: "Studying the impact of AI in the workforce alongside Dr. Meena Andiappan's team of researchers",
-        sm: "Studying AI's workplace impact alongside Dr. Meena Andiappan's research team",
+        lg: "Part of a university-partnered collaboration with OpenAI, study's first manuscript accepted into the European Group of Organizational Studies (EGOS)",
+        sm: 'Part of a university-partnered collaboration with OpenAI',
       },
       {
         lg: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',

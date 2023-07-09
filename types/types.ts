@@ -5,7 +5,7 @@ export type Project = {
   title: string;
   description: string;
   summary: string[];
-  developedFor?: string;
+  developedFor: string;
   projectType: string;
   techStack: string[];
   roles: string[];
