@@ -14,7 +14,7 @@ export default function Footer() {
       icon: (
         <Linkedin
           size={24}
-          color={theme === 'light' ? COLORS.purple4 : COLORS.purple2}
+          color={theme === 'light' ? COLORS.purple5 : COLORS.purple2}
           className='transition-300'
         />
       ),
@@ -25,7 +25,7 @@ export default function Footer() {
       icon: (
         <GitHub
           size={24}
-          color={theme === 'light' ? COLORS.purple4 : COLORS.purple2}
+          color={theme === 'light' ? COLORS.purple5 : COLORS.purple2}
           className='transition-300'
         />
       ),
@@ -36,7 +36,7 @@ export default function Footer() {
       icon: (
         <Instagram
           size={24}
-          color={theme === 'light' ? COLORS.purple4 : COLORS.purple2}
+          color={theme === 'light' ? COLORS.purple5 : COLORS.purple2}
           className='transition-300'
         />
       ),
@@ -61,7 +61,7 @@ export default function Footer() {
           </a>
         </div>
         <div className='flex gap-4'>
-          {SOCIALS.map((social, i) => (
+          {SOCIALS.map((social) => (
             <a
               href={social.url}
               target='_blank'

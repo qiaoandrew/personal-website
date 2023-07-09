@@ -33,9 +33,9 @@ export default function Hero({ project }: HeroProps) {
           <div
             className={`transition-300 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:group-hover:scale-[1.02] 
             ${project.id === 'investrack' && 'w-[130%] max-w-[900px]'}
-            ${project.id === 'remax' && 'w-[150%] max-w-[1200px]'}
+            ${project.id === 'remax' && 'w-[150%] max-w-[1240px]'}
             ${project.id === 'pethsapp' ? 'w-[85%] max-w-[375px]' : ''}
-            ${project.id === 'uwdsc' && 'w-[120%] max-w-[800px] xs:w-[80%]'}
+            ${project.id === 'uwdsc' && 'w-[120%] max-w-[1200px]'}
             `}
           >
             <Image
