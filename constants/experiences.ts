@@ -15,8 +15,8 @@ export const EXPERIENCES: Experience[] = [
     logo: tdLogo,
     description: [
       {
-        lg: "Implementing portfolio analytics software using React.js and Redux to help the firm's Portfolio Managers manage $421B+ in client assets",
-        sm: 'Implementing portfolio analytics software using React.js and Redux in aiding Portfolio Managers',
+        lg: "Implementing financial analytics software using React.js and Redux to help the firm's Portfolio Managers manage $421B+ in client assets",
+        sm: 'Implementing financial analytics software using React.js and Redux in aiding Portfolio Managers',
       },
       {
         lg: 'Leveraging Django, Python, Pandas, and SQL to build financial data pipelines and automate the generation of client reports',
@@ -59,8 +59,8 @@ export const EXPERIENCES: Experience[] = [
     logo: uwdscLogo,
     description: [
       {
-        lg: "Implementing portfolio analytics software to help the firm's Portfolio Managers manage $421B+ in client assets",
-        sm: 'Developing and designing applications embedded with AI models such as GPT-3',
+        lg: "Leading 4 developers and 2 designers in a comprehensive revamping of the club's website, resulting in 10K+ impressions.",
+        sm: 'Leading a team in revamping the club website, resulting in 10K+ impressions',
       },
       {
         lg: 'Networking with organizations like Solana University and Waterloo Blockchain to deliver a hackthon and events to 1000+ students',

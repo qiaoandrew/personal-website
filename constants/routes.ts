@@ -4,5 +4,5 @@ export const ROUTES = [
   { link: '/#experience', text: 'Experience' },
   { link: '/#about', text: 'About' },
   { link: '/#contact', text: 'Contact' },
-  { link: '/resume.pdf', text: 'Resume' },
+  // { link: '/resume.pdf', text: 'Resume' },
 ];
