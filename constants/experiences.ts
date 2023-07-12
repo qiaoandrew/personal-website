@@ -45,8 +45,8 @@ export const EXPERIENCES: Experience[] = [
         sm: 'Preparing investor pitches and raising seed funding to expand our product',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firestore, Firebase Auth, Tailwind CSS, Python, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firestore, Firebase Auth, Tailwind CSS, Python, Figma',
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firestore, Firebase Auth, Cloud Storage, Tailwind CSS, Python, Stripe, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firebase, Tailwind CSS, Python, Stripe, Figma',
       },
     ],
   },
