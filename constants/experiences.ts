@@ -63,8 +63,8 @@ export const EXPERIENCES: Experience[] = [
         sm: 'Leading a team in revamping the club website, resulting in 10K+ impressions',
       },
       {
-        lg: 'Networking with organizations like Solana University and Waterloo Blockchain to deliver a hackthon and events to 1000+ students',
-        sm: 'Networking with organizations in delivering a hackathon and events to 1000+ students',
+        lg: 'Networking with organizations like Solana University and Waterloo Blockchain to deliver a hackathon and events to 400+ students',
+        sm: 'Networking with organizations in delivering a hackathon and events to 400+ students',
       },
       {
         lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Node.js, Firebase Auth, Realtime Database, Tailwind CSS, Figma',
