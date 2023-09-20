@@ -26,11 +26,15 @@ export default function Hero() {
         <span className='gradient-text dark-uwaterloo-gradient dark:light-uwaterloo-gradient'>
           University of Waterloo
         </span>
-        &nbsp;and a Portfolio Analytics Developer @&nbsp;
+        . Previously, I&apos;ve worked at @&nbsp;
         <span className='gradient-text dark-td-gradient dark:light-td-gradient'>
           TD Bank
         </span>
-        . Here&apos;s some of my work.
+        ,{' '}
+        <span className='gradient-text dark-uoft-gradient dark:light-uoft-gradient'>
+          University of Toronto
+        </span>
+        , and&nbsp; RE/MAX . Here&apos;s some of my work.
       </p>
     </section>
   );

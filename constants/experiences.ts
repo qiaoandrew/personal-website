@@ -8,7 +8,7 @@ import uwdscLogo from '@/public/img/logos/uwdsc.png';
 export const EXPERIENCES: Experience[] = [
   {
     id: 'td',
-    title: 'Portfolio Analytics Developer',
+    title: 'Software Developer Intern',
     company: 'TD Bank',
     location: 'Toronto, ON',
     date: 'May 2023 - Present',
