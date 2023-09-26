@@ -74,7 +74,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: 'uoft',
-    title: 'AI Research Assistant',
+    title: 'Research Engineer Intern',
     company: 'University of Toronto',
     location: 'Toronto, ON',
     date: 'Oct 2022 - Present',
