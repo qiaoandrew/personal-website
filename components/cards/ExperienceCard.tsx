@@ -55,12 +55,11 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           {experience.description.map((point, i) => (
             <Fragment key={`point-${i}`}>
               <ArrowRight
-                size={24}
                 color={theme === 'light' ? COLORS.purple5 : COLORS.purple2}
-                className='transition-300'
+                className='transition-300 w-4 xs:w-5 xl:w-6'
               />
               <p
-                className='transition-300 text-sm leading-normal text-black dark:text-purple2 xs:text-md sm:hidden md:block md:text-sm xl:hidden'
+                className='transition-300 mt-0.5 text-sm leading-normal text-black dark:text-purple2 xs:text-md sm:hidden md:block md:text-sm xl:hidden'
                 dangerouslySetInnerHTML={{ __html: point.sm }}
               />
               <p

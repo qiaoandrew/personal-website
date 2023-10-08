@@ -15,16 +15,16 @@ export const EXPERIENCES: Experience[] = [
     logo: tdLogo,
     description: [
       {
-        lg: "Implementing responsive and intuitive financial analytics software using React.js and Redux to help the firm's Portfolio Managers manage $421B+ in client assets",
-        sm: 'Implementing financial analytics software using React.js and Redux in aiding Portfolio Managers',
+        lg: 'Engineered scalable financial data pipelines and distributed systems, saving 5+ hours a week and increasing tool speed by 67%',
+        sm: 'Engineered scalable financial data pipelines and distributed systems',
       },
       {
-        lg: 'Leveraging Django, Python, Pandas, and SQL to build financial data pipelines in automating client reports',
-        sm: 'Building data pipelines and automating client reports using Django, Python, Pandas, and SQL',
+        lg: 'Developed performant web applications and microservices for the risk management of $421B+ in client assets',
+        sm: 'Developed performant web applications for the risk management of $421B+ in assets',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> React.js, Django, Python, Pandas, SQL, Redux, Celery, JavaScript, JIRA',
-        sm: '<span class="font-medium">Technologies Used:</span> React.js, Django, Python, Pandas, SQL, Redux, Celery, JavaScript, JIRA',
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Microsoft Azure, Django, Python, NumPy, Pandas, SQL, Celery, JavaScript, JIRA',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Microsoft Azure, Django, Python, SQL, JavaScript',
       },
     ],
   },
@@ -37,16 +37,16 @@ export const EXPERIENCES: Experience[] = [
     logo: stealthLogo,
     description: [
       {
-        lg: 'Reimagining the way healthcare providers interact with their patients through an innovative data-driven application',
-        sm: 'Reimaging doctor and patient interactions through an innovative data-driven application',
+        lg: 'Reimagining the way healthcare providers interact with their patients through an innovative data-driven platform',
+        sm: 'Reimaging doctor-patient interaction through an innovative data-driven platform',
       },
       {
         lg: 'Preparing pitches to investors and healthcare professionals in raising seed funding and expanding our product',
         sm: 'Preparing investor pitches and raising seed funding to expand our product',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firestore, Firebase Auth, Cloud Storage, Tailwind CSS, Python, Stripe, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Firebase, Tailwind CSS, Python, Stripe, Figma',
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Google Cloud, Firebase, TypeScript, Stripe, Tailwind CSS, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Googld Cloud, TypeScript, Stripe',
       },
     ],
   },
@@ -59,16 +59,16 @@ export const EXPERIENCES: Experience[] = [
     logo: uwdscLogo,
     description: [
       {
-        lg: "Leading 4 developers and 2 designers in a comprehensive revamping of the club's website, resulting in 10K+ impressions.",
-        sm: 'Leading a team in revamping the club website, resulting in 10K+ impressions',
+        lg: "Leading a team of 4 developers in revamping the club's website, resulting in 15K+ Google search impressions.",
+        sm: 'Leading a team in revamping the club website, resulting in 15K+ impressions',
       },
       {
-        lg: 'Networking with organizations like Solana University and Waterloo Blockchain to deliver a hackathon and events to 400+ students',
-        sm: 'Networking with organizations in delivering a hackathon and events to 400+ students',
+        lg: 'Integrating an automated sponsorship flow, resulting in connections with 5+ potential sponsors',
+        sm: 'Integrating an automated sponsorship flow, connecting with 5+ potential sponsors',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Node.js, Firebase Auth, Realtime Database, Tailwind CSS, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Node.js, Firebase Auth, Realtime Database, Tailwind CSS, Figma',
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Node.js, TypeScript, Google Cloud, Firebase, Tailwind CSS, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Node.js, TypeScript, Google Cloud, Firebase',
       },
     ],
   },
@@ -81,16 +81,16 @@ export const EXPERIENCES: Experience[] = [
     logo: uoftLogo,
     description: [
       {
-        lg: 'Spearheaded development of a full stack application to integrate AI models into a research study with 500+ participants',
-        sm: 'Developed a full stack application integrating AI models into a study with 500+ participants',
+        lg: 'Supervised by Dr. Meena Andiappan and Dr. Gillian Hadfield in investigating the impact of AI in the workplace',
+        sm: 'Supervised by Dr. Meena Andiappan in studying the impact of AI in the workplace',
       },
       {
-        lg: "Part of a university-partnered collaboration with OpenAI, study's first manuscript accepted into the European Group of Organizational Studies (EGOS)",
-        sm: 'Part of a university-partnered collaboration with OpenAI',
+        lg: 'Deployed an AI-powered survey platform for 500+ participants as part of a university-partnered collaboration with OpenAI',
+        sm: 'Deployed an AI platform for 500+ users as part of a partnered study with OpenAI',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Firebase, Tailwind CSS, Figma',
+        lg: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Google Cloud, Firebase, Tailwind CSS, Figma',
+        sm: '<span class="font-medium">Technologies Used:</span> OpenAI API, React.js, Next.js, Google Cloud, Firebase',
       },
     ],
   },
