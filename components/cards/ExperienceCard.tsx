@@ -31,21 +31,19 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           className={`absolute z-0 
         ${
           experience.id === 'uoft'
-            ? 'right-[-12%] top-[60%] w-[60%] -translate-y-1/2'
-            : 'bottom-[-5%] right-[-5%] w-[60%]'
-        } ${
-            experience.id === 'stealth'
-              ? 'opacity-40 dark:opacity-100'
-              : 'opacity-70 dark:opacity-40'
+            ? 'right-[-12%] top-[60%] -translate-y-1/2'
+            : 'bottom-[-5%] right-[-5%]'
+        } ${experience.id === 'uhn' ? 'w-[55%]' : 'w-[60%]'} ${
+            theme === 'light' ? 'opacity-60' : 'opacity-30'
           }`}
         />
         <h3 className='relative z-20 mb-1 text-xl font-[550] xs:mb-1.5 xs:text-2xl sm:mb-2 sm:text-3xl md:mb-1.5 md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl'>
           <span className='gradient-text dark-main-gradient dark:light-main-gradient'>
-            {experience.title}
+            {experience.company}
           </span>
         </h3>
         <p className='transition-300 relative z-20 mb-3 text-sm italic text-purple5 dark:text-purple2 xs:mb-4 xs:text-md sm:mb-5 sm:text-lg md:mb-3 md:text-sm lg:mb-4 xl:mb-5 xl:text-md 2xl:text-lg'>
-          {experience.company}
+          {experience.title}
         </p>
         <div className='relative z-20 mb-3 hidden flex-wrap gap-3 3xs:flex xs:mb-4 xs:gap-4 sm:mb-5 md:mb-3 lg:mb-4 2xl:mb-6 2xl:gap-5'>
           <Chip>{experience.date}</Chip>

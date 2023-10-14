@@ -2,51 +2,29 @@ import { Experience } from '@/types/types';
 
 import tdLogo from '@/public/img/logos/td.png';
 import uoftLogo from '@/public/img/logos/uoft.png';
-import stealthLogo from '@/public/img/logos/stealth.png';
 import uwdscLogo from '@/public/img/logos/uwdsc.png';
+import uhnLogo from '@/public/img/logos/uhn.png';
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: 'td',
+    id: 'uhn',
     title: 'Software Developer Intern',
-    company: 'TD Bank',
+    company: 'University Health Network',
     location: 'Toronto, ON',
-    date: 'May 2023 - Present',
-    logo: tdLogo,
+    date: 'Oct 2023 - Present',
+    logo: uhnLogo,
     description: [
       {
-        lg: 'Engineered scalable financial data pipelines and distributed systems, saving 5+ hours a week and increasing tool speed by 67%',
-        sm: 'Engineered scalable financial data pipelines and distributed systems',
+        lg: 'Evaluating AI effectiveness in diagnosing 100+ health conditions through a platform integrated with GPT-4V',
+        sm: 'Evaluating AI effectiveness in diagnosing 100+ health conditions',
       },
       {
-        lg: 'Developed performant web applications and microservices for the risk management of $421B+ in client assets',
-        sm: 'Developed performant web applications for the risk management of $421B+ in assets',
+        lg: "Assisting 8 clinicians at Canada's largest research hospital in generating actionable insights by analyzing model outputs",
+        sm: 'Assisting 8 clinicians in generating actionable insights through model outputs',
       },
       {
-        lg: '<span class="font-medium">Technologies Used:</span> React.js, Microsoft Azure, Django, Python, NumPy, Pandas, SQL, Celery, JavaScript, JIRA',
-        sm: '<span class="font-medium">Technologies Used:</span> React.js, Microsoft Azure, Django, Python, SQL, JavaScript',
-      },
-    ],
-  },
-  {
-    id: 'stealth',
-    title: 'Co-Founder',
-    company: 'Stealth Startup',
-    location: 'Toronto, ON',
-    date: 'May 2023 - Present',
-    logo: stealthLogo,
-    description: [
-      {
-        lg: 'Reimagining the way healthcare providers interact with their patients through an innovative data-driven platform',
-        sm: 'Reimaging doctor-patient interaction through an innovative data-driven platform',
-      },
-      {
-        lg: 'Preparing pitches to investors and healthcare professionals in raising seed funding and expanding our product',
-        sm: 'Preparing investor pitches and raising seed funding to expand our product',
-      },
-      {
-        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Google Cloud, Firebase, TypeScript, Stripe, Tailwind CSS, Figma',
-        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Googld Cloud, TypeScript, Stripe',
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Google Cloud, Firebase, TypeScript, Python, Tailwind CSS',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Next.js, Google Cloud, Firebase, TypeScript, Python',
       },
     ],
   },
@@ -55,7 +33,7 @@ export const EXPERIENCES: Experience[] = [
     title: 'VP of Development',
     company: 'UWaterloo Data Science Club',
     location: 'Waterloo, ON',
-    date: 'Dec 2022 - Present',
+    date: 'Oct 2022 - Present',
     logo: uwdscLogo,
     description: [
       {
@@ -73,6 +51,29 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    id: 'td',
+    title: 'Software Developer Intern',
+    company: 'TD Bank',
+    location: 'Toronto, ON',
+    date: 'May 2023 - Aug 2023',
+    logo: tdLogo,
+    description: [
+      {
+        lg: 'Developed a distributed system to defer portfolio model recalculations using Celery and Python, saving 10+ hours a week',
+        sm: 'Developed a system to defer portfolio model recalculations, saving 10+ hours a week',
+      },
+      {
+        lg: 'Automated trade report generation using Django and SQL, removing 5+ hours a week of repetitive data entry',
+        sm: 'Automated trade report generation, removing 5+ hours a week of data entry',
+      },
+      {
+        lg: '<span class="font-medium">Technologies Used:</span> React.js, Microsoft Azure, Django, Python, NumPy, Pandas, SQL, Celery, JavaScript, JIRA',
+        sm: '<span class="font-medium">Technologies Used:</span> React.js, Microsoft Azure, Django, Python, SQL, JavaScript',
+      },
+    ],
+  },
+
+  {
     id: 'uoft',
     title: 'Research Engineer Intern',
     company: 'University of Toronto',
@@ -81,8 +82,8 @@ export const EXPERIENCES: Experience[] = [
     logo: uoftLogo,
     description: [
       {
-        lg: 'Supervised by Dr. Meena Andiappan and Dr. Gillian Hadfield in investigating the impact of AI in the workplace',
-        sm: 'Supervised by Dr. Meena Andiappan in studying the impact of AI in the workplace',
+        lg: "Supervised by Dr. M. Andiappan and Dr. G. Hadfield in investigating AI's impact on the workforce",
+        sm: "Supervised by Dr. M. Andiappan in investigating AI's impact on the workforce",
       },
       {
         lg: 'Deployed an AI-powered survey platform for 500+ participants as part of a university-partnered collaboration with OpenAI',
