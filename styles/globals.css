@@ -86,4 +86,8 @@ html {
   .light-td-gradient {
     @apply bg-gradient-to-tr from-green2 via-beige to-green2;
   }
+
+  .uhn-gradient {
+    @apply bg-gradient-to-tr from-blue via-beige to-blue;
+  }
 }
