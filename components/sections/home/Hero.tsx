@@ -26,7 +26,7 @@ export default function Hero() {
         <span className='gradient-text dark-uwaterloo-gradient dark:light-uwaterloo-gradient'>
           University of Waterloo
         </span>
-        . I&apos;ve worked at @&nbsp;
+        . I&apos;ve worked at
         <span className='gradient-text dark-td-gradient dark:light-td-gradient'>
           TD Bank
         </span>{' '}
