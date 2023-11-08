@@ -26,7 +26,7 @@ export default function Hero() {
         <span className='gradient-text dark-uwaterloo-gradient dark:light-uwaterloo-gradient'>
           University of Waterloo
         </span>
-        . I&apos;ve worked at
+        . I&apos;ve worked @&nbsp;
         <span className='gradient-text dark-td-gradient dark:light-td-gradient'>
           TD Bank
         </span>{' '}
@@ -34,8 +34,11 @@ export default function Hero() {
         <span className='gradient-text dark-uoft-gradient dark:light-uoft-gradient'>
           University of Toronto
         </span>
-        , and <span className='gradient-text uhn-gradient'>UHN</span>.
-        Here&apos;s some of my work.
+        , and{' '}
+        <span className='gradient-text dark-uoft-gradient dark:light-uoft-gradient'>
+          UHN
+        </span>
+        . Here&apos;s some of my work.
       </p>
     </section>
   );
