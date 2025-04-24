@@ -4,8 +4,8 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
-import GradientText from "~/components/effects/GradientText";
 import { cn } from "~/utils/tailwind";
+import GradientText from "~/components/effects/GradientText";
 import MobileMobileToggle from "~/components/navigation/MobileMenuToggle";
 import MobileMenu from "~/components/navigation/MobileMenu";
 

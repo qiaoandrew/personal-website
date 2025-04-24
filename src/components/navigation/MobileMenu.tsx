@@ -1,6 +1,6 @@
+import { HEADER_MENU } from "~/constants/navigation";
 import _Link from "~/components/ui/_Link";
 import { ScrollArea } from "~/components/ui/ScrollArea";
-import { HEADER_MENU } from "~/constants/navigation";
 
 interface MobileMenuProps {
   setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
