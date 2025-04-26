@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "next-themes";
+import { GeistMono } from "geist/font/mono";
 
 import "~/styles/globals.css";
 import Header from "~/components/navigation/Header";
-import { ThemeProvider } from "next-themes";
-import { GeistMono } from "geist/font/mono";
+import Spotlight from "~/components/effects/Spotlight";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -27,6 +28,7 @@ export default function RootLayout({
           disableTransitionOnChange
           enableSystem={false}
         >
+          <Spotlight />
           <Header />
           {children}
         </ThemeProvider>
