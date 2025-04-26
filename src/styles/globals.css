@@ -106,6 +106,7 @@
   --radius-3: 0.75rem;
   --radius-3_5: 0.875rem;
   --radius-4: 1rem;
+  --radius-4_5: 1.125rem;
   --radius-5: 1.25rem;
   --radius-6: 1.5rem;
   --radius-7: 1.75rem;
@@ -200,6 +201,7 @@
     --highlight: 0 0% 98%;
 
     --gradient-foreground: 90deg, #000 0%, #8f8f8f 100%;
+    --gradient-border: 45deg, #c5cad1 0%, #202225 50%, #c5cad1 100%;
     --gradient-spotlight:
       68.54% 68.72% at 55.02% 31.46%, hsla(0, 0%, 85%, 0.08) 0,
       hsla(0, 0%, 55%, 0.02) 50%, hsla(0, 0%, 45%, 0) 80%;
@@ -249,6 +251,7 @@
     --highlight: 240 3% 7%;
 
     --gradient-foreground: 90deg, #e4e4e4 0%, #919191 100%;
+    --gradient-border: 45deg, #232528 0%, #cbd2dc 50%, #232528 100%;
     --gradient-spotlight:
       68.54% 68.72% at 55.02% 31.46%, hsla(0, 0%, 85%, 0.08) 0,
       hsla(0, 0%, 55%, 0.02) 50%, hsla(0, 0%, 45%, 0) 80%;

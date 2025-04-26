@@ -3,7 +3,14 @@ import { cn } from "~/utils/tailwind";
 
 export default function Hero() {
   return (
-    <section className={cn("mx-container mt-21 mb-9", "sm:mt-24", "xl:mt-34")}>
+    <section
+      className={cn(
+        "mx-container mt-21 mb-9",
+        "sm:mt-24",
+        "md:mb-12",
+        "xl:mt-34 xl:mb-16",
+      )}
+    >
       <h1
         className={cn(
           "font-display text-8 max-w-[318px] leading-11 font-semibold",
