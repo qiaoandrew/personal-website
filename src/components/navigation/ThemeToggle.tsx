@@ -14,7 +14,7 @@ export default function ThemeToggle() {
       variant="ghost"
       subject="icon"
       size="sm"
-      className="text-muted-foreground [&_svg]:size-4.5"
+      className="text-muted-foreground xl:bg-background xl:border [&_svg]:size-4.5"
     >
       <Icon />
     </Button>

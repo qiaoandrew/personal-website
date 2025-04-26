@@ -1,5 +1,6 @@
 export type HeaderMenuItem = {
   id: string;
-  label: string;
   href: string;
+  label: string;
+  subItems: { id: string; href: string; label: string; description: string }[];
 };

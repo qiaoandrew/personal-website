@@ -8,8 +8,8 @@ interface MobileMenuProps {
 
 export default function MobileMenu({ setIsMobileMenuOpen }: MobileMenuProps) {
   return (
-    <ScrollArea className="h-full xl:hidden">
-      <nav className="flex flex-col gap-y-8 px-3 py-6">
+    <ScrollArea className="grow xl:hidden">
+      <nav className="flex flex-col gap-y-6 px-3 pt-6 pb-3">
         {HEADER_MENU.map((item) => (
           <_Link
             href={item.href}
