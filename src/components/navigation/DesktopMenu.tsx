@@ -1,6 +1,6 @@
 import { HEADER_MENU } from "~/constants/navigation";
-import _Link from "~/components/ui/_Link";
 import type { HeaderMenuItem } from "~/types/navigation";
+import _Link from "~/components/ui/_Link";
 
 interface DesktopMenuProps {
   setActiveDesktopMenuSubItems: React.Dispatch<

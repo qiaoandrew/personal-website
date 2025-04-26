@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "~/styles/globals.css";
 import Header from "~/components/navigation/Header";
 import { ThemeProvider } from "next-themes";
+import { GeistMono } from "geist/font/mono";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -14,12 +15,16 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="bg-background text-foreground font-sans antialiased">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`scroll-smooth ${GeistMono.className}`}
+    >
+      <body className="\bg-background text-foreground font-sans antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          disableTransitionOnChange={true}
+          disableTransitionOnChange
           enableSystem={false}
         >
           <Header />
