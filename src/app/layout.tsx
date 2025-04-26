@@ -21,7 +21,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`scroll-smooth ${GeistMono.className}`}
     >
-      <body className="\bg-background text-foreground font-sans antialiased">
+      <body className="bg-background text-foreground font-sans antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
