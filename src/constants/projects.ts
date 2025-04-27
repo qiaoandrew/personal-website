@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
   {
     id: "pethsapp",
     title: "Pethsapp",
-    href: "/projects/pethsapp",
+    href: "https://www.tsac.ca/pethsapp",
     type: "Mobile App",
   },
   {
@@ -17,13 +17,13 @@ export const PROJECTS: Project[] = [
     id: "quadratic-ui",
     title: "quadratic/ui",
     href: "https://www.quadratic-ui.com",
-    type: "Component Library",
+    type: "UI Library",
   },
 
   {
     id: "coming-soon",
     title: "Coming soon...",
     href: "#",
-    type: "Working on something new and fun!",
+    type: "TBD",
   },
 ];

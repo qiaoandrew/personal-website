@@ -40,7 +40,7 @@ export default function Header() {
     <header
       onMouseLeave={() => setActiveDesktopMenuSubItems([])}
       className={cn(
-        "rounded-2.5 border-border/50 bg-highlight/80 fixed inset-x-3 top-3 flex flex-col border backdrop-blur-sm transition-[height]",
+        "rounded-2.5 border-border/50 bg-highlight/80 fixed inset-x-3 top-3 z-50 flex flex-col border backdrop-blur-sm transition-[height] duration-100",
         "xl:inset-x-9 xl:top-6",
         "2xl:inset-x-[calc((100vw-1112px)/2)]",
         isMobileMenuOpen ? "h-[calc(100dvh-1.5rem)]" : "h-11",
