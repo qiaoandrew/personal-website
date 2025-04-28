@@ -22,7 +22,7 @@ export default function ExperienceCard({
       <hr className="md:text-ring hidden md:my-4.5 md:block md:flex-grow" />
       <div className="flex grow flex-col gap-4 md:w-[420px]">
         <div className="flex items-start justify-between">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 md:gap-1.5">
             <h3 className="text-6 font-display md:text-7 font-semibold">
               {company}
             </h3>

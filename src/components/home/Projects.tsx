@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section
       className={cn(
-        "mx-container mb-24 grid gap-y-6",
+        "mx-container mb-24 grid gap-6",
         "md:grid-cols-2 md:pb-9",
         "xl:mb-40 xl:gap-12",
       )}

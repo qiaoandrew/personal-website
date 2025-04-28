@@ -11,7 +11,7 @@ export default function Experiences() {
       <h2
         className={cn(
           "font-display text-7 mb-5 font-semibold",
-          "xl:text-10 xl:mb-6",
+          "xl:text-10 xl:mb-7",
         )}
       >
         <GradientText>Experiences</GradientText>
