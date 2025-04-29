@@ -11,15 +11,23 @@ export default function About() {
   return (
     <section className={cn("mx-container mb-24", "xl:mb-40")}>
       <ID id="about" />
-      <div className="mx-auto max-w-110 md:max-w-145">
+      <div className={cn("mx-auto max-w-110", "md:max-w-145")}>
         <Image
           src={headshot}
           alt="Andrew Qiao"
           width={160}
           height={160}
-          className="mx-auto mb-8 size-30 rounded-full md:mb-12 md:size-40"
+          className={cn(
+            "mx-auto mb-8 size-30 rounded-full",
+            "md:mb-12 md:size-40",
+          )}
         />
-        <p className="font-display text-4 md:text-4.5 mx-auto mb-12 whitespace-pre-line md:mb-16">
+        <p
+          className={cn(
+            "font-display text-4 text-foreground/80 mx-auto mb-12 leading-7 whitespace-pre-line",
+            "md:text-4.5 md:mb-16 md:leading-8",
+          )}
+        >
           {ABOUT}
         </p>
         <div className="flex justify-stretch sm:justify-center">

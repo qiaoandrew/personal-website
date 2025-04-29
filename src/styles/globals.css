@@ -206,6 +206,7 @@
       180deg, rgba(230, 230, 230, 0) 0%, rgba(230, 230, 230, 0) 50%,
       #e6e6e6 100%;
     --gradient-button: 180deg, #f7f7f7 0%, #f7f7f7 50%, #dfdfdf 100%;
+    --gradient-contact: 180deg, #f3f3f3 0%, #fff 100%;
     --gradient-spotlight:
       68.54% 68.72% at 55.02% 31.46%, hsla(0, 0%, 85%, 0.08) 0,
       hsla(0, 0%, 55%, 0.02) 50%, hsla(0, 0%, 45%, 0) 80%;
@@ -259,6 +260,7 @@
     --gradient-card:
       180deg, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 0) 50%, #0f0f0f 100%;
     --gradient-button: 0deg, #2a2a2a 0%, #09090b 50%, #09090b 100%;
+    --gradient-contact: 180deg, #0f0f0f 0%, rgba(15, 15, 15, 0) 100%;
     --gradient-spotlight:
       68.54% 68.72% at 55.02% 31.46%, hsla(0, 0%, 85%, 0.08) 0,
       hsla(0, 0%, 55%, 0.02) 50%, hsla(0, 0%, 45%, 0) 80%;
