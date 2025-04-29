@@ -1,4 +1,4 @@
-import type { HeaderMenuItem } from "~/types/navigation";
+import type { FooterMenuItem, HeaderMenuItem } from "~/types/navigation";
 
 export const HEADER_MENU: HeaderMenuItem[] = [
   { id: "home", label: "Home", href: "/", subItems: [] },
@@ -40,4 +40,12 @@ export const HEADER_MENU: HeaderMenuItem[] = [
   { id: "about", label: "About", href: "/#about", subItems: [] },
   { id: "contact", label: "Contact", href: "/#contact", subItems: [] },
   { id: "resume", label: "Resume", href: "/resume.pdf", subItems: [] },
+];
+
+export const FOOTER_MENU: FooterMenuItem[] = [
+  {
+    id: "landing",
+    label: "Landing",
+    subItems: [],
+  },
 ];
