@@ -12,7 +12,7 @@ export default function SocialButtons() {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground bg-linear-(--gradient-button) transition-colors [&>svg]:size-4.5"
+              className="bg-linear-(--gradient-button) transition-colors [&>svg]:size-4.5"
             >
               <social.Icon />
             </a>
