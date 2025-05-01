@@ -13,7 +13,6 @@ export const EXPERIENCES: Experience[] = [
     location: "Menlo Park, CA",
     points: ["🖥️ UI Platform"],
     icon: snowflakeLogo,
-    buttons: [],
   },
   {
     id: "snowflake-2",
@@ -23,7 +22,6 @@ export const EXPERIENCES: Experience[] = [
     location: "Canada (Remote)",
     points: ["✨ Copilot, Notebooks"],
     icon: snowflakeLogo,
-    buttons: [],
   },
   {
     id: "snowflake-1",
@@ -33,7 +31,6 @@ export const EXPERIENCES: Experience[] = [
     location: "Bellevue, WA",
     points: ["📊 Streamlit in Snowflake"],
     icon: snowflakeLogo,
-    buttons: [],
   },
   {
     id: "ibm",
@@ -43,7 +40,6 @@ export const EXPERIENCES: Experience[] = [
     location: "Toronto, ON",
     points: ["💬 Generative AI"],
     icon: ibmLogo,
-    buttons: [],
   },
   {
     id: "td",
@@ -53,7 +49,6 @@ export const EXPERIENCES: Experience[] = [
     location: "Toronto, ON",
     points: ["📈 Portfolio Analytics"],
     icon: tdLogo,
-    buttons: [],
   },
   {
     id: "uoft",
@@ -63,6 +58,5 @@ export const EXPERIENCES: Experience[] = [
     location: "Toronto, ON",
     points: ["🤖 AI Alignment"],
     icon: uoftLogo,
-    buttons: [],
   },
 ];
