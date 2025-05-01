@@ -25,7 +25,6 @@ export default function Experiences() {
             location={experience.location}
             points={experience.points}
             icon={experience.icon}
-            buttons={experience.buttons}
             key={experience.id}
           />
         ))}

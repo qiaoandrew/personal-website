@@ -11,22 +11,23 @@ export default function ExperienceCard({
   location,
   points,
   icon,
-  buttons,
 }: ExperienceCardProps) {
   return (
     <div className="flex items-start gap-7">
       <div className="hidden w-50 md:block">
         <p className="font-display text-5 leading-9 font-semibold">{date}</p>
-        <p className="font-display text-foreground/80 text-4.5">{location}</p>
+        <p className="font-display text-foreground/80 text-4.5 font-medium">
+          {location}
+        </p>
       </div>
       <hr className="md:text-ring hidden md:my-4.5 md:block md:flex-grow" />
       <div className="flex grow flex-col gap-4 md:w-[420px]">
         <div className="flex items-start justify-between">
-          <div className="flex flex-col gap-1.5">
+          <div className="flex flex-col gap-2.5">
             <h3 className="text-6 font-display md:text-7 font-semibold">
               {company}
             </h3>
-            <p className="font-display text-3.5 text-muted-foreground md:text-4.5 font-medium">
+            <p className="font-display text-4 text-muted-foreground md:text-4.5 font-medium">
               {position}
             </p>
           </div>
@@ -38,7 +39,7 @@ export default function ExperienceCard({
           {points.map((point) => (
             <li
               dangerouslySetInnerHTML={{ __html: point }}
-              className="text-3.5 text-foreground/80 md:text-4"
+              className="text-foreground/80 text-4"
               key={point}
             />
           ))}

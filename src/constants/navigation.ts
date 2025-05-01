@@ -1,7 +1,16 @@
+import {
+  BriefcaseIcon,
+  FileText,
+  HomeIcon,
+  MonitorIcon,
+  PhoneIcon,
+  UserRoundIcon,
+} from "lucide-react";
+
 import type { FooterMenuItem, HeaderMenuItem } from "~/types/navigation";
 
 export const HEADER_MENU: HeaderMenuItem[] = [
-  { id: "home", label: "Home", href: "/", subItems: [] },
+  { id: "home", label: "Home", href: "/", subItems: [], Icon: HomeIcon },
   {
     id: "projects",
     label: "Projects",
@@ -35,11 +44,36 @@ export const HEADER_MENU: HeaderMenuItem[] = [
         description: "Working on something new and fun!",
       },
     ],
+    Icon: MonitorIcon,
   },
-  { id: "experience", label: "Experience", href: "/#experience", subItems: [] },
-  { id: "about", label: "About", href: "/#about", subItems: [] },
-  { id: "contact", label: "Contact", href: "/#contact", subItems: [] },
-  { id: "resume", label: "Resume", href: "/resume.pdf", subItems: [] },
+  {
+    id: "experience",
+    label: "Experience",
+    href: "/#experience",
+    subItems: [],
+    Icon: BriefcaseIcon,
+  },
+  {
+    id: "about",
+    label: "About",
+    href: "/#about",
+    subItems: [],
+    Icon: UserRoundIcon,
+  },
+  {
+    id: "contact",
+    label: "Contact",
+    href: "/#contact",
+    subItems: [],
+    Icon: PhoneIcon,
+  },
+  {
+    id: "resume",
+    label: "Resume",
+    href: "/resume.pdf",
+    subItems: [],
+    Icon: FileText,
+  },
 ];
 
 export const FOOTER_MENU: FooterMenuItem[] = [

@@ -1,8 +1,11 @@
+import type { LucideIcon } from "lucide-react";
+
 export type HeaderMenuItem = {
   id: string;
   href: string;
   label: string;
   subItems: HeaderMenuSubItem[];
+  Icon: LucideIcon;
 };
 
 export type FooterMenuItem = {

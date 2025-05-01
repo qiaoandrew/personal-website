@@ -9,7 +9,6 @@ export type Experience = {
   location: string;
   points: string[];
   icon: StaticImageData;
-  buttons: ExperienceButton[];
 };
 
 export type ExperienceButton = {
