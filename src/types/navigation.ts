@@ -2,7 +2,7 @@ export type HeaderMenuItem = {
   id: string;
   href: string;
   label: string;
-  subItems: SubItem[];
+  subItems: HeaderMenuSubItem[];
 };
 
 export type FooterMenuItem = {
@@ -15,5 +15,8 @@ export type SubItem = {
   id: string;
   href: string;
   label: string;
+};
+
+export type HeaderMenuSubItem = SubItem & {
   description: string;
 };

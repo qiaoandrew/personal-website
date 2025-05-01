@@ -79,7 +79,7 @@ function FormItem({ className, ...props }: React.ComponentProps<"div">) {
 
   return (
     <FormItemContext.Provider value={{ id }}>
-      <div className={cn("flex flex-col gap-y-2", className)} {...props} />
+      <div className={cn("flex flex-col gap-y-3", className)} {...props} />
     </FormItemContext.Provider>
   );
 }
@@ -131,9 +131,7 @@ function FormMessage({
   const { error, formMessageId } = useFormField();
   const body = error ? String(error?.message) : children;
 
-  if (!body) {
-    return null;
-  }
+  if (!body) return null;
 
   return (
     <p

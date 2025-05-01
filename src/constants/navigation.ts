@@ -9,7 +9,7 @@ export const HEADER_MENU: HeaderMenuItem[] = [
     subItems: [
       {
         id: "pethsapp",
-        href: "/projects/pethsapp",
+        href: "https://www.tsac.ca/pethsapp",
         label: "Pethsapp",
         description:
           "Built my high school's mobile app, loved by 1200+ students.",
@@ -46,6 +46,33 @@ export const FOOTER_MENU: FooterMenuItem[] = [
   {
     id: "landing",
     label: "Landing",
-    subItems: [],
+    subItems: [
+      { id: "home", label: "Home", href: "/" },
+      { id: "projects", label: "Projects", href: "/#projects" },
+      { id: "experiences", label: "Experiences", href: "/#experiences" },
+      { id: "about", label: "About", href: "/#about" },
+      { id: "contact", label: "Contact", href: "/#contact" },
+    ],
+  },
+  {
+    id: "projects",
+    label: "Projects",
+    subItems: [
+      {
+        id: "pethsapp",
+        label: "Pethsapp",
+        href: "https://www.tsac.ca/pethsapp",
+      },
+      {
+        id: "snowflake-notebooks",
+        href: "https://www.snowflake.com/en/blog/introducing-snowflake-notebooks/",
+        label: "Snowflake Notebooks",
+      },
+      {
+        id: "quadratic-ui",
+        href: "https://quadratic-ui.com/",
+        label: "quadratic/ui",
+      },
+    ],
   },
 ];

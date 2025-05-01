@@ -1,7 +1,7 @@
 import { cn } from "~/utils/tailwind";
+import { EXPERIENCES } from "~/constants/experiences";
 import GradientText from "~/components/effects/GradientText";
 import ID from "~/components/navigation/ID";
-import { EXPERIENCES } from "~/constants/experiences";
 import ExperienceCard from "~/components/home/ExperienceCard";
 
 export default function Experiences() {

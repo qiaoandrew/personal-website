@@ -10,7 +10,7 @@ const inputVariants = tv({
     "disabled:cursor-not-allowed disabled:opacity-50",
   ],
   variants: {
-    inputSize: {
+    size: {
       xs: "rounded-1.5 text-3.5 h-8 px-2",
       sm: "rounded-2 text-3.5 h-9 px-2.5",
       md: "rounded-2 text-3.5 h-10 px-3",
@@ -18,17 +18,18 @@ const inputVariants = tv({
     },
   },
   defaultVariants: {
-    inputSize: "md",
+    size: "md",
   },
 });
 
 function Input({
   className,
-  inputSize,
+  size,
   ...props
-}: React.ComponentProps<"input"> & VariantProps<typeof inputVariants>) {
+}: Omit<React.ComponentProps<"input">, "size"> &
+  VariantProps<typeof inputVariants>) {
   return (
-    <input className={cn(inputVariants({ inputSize, className }))} {...props} />
+    <input className={cn(inputVariants({ size, className }))} {...props} />
   );
 }
 

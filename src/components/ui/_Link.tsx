@@ -5,7 +5,7 @@ interface _LinkProps extends React.ComponentProps<typeof Link> {
 }
 
 export default function _Link({ href, className, ...props }: _LinkProps) {
-  const Comp = href.startsWith("/") ? Link : "a";
+  const Comp = href.startsWith("http") ? "a" : Link;
 
   return (
     <Comp

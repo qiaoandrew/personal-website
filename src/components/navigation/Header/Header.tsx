@@ -7,11 +7,11 @@ import { useEffect, useState } from "react";
 import { cn } from "~/utils/tailwind";
 import type { HeaderMenuItem } from "~/types/navigation";
 import GradientText from "~/components/effects/GradientText";
-import MobileMobileToggle from "~/components/navigation/MobileMenuToggle";
-import MobileMenu from "~/components/navigation/MobileMenu";
-import DesktopMenu from "~/components/navigation/DesktopMenu";
-import CommandMenuTrigger from "~/components/navigation/CommandMenuTrigger";
-import DesktopSubMenu from "~/components/navigation/DesktopSubMenu";
+import MobileMobileToggle from "~/components/navigation/Header/MobileMenuToggle";
+import MobileMenu from "~/components/navigation/Header/MobileMenu";
+import DesktopMenu from "~/components/navigation/Header/DesktopMenu";
+import CommandMenuTrigger from "~/components/navigation/Header/CommandMenuTrigger";
+import DesktopSubMenu from "~/components/navigation/Header/DesktopSubMenu";
 
 const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
   ssr: false,

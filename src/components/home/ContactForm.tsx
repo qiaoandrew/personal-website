@@ -42,13 +42,22 @@ export default function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="md:mt-2 md:ml-auto md:w-full md:max-w-112"
+      >
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
-            <FormItem className="xs:mb-6 mb-5">
-              <Input type="text" placeholder="Name" {...field} />
+            <FormItem className="mb-5 md:mb-6">
+              <Input
+                type="text"
+                placeholder="Name"
+                size="lg"
+                className="h-12"
+                {...field}
+              />
               {form.formState.errors.name && (
                 <FormMessage>{form.formState.errors.name.message}</FormMessage>
               )}
@@ -59,8 +68,14 @@ export default function ContactForm() {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem className="xs:mb-6 mb-5">
-              <Input type="email" placeholder="Email" {...field} />
+            <FormItem className="mb-5 md:mb-6">
+              <Input
+                type="email"
+                placeholder="Email"
+                size="lg"
+                className="h-12"
+                {...field}
+              />
               {form.formState.errors.email && (
                 <FormMessage>{form.formState.errors.email.message}</FormMessage>
               )}
@@ -71,11 +86,12 @@ export default function ContactForm() {
           control={form.control}
           name="message"
           render={({ field }) => (
-            <FormItem className="xs:mb-16 mb-12">
+            <FormItem className="mb-12 md:mb-16">
               <Textarea
                 placeholder="Message"
+                size="lg"
+                className="h-48"
                 {...field}
-                className="xs:h-50 h-40"
               />
               {form.formState.errors.message && (
                 <FormMessage>
@@ -85,6 +101,19 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
+        <GradientBorder className="w-full rounded-[11px] md:inline-flex md:w-auto">
+          <Button
+            type="submit"
+            size="lg"
+            variant="outline"
+            className={cn(
+              "font-display w-full bg-linear-(--gradient-button) font-semibold",
+              "md:text-4.5 px-5 md:h-12.5 md:w-auto",
+            )}
+          >
+            Submit
+          </Button>
+        </GradientBorder>
       </form>
     </Form>
   );

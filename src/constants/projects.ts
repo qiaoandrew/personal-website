@@ -19,7 +19,6 @@ export const PROJECTS: Project[] = [
     href: "https://www.quadratic-ui.com",
     type: "UI Library",
   },
-
   {
     id: "coming-soon",
     title: "Coming soon...",

@@ -31,14 +31,14 @@ export default function About() {
           {ABOUT}
         </p>
         <div className="flex justify-stretch sm:justify-center">
-          <GradientBorder className="w-full rounded-[11px] md:w-auto">
+          <GradientBorder className="w-full rounded-[11px] md:w-auto md:rounded-[13px]">
             <Button
               size="lg"
               variant="outline"
               asChild
               className={cn(
                 "font-display w-full border-0 bg-linear-(--gradient-button) font-semibold",
-                "md:text-5 md:h-15 md:px-5",
+                "md:text-5 md:rounded-3 md:h-15 md:px-5",
               )}
             >
               <Link href="/#contact">Contact Me</Link>
