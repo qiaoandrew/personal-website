@@ -6,6 +6,7 @@ import "~/styles/globals.css";
 import Header from "~/components/navigation/Header/Header";
 import Spotlight from "~/components/effects/Spotlight";
 import Footer from "~/components/navigation/Footer/Footer";
+import { Toaster } from "~/components/ui/Toaster";
 
 export const metadata: Metadata = {
   title: "Andrew Qiao",
@@ -32,6 +33,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

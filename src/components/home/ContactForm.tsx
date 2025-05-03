@@ -33,12 +33,14 @@ export default function ContactForm() {
         body: JSON.stringify(values),
       });
       form.reset();
-      toast.success("Message sent successfully!");
+      toast.success("Message sent successfully.");
     } catch (error) {
       console.error(error);
       toast.error("Something went wrong. Please try again later.");
     }
   };
+
+  const { isSubmitting } = form.formState;
 
   return (
     <Form {...form}>
@@ -111,7 +113,10 @@ export default function ContactForm() {
               "md:text-4.5 px-5 md:h-12.5 md:w-auto",
             )}
           >
-            Submit
+            <span className={cn(isSubmitting && "opacity-0")}>Submit</span>
+            {isSubmitting && (
+              <Loader2Icon className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-spin" />
+            )}
           </Button>
         </GradientBorder>
       </form>
