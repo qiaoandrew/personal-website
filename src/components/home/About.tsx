@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section className={cn("mx-container mb-24", "xl:mb-40")}>
+    <section className={cn("mx-container relative mb-24", "xl:mb-40")}>
       <ID id="about" />
       <div className={cn("mx-auto max-w-110", "md:max-w-145")}>
         <Image

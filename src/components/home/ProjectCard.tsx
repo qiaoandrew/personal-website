@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { cn } from "~/utils/tailwind";
 import type { Project } from "~/types/projects";
 import _Link from "~/components/ui/_Link";
@@ -5,9 +7,23 @@ import GradientBorder from "~/components/effects/GradientBorder";
 import GradientText from "~/components/effects/GradientText";
 import { Badge } from "~/components/ui/Badge";
 
-type ProjectCardProps = Omit<Project, "id">;
+type ProjectCardProps = Project;
 
-export default function ProjectCard({ title, href, type }: ProjectCardProps) {
+export default function ProjectCard({
+  id,
+  title,
+  href,
+  type,
+  mockupLight,
+  mockupDark,
+}: ProjectCardProps) {
+  const mockupStyles = cn(
+    "absolute",
+    id === "pethsapp" && "-top-[13%] right-[10%] w-1/2",
+    (id === "snowflake-notebooks" || id === "quadratic-ui") && "inset-0",
+    id === "slope" && "w-2/3 right-[6%] -bottom-[15%]",
+  );
+
   return (
     <GradientBorder
       className={cn("rounded-5", "md:odd:translate-y-9", "xl:rounded-6")}
@@ -19,6 +35,16 @@ export default function ProjectCard({ title, href, type }: ProjectCardProps) {
           "xl:rounded-[23px]",
         )}
       >
+        <Image
+          src={mockupLight}
+          alt={title}
+          className={cn("dark:hidden", mockupStyles)}
+        />
+        <Image
+          src={mockupDark}
+          alt={title}
+          className={cn("hidden dark:block", mockupStyles)}
+        />
         <div className="absolute inset-0 bg-linear-(--gradient-card)" />
         <h3
           className={cn(
@@ -31,8 +57,8 @@ export default function ProjectCard({ title, href, type }: ProjectCardProps) {
         <Badge
           variant="outline"
           className={cn(
-            "absolute top-4 right-4",
-            "xl:text-4 xl:top-6 xl:right-6 xl:h-8 xl:px-3",
+            "bg-background absolute top-4 right-4",
+            "xl:text-4 xl:top-5 xl:right-5 xl:h-8 xl:px-3",
           )}
         >
           {type}

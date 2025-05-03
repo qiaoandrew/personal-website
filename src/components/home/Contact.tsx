@@ -5,7 +5,7 @@ import ContactForm from "~/components/home/ContactForm";
 
 export default function Contact() {
   return (
-    <section className="bg-linear-(--gradient-contact)">
+    <section className="relative bg-linear-(--gradient-contact)">
       <ID id="contact" />
       <div
         className={cn(

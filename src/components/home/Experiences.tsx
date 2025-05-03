@@ -6,7 +6,7 @@ import ExperienceCard from "~/components/home/ExperienceCard";
 
 export default function Experiences() {
   return (
-    <section className={cn("mx-container mb-24", "xl:mb-40")}>
+    <section className={cn("mx-container relative mb-24", "xl:mb-40")}>
       <ID id="experiences" />
       <h2
         className={cn(

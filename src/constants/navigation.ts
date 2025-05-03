@@ -49,7 +49,7 @@ export const HEADER_MENU: HeaderMenuItem[] = [
   {
     id: "experience",
     label: "Experience",
-    href: "/#experience",
+    href: "/#experiences",
     subItems: [],
     Icon: BriefcaseIcon,
   },
