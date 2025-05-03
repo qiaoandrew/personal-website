@@ -1,5 +1,5 @@
-export const ABOUT = `Hi! I'm Andrew, a Computer Science student at UWaterloo and Software Engineer Intern at Snowflake. In the past, I've also worked at IBM, TD Bank, and the University of Toronto.
+export const ABOUT = `Hi! I'm Andrew, a Computer Science student at UWaterloo and Software Engineer Intern at Snowflake. At Snowflake, I've worked on the company's design system, Notebooks, and Streamlit.
 
-For me, programming is all about building and fixing. I want to build things that are easy to use and address meaningful pain points that the people around me experience.
+For me, programming is all about building and fixing. I want to make things that solve real problems and are delightful to use.
 
-In my free time, I love to play tennis, lift weights, and dabble in UI/UX design. I'm always open to meeting new people, so if you're building something interesting or want to chat, please reach out!`;
+In my free time, I love to play tennis, lift weights, and dabble in UI/UX design. If you're building something interesting or want to chat, feel free to reach out!`;
