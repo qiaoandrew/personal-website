@@ -44,7 +44,7 @@ export default function Header() {
         "xl:inset-x-9 xl:top-6",
         "2xl:inset-x-[calc((100vw-1112px)/2)]",
         isMobileMenuOpen ? "h-[calc(100dvh-1.5rem)]" : "h-11",
-        activeDesktopMenuSubItems.length > 0 ? "xl:h-62" : "xl:h-13",
+        activeDesktopMenuSubItems.length > 0 ? "xl:h-64" : "xl:h-13",
       )}
     >
       <div

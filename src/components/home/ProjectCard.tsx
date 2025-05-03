@@ -14,11 +14,11 @@ export default function ProjectCard({
   title,
   href,
   type,
-  mockupLight,
-  mockupDark,
+  imageLight: mockupLight,
+  imageDark: mockupDark,
 }: ProjectCardProps) {
   const mockupStyles = cn(
-    "absolute group-hover:scale-105 transition-transform",
+    "absolute block group-hover:scale-105 transition-transform",
     id === "pethsapp" && "-top-[13%] right-[10%] w-1/2",
     (id === "snowflake-notebooks" || id === "quadratic-ui") && "inset-0",
     id === "slope" && "w-2/3 right-[6%] -bottom-[15%]",
@@ -38,12 +38,12 @@ export default function ProjectCard({
         <Image
           src={mockupLight}
           alt={title}
-          className={cn("dark:hidden", mockupStyles)}
+          className={cn(mockupStyles, "dark:hidden")}
         />
         <Image
           src={mockupDark}
           alt={title}
-          className={cn("hidden dark:block", mockupStyles)}
+          className={cn(mockupStyles, "hidden dark:block")}
         />
         <div className="absolute inset-0 bg-linear-(--gradient-card)" />
         <h3

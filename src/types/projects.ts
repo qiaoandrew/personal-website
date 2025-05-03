@@ -5,6 +5,6 @@ export type Project = {
   title: string;
   href: string;
   type: string;
-  mockupLight: StaticImageData;
-  mockupDark: StaticImageData;
+  imageLight: StaticImageData;
+  imageDark: StaticImageData;
 };

@@ -7,6 +7,12 @@ import {
   UserRoundIcon,
 } from "lucide-react";
 
+import pethsappLight from "../../public/img/mockups/pethsapp-light.png";
+import pethsappDark from "../../public/img/mockups/pethsapp-dark.png";
+import quadraticUILight from "../../public/img/mockups/quadratic-ui-2-light.png";
+import quadraticUIDark from "../../public/img/mockups/quadratic-ui-2-dark.png";
+import snowflakeNotebooks from "../../public/img/mockups/snowflake-notebooks.png";
+import slope from "../../public/img/mockups/slope.png";
 import type { FooterMenuItem, HeaderMenuItem } from "~/types/navigation";
 
 export const HEADER_MENU: HeaderMenuItem[] = [
@@ -22,13 +28,17 @@ export const HEADER_MENU: HeaderMenuItem[] = [
         label: "Pethsapp",
         description:
           "Built my high school's mobile app, loved by 1200+ students.",
+        imageLight: pethsappLight,
+        imageDark: pethsappDark,
       },
       {
         id: "snowflake-notebooks",
         href: "https://www.snowflake.com/en/blog/introducing-snowflake-notebooks/",
         label: "Snowflake Notebooks",
         description:
-          "An end-to-end interactive environment for daata & AI teams.",
+          "An end-to-end interactive environment for data & AI teams.",
+        imageLight: snowflakeNotebooks,
+        imageDark: snowflakeNotebooks,
       },
       {
         id: "quadratic-ui",
@@ -36,12 +46,16 @@ export const HEADER_MENU: HeaderMenuItem[] = [
         label: "quadratic/ui",
         description:
           "Beautiful components to build your next side project faster.",
+        imageLight: quadraticUILight,
+        imageDark: quadraticUIDark,
       },
       {
-        id: "coming-soon",
+        id: "slope",
         href: "#",
-        label: "Coming soon...",
-        description: "Working on something new and fun!",
+        label: "Slope",
+        description: "Coming soon...",
+        imageLight: slope,
+        imageDark: slope,
       },
     ],
     Icon: MonitorIcon,
