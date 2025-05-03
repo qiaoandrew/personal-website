@@ -14,6 +14,7 @@ import {
   CommandList,
 } from "~/components/ui/CommandMenu";
 import { HEADER_MENU } from "~/constants/navigation";
+import { SOCIALS } from "~/constants/socials";
 
 export default function CommandMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -68,6 +69,17 @@ export default function CommandMenu() {
               >
                 <item.Icon />
                 {item.label}
+              </CommandItem>
+            ))}
+          </CommandGroup>
+          <CommandGroup heading="Socials">
+            {SOCIALS.map((social) => (
+              <CommandItem
+                onSelect={() => handleSelect(() => window.open(social.href))}
+                key={social.id}
+              >
+                <social.Icon />
+                {social.label}
               </CommandItem>
             ))}
           </CommandGroup>
