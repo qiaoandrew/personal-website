@@ -24,46 +24,55 @@ export default function ProjectCard({
     id === "slope" && "w-2/3 right-[6%] -bottom-[15%]",
   );
 
+  const children = (
+    <>
+      <Image
+        src={mockupLight}
+        alt={title}
+        className={cn(mockupStyles, "dark:hidden")}
+      />
+      <Image
+        src={mockupDark}
+        alt={title}
+        className={cn(mockupStyles, "hidden dark:block")}
+      />
+      <div className="absolute inset-0 bg-linear-(--gradient-card)" />
+      <h3
+        className={cn(
+          "text-6 font-display absolute bottom-5.5 left-5 font-semibold",
+          "xl:text-7 xl:bottom-8 xl:left-7",
+        )}
+      >
+        <GradientText>{title}</GradientText>
+      </h3>
+      <Badge
+        variant="outline"
+        className={cn(
+          "bg-background absolute top-4 right-4",
+          "xl:text-4 xl:top-5 xl:right-5 xl:h-8 xl:px-3",
+        )}
+      >
+        {type}
+      </Badge>
+    </>
+  );
+
+  const cardStyles = cn(
+    "bg-background group relative block aspect-[11/7] w-full overflow-hidden rounded-[19px]",
+    "xl:rounded-[23px]",
+  );
+
   return (
     <GradientBorder
       className={cn("rounded-5", "md:odd:translate-y-9", "xl:rounded-6")}
     >
-      <_Link
-        href={href}
-        className={cn(
-          "bg-background group relative block aspect-[11/7] w-full overflow-hidden rounded-[19px]",
-          "xl:rounded-[23px]",
-        )}
-      >
-        <Image
-          src={mockupLight}
-          alt={title}
-          className={cn(mockupStyles, "dark:hidden")}
-        />
-        <Image
-          src={mockupDark}
-          alt={title}
-          className={cn(mockupStyles, "hidden dark:block")}
-        />
-        <div className="absolute inset-0 bg-linear-(--gradient-card)" />
-        <h3
-          className={cn(
-            "text-6 font-display absolute bottom-5.5 left-5 font-semibold",
-            "xl:text-7 xl:bottom-8 xl:left-7",
-          )}
-        >
-          <GradientText>{title}</GradientText>
-        </h3>
-        <Badge
-          variant="outline"
-          className={cn(
-            "bg-background absolute top-4 right-4",
-            "xl:text-4 xl:top-5 xl:right-5 xl:h-8 xl:px-3",
-          )}
-        >
-          {type}
-        </Badge>
-      </_Link>
+      {href === "" ? (
+        <div className={cardStyles}>{children}</div>
+      ) : (
+        <_Link href={href} className={cardStyles}>
+          {children}
+        </_Link>
+      )}
     </GradientBorder>
   );
 }

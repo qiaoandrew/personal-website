@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
   {
     id: "slope",
     title: "Slope",
-    href: "#",
+    href: "",
     type: "Coming Soon",
     imageLight: slope,
     imageDark: slope,
