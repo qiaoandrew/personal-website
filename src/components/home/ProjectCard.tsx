@@ -18,7 +18,7 @@ export default function ProjectCard({
   mockupDark,
 }: ProjectCardProps) {
   const mockupStyles = cn(
-    "absolute",
+    "absolute group-hover:scale-105 transition-transform",
     id === "pethsapp" && "-top-[13%] right-[10%] w-1/2",
     (id === "snowflake-notebooks" || id === "quadratic-ui") && "inset-0",
     id === "slope" && "w-2/3 right-[6%] -bottom-[15%]",

@@ -8,7 +8,7 @@ export default function PethsappPage() {
 
   useEffect(() => {
     window.open("https://www.tsac.ca/pethsapp", "_blank");
-    router.push("/");
+    router.replace("/");
   }, [router]);
 
   return null;

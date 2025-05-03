@@ -44,11 +44,11 @@ export default function CommandMenu() {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="bg-background rounded-2 hover:bg-muted/50 hidden h-9 w-68 cursor-pointer items-center justify-between border px-2.5 transition-colors xl:flex"
+        className="bg-background group rounded-2 hover:bg-muted/50 hidden h-9 w-68 cursor-pointer items-center justify-between border px-2.5 transition-colors xl:flex"
       >
         <span className="flex items-center gap-1.5">
-          <SearchIcon className="text-muted-foreground size-3.5" />
-          <span className="text-muted-foreground text-3.5">
+          <SearchIcon className="text-muted-foreground group-hover:text-foreground size-3.5 transition-colors" />
+          <span className="text-muted-foreground text-3.5 group-hover:text-foreground transition-colors">
             Search website...
           </span>
         </span>
