@@ -1,30 +1,35 @@
+import { z } from "zod";
+
 import { resend } from "~/lib/resend";
 
-import ContactFormEmailTemplate from "~/components/emails/ContactFormEmailTemplate";
+const contactFormSchema = z.object({
+  name: z.string().min(1),
+  email: z.string().email(),
+  message: z.string().min(1),
+});
 
 export async function POST(request: Request) {
   try {
-    const { name, email, message } = (await request.json()) as {
-      name: string;
-      email: string;
-      message: string;
-    };
+    const result = contactFormSchema.safeParse(await request.json());
+    if (!result.success) {
+      return Response.json({ error: result.error.flatten() }, { status: 400 });
+    }
+
+    const { name, email, message } = result.data;
 
     const { data, error } = await resend.emails.send({
-      from: "Personal Website <hello@andrewqiao.com>",
+      from: "hello@andrewqiao.com",
       to: ["andrewqiao2004@gmail.com"],
       subject: "New Contact Form Submission",
-      react: ContactFormEmailTemplate({ name, email, message }),
+      html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong> ${message}</p>`,
     });
 
     if (error) {
-      throw new Error(error.message);
+      return Response.json({ error }, { status: 500 });
     }
 
     return Response.json(data);
-  } catch (error: unknown) {
-    console.error(error);
-
-    return Response.json({ error });
+  } catch (error) {
+    return Response.json({ error }, { status: 500 });
   }
 }
