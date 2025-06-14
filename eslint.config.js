@@ -11,7 +11,10 @@ export default tseslint.config(
   {
     ignores: [".next"],
   },
-  ...compat.extends("next/core-web-vitals"),
+  ...compat.extends("next/core-web-vitals").map((config) => ({
+    ...config,
+    languageOptions: undefined,
+  })),
   {
     files: ["**/*.ts", "**/*.tsx"],
     plugins: {
