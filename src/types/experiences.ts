@@ -7,8 +7,9 @@ export type Experience = {
   position: string;
   date: string;
   location: string;
-  points: string[];
   icon: StaticImageData;
+  team: string;
+  emoji: string;
 };
 
 export type ExperienceButton = {

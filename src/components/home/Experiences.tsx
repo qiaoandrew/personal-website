@@ -18,15 +18,7 @@ export default function Experiences() {
       </h2>
       <div className={cn("grid gap-y-16", "md:gap-y-18")}>
         {EXPERIENCES.map((experience) => (
-          <ExperienceCard
-            position={experience.position}
-            company={experience.company}
-            date={experience.date}
-            location={experience.location}
-            points={experience.points}
-            icon={experience.icon}
-            key={experience.id}
-          />
+          <ExperienceCard {...experience} key={experience.id} />
         ))}
       </div>
     </section>
