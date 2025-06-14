@@ -84,7 +84,7 @@ export const HEADER_MENU: HeaderMenuItem[] = [
   {
     id: "resume",
     label: "Resume",
-    href: "/resume.pdf",
+    href: "https://andrewqiao.com/resume.pdf",
     subItems: [],
     Icon: FileText,
   },

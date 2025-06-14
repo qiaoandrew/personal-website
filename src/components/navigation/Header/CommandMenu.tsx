@@ -64,7 +64,15 @@ export default function CommandMenu() {
           <CommandGroup heading="Home">
             {HEADER_MENU.slice(1).map((item) => (
               <CommandItem
-                onSelect={() => handleSelect(() => router.push(item.href))}
+                onSelect={() =>
+                  handleSelect(() => {
+                    if (item.href.startsWith("http")) {
+                      window.open(item.href, "_blank");
+                    } else {
+                      router.push(item.href);
+                    }
+                  })
+                }
                 key={item.id}
               >
                 <item.Icon />
