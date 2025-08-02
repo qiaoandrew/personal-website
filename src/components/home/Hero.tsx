@@ -1,5 +1,5 @@
-import GradientText from "~/components/effects/GradientText";
 import { cn } from "~/utils/tailwind";
+import GradientText from "~/components/effects/GradientText";
 
 export default function Hero() {
   return (

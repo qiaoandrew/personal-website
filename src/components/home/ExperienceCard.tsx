@@ -23,7 +23,7 @@ export default function ExperienceCard({
         </p>
       </div>
       <hr className="md:text-ring hidden md:my-4.5 md:block md:flex-grow" />
-      <div className="flex grow flex-col gap-5 md:w-[420px]">
+      <div className="flex grow flex-col gap-5 md:w-105">
         <div className="flex items-start justify-between">
           <div className="flex flex-col gap-2.5">
             <h3 className="text-6 font-display md:text-7 font-semibold">

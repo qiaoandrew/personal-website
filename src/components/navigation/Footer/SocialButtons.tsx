@@ -1,6 +1,6 @@
+import { SOCIALS } from "~/constants/socials";
 import GradientBorder from "~/components/effects/GradientBorder";
 import { Button } from "~/components/ui/Button";
-import { SOCIALS } from "~/constants/socials";
 
 export default function SocialButtons() {
   return (

@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { SearchIcon } from "lucide-react";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
-
-import { Shortcut, ShortcutGroup } from "~/components/ui/Shortcut";
-import { useRouter } from "next/navigation";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/navigation";
+
+import { HEADER_MENU } from "~/constants/navigation";
+import { SOCIALS } from "~/constants/socials";
+import { Shortcut, ShortcutGroup } from "~/components/ui/Shortcut";
 import {
   CommandDialog,
   CommandEmpty,
@@ -13,8 +15,6 @@ import {
   CommandItem,
   CommandList,
 } from "~/components/ui/CommandMenu";
-import { HEADER_MENU } from "~/constants/navigation";
-import { SOCIALS } from "~/constants/socials";
 
 export default function CommandMenu() {
   const [isOpen, setIsOpen] = useState<boolean>(false);

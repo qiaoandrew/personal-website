@@ -4,7 +4,7 @@ import { resend } from "~/lib/resend";
 
 const contactFormSchema = z.object({
   name: z.string().min(1),
-  email: z.string().email(),
+  email: z.email(),
   message: z.string().min(1),
 });
 

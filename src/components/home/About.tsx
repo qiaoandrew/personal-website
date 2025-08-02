@@ -1,11 +1,12 @@
-import { cn } from "~/utils/tailwind";
-import ID from "~/components/navigation/ID";
+import Link from "next/link";
 import Image from "next/image";
+
 import headshot from "../../../public/img/headshot.png";
+import { cn } from "~/utils/tailwind";
 import { ABOUT } from "~/constants/about";
+import ID from "~/components/navigation/ID";
 import GradientBorder from "~/components/effects/GradientBorder";
 import { Button } from "~/components/ui/Button";
-import Link from "next/link";
 
 export default function About() {
   return (
